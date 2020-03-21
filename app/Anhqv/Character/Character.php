@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace Anhqv\Character;
 
-use Illuminate\Database\Eloquent\Model;
+use Anhqv\Base\BaseEntity;
 
-class Character extends Model
+class Character extends BaseEntity
 {
     protected $table = 'characters';
     protected $primaryKey = 'id';
