@@ -6,6 +6,9 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCharactersTable extends Migration
 {
+
+    const TABLE_NAME = 'characters';
+
     /**
      * Run the migrations.
      *
@@ -13,11 +16,12 @@ class CreateCharactersTable extends Migration
      */
     public function up()
     {
-        Schema::create('characters', function (Blueprint $table) {
+        Schema::create(static::TABLE_NAME, function (Blueprint $table) {
             $table->id();
-            $table->string('name', 30);
-            $table->string('surname', 50);
-            $table->string('nickname', 30);
+            $table->string('name', 30)->comment('Nombre del personaje');
+            $table->string('surname', 50)->comment('Apellidos del personaje');
+            $table->string('nickname', 30)->comment('Apodo del personaje');
+            $table->string('image_url', 100)->comment('Url a la imagen del personaje');
             $table->timestamps();
         });
     }
@@ -29,6 +33,6 @@ class CreateCharactersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('characters');
+        Schema::dropIfExists(static::TABLE_NAME);
     }
 }
