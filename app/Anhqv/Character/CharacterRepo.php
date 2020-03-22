@@ -37,6 +37,11 @@ class CharacterRepo extends BaseRepo implements CharacterRepoInterface
             $query = $query->where('name', 'like', '%' . $name . '%');
         }
 
+        if (!isset($perPage)) {
+            $perPage = $query->count();
+            $page = 1;
+        }
+
         // Aplicamos la paginacion
         $query = $query
             ->paginate($perPage, ['*'], 'page', $page)
