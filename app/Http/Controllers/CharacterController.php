@@ -49,8 +49,8 @@ class CharacterController extends Controller
         $data = $request->validate($this->rules_index);
 
         $name = isset($data[static::NAME]) ? $data[static::NAME] : null;
-        $page = isset($data[static::PAGE]) ? $data[static::PAGE] : 1;
-        $perPage = isset($data[static::PER_PAGE]) ? $data[static::PER_PAGE] : 10;
+        $page = isset($data[static::PAGE]) ? $data[static::PAGE] : null;
+        $perPage = isset($data[static::PER_PAGE]) ? $data[static::PER_PAGE] : null;
 
         $filters = [
             static::NAME => $name,
