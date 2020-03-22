@@ -123,7 +123,7 @@ class CharactersTableSeeder extends Seeder
             ], [
                 static::FIELD_NAME => 'Trabajador mudanza 2',
                 static::FIELD_SURNAME => '',
-                static::FIELD_NICKNAME => 'Paco',
+                static::FIELD_NICKNAME => '',
                 static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/trabajador_mudanza_2.jpg'
             ], [
                 static::FIELD_NAME => 'Paco',
