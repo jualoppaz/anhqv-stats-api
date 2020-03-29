@@ -37,9 +37,19 @@ class CharacterController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @OA\Get(
+     *  path="/characters",
+     *  summary="Mostrar personajes",
+     *  tags={"characters"},
+     *  @OA\Response(
+     *      response=200,
+     *      description="Listado con los personajes consultados."
+     *  ),
+     *  @OA\Response(
+     *      response="default",
+     *      description="Ha ocurrido un error."
+     *  )
+     * )
      */
     public function index(Request $request)
     {

@@ -1,11 +1,9 @@
 <?php
 
-if (!defined('SWAGGER_API_HOST')) {
-    define('SWAGGER_API_HOST', env('SWAGGER_API_HOST'));
-    define('SWAGGER_API_PREFIX', env('SWAGGER_API_PREFIX'));
+if (!defined('SWAGGER_API_TITLE')) {
+    define('SWAGGER_API_TITLE', env('SWAGGER_API_TITLE'));
     define('SWAGGER_API_VERSION', env('SWAGGER_API_VERSION'));
-    define('SWAGGER_TAB_TITLE', env('SWAGGER_TAB_TITLE'));
-    define('SWAGGER_BODY_TITLE', env('SWAGGER_BODY_TITLE'));
+    define('SWAGGER_API_URL', env('SWAGGER_API_URL'));
 
     define('LOG_LEVEL_INFO', 'INFO');
     define('LOG_LEVEL_DEBUG', 'DEBUG');
