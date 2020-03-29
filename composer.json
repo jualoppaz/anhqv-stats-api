@@ -1,7 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "jualoppaz/anhqv-stats-api",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "version": "0.1.1",
+    "description": "API de la aplicación web anhqv-stats.es",
     "keywords": [
         "framework",
         "laravel"
