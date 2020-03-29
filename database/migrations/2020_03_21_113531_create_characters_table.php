@@ -19,7 +19,8 @@ class CreateCharactersTable extends Migration
         Schema::create(static::TABLE_NAME, function (Blueprint $table) {
             $table->id();
             $table->string('name', 30)->comment('Nombre del personaje');
-            $table->string('surname', 50)->comment('Apellidos del personaje');
+            $table->string('surname', 50)->comment('Primer apellido del personaje');
+            $table->string('second_surname', 50)->comment('Segundo apellido del personaje');
             $table->string('nickname', 30)->comment('Apodo del personaje');
             $table->string('image_url', 100)->comment('Url a la imagen del personaje');
             $table->timestamps();
