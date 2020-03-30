@@ -2,7 +2,6 @@
 
 if (!defined('SWAGGER_API_TITLE')) {
     define('SWAGGER_API_TITLE', env('SWAGGER_API_TITLE'));
-    define('SWAGGER_API_VERSION', env('SWAGGER_API_VERSION'));
     define('SWAGGER_API_URL', env('SWAGGER_API_URL'));
 
     define('LOG_LEVEL_INFO', 'INFO');
