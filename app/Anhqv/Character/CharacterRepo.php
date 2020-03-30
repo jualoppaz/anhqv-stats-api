@@ -63,4 +63,8 @@ class CharacterRepo extends BaseRepo implements CharacterRepoInterface
         return $query;
 
     }
+
+    public function findBySlug($slug){
+        return $this->model->where('slug', $slug)->firstOrFail();
+    }
 }

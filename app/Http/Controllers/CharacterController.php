@@ -97,15 +97,15 @@ class CharacterController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Character  $character
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Character $character)
+    public function show(Request $request, $slug)
     {
-        //
+        $methodName = __FUNCTION__;
+        Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Access');
+
+        $res = $this->characterRepo->findBySlug($slug);
+
+        Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Exit');
+        return response()->json($res, static::HTTP_OK, [], JSON_PRETTY_PRINT);
     }
 
     /**

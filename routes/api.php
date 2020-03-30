@@ -20,4 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::prefix('characters')->group(function () {
     Route::get('/', 'CharacterController@index');
+    Route::get('/{slug}', 'CharacterController@show');
 });
