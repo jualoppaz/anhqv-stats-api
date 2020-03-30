@@ -42,12 +42,8 @@ class CharacterController extends Controller
      *  summary="Mostrar personajes",
      *  tags={"characters"},
      *  @OA\Response(
-     *      response=200,
-     *      description="Listado con los personajes consultados."
-     *  ),
-     *  @OA\Response(
-     *      response="default",
-     *      description="Ha ocurrido un error."
+     *    response=200,
+     *    description="Listado con los personajes consultados."
      *  )
      * )
      */
@@ -98,14 +94,34 @@ class CharacterController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  \App\Character  $character
-     * @return \Illuminate\Http\Response
+     * @OA\Get(
+     *  path="/characters/{slug}",
+     *  summary="Mostrar detalle de personaje",
+     *  tags={"characters"},
+     *  @OA\Parameter(
+     *    name="slug",
+     *    description="Slug que identifica al personaje de forma única",
+     *    required=true,
+     *    in="path",
+     *    @OA\Schema(
+     *      type="string"
+     *    )
+     * ),
+     *  @OA\Response(
+     *    response=200,
+     *    description="Listado con los personajes consultados."
+     *  )
+     * )
      */
-    public function show(Character $character)
+    public function show(Request $request, $slug)
     {
-        //
+        $methodName = __FUNCTION__;
+        Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Access');
+
+        $res = $this->characterRepo->findBySlug($slug);
+
+        Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Exit');
+        return response()->json($res, static::HTTP_OK, [], JSON_PRETTY_PRINT);
     }
 
     /**
