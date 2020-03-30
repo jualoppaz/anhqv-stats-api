@@ -42,12 +42,8 @@ class CharacterController extends Controller
      *  summary="Mostrar personajes",
      *  tags={"characters"},
      *  @OA\Response(
-     *      response=200,
-     *      description="Listado con los personajes consultados."
-     *  ),
-     *  @OA\Response(
-     *      response="default",
-     *      description="Ha ocurrido un error."
+     *    response=200,
+     *    description="Listado con los personajes consultados."
      *  )
      * )
      */
@@ -97,6 +93,26 @@ class CharacterController extends Controller
         //
     }
 
+    /**
+     * @OA\Get(
+     *  path="/characters/{slug}",
+     *  summary="Mostrar detalle de personaje",
+     *  tags={"characters"},
+     *  @OA\Parameter(
+     *    name="slug",
+     *    description="Slug que identifica al personaje de forma única",
+     *    required=true,
+     *    in="path",
+     *    @OA\Schema(
+     *      type="string"
+     *    )
+     * ),
+     *  @OA\Response(
+     *    response=200,
+     *    description="Listado con los personajes consultados."
+     *  )
+     * )
+     */
     public function show(Request $request, $slug)
     {
         $methodName = __FUNCTION__;
