@@ -15,6 +15,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         App::bind('Anhqv\Character\CharacterRepoInterface', 'Anhqv\Character\CharacterRepo');
+        App::bind('Anhqv\Chapter\ChapterRepoInterface', 'Anhqv\Chapter\ChapterRepo');
     }
 
     /**
