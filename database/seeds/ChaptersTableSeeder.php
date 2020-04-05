@@ -23,6 +23,7 @@ class ChaptersTableSeeder extends Seeder
       $this->getChapters(1),
       $this->getChapters(2),
       $this->getChapters(3),
+      $this->getChapters(4),
     );
 
     foreach ($chapters as $chapter) {
@@ -41,6 +42,7 @@ class ChaptersTableSeeder extends Seeder
     if ($season === 1) $funcName = 'getFirstSeasonChapters';
     if ($season === 2) $funcName = 'getSecondSeasonChapters';
     if ($season === 3) $funcName = 'getThirdSeasonChapters';
+    if ($season === 4) $funcName = 'getFourthSeasonChapters';
 
     return $this->$funcName();
   }
@@ -688,6 +690,154 @@ class ChaptersTableSeeder extends Seeder
           Pero, como es habitual en esta loca comunidad de vecinos, las cosas no van a salir como ellos piensan y las vacaciones van a traer muchas sorpresas a todos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x33.jpg',
       ]
+    ];
+  }
+
+  public function getFourthSeasonChapters()
+  {
+    return [
+      [
+        static::FIELD_NAME => 'Érase un despertar',
+        static::FIELD_SLUG => '4x01',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Los vecinos han iniciado las obras en sus pisos, pero el seguro se niega a pagarles el arreglo alegando que el incendio ha sido provocado.
+          Pero ése no va a ser el único problema al que se enfrente el presidente de la comunidad. Paloma está despierta en el hospital y aunque está completamente desorientada y no se acuerda de nada, en cualquier momento puede recobrarse y volver a casa. Isabel, por si las moscas, ha desaparecido, y el único consuelo que le queda a Juan Cuesta es que Natalia ha vuelto a casa.
+          Lucía vuelve de pasar unos días en Málaga donde ha conocido a Yago, un ecologista activo que le hace cambiar su concepto de la vida.
+          Concha le sube el alquiler a Belén y la amenaza con poner el piso en venta. Belén, que ahora tiene trabajo de vendedora de seguros, se decide a comprarlo y pide una hipoteca al banco.
+          Fernando está agobiado porque no le gusta su trabajo y Mauri, para ayudarle a que se independice y monte su propio despacho, accede a trabajar de tertuliano en un programa del corazón.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un cultivo',
+        static::FIELD_SLUG => '4x02',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'La investigación policial del atropello de Paloma avanza satisfactoriamente para Juan, pero Isabel está cada vez más preocupada.
+          Belén, avalada por su madre, está a punto de conseguir la hipoteca. Solamente teme no pasar la prueba de esfuerzo que le hacen en el examen médico para el seguro de vida y decide doparse. Marisa y Vicenta también acuden al médico a hacerse un chequeo, pero al contrario de lo que pensaban, es Vicenta la que tiene un problema y va a tener que operarse. Para relajarse, le pide alguna infusión a Isabel y ella le aconseja, pensando que nunca va a saber como conseguirla, que fume marihuana.
+          Lucía ya no sabe qué hacer para atraer a Yago, y cuando él se presenta en su casa y le dice que le ha echado la novia, enseguida le sugiere que se quede a vivir en la suya.
+          Fernando no encuentra local para su oficina y atiende en su casa a los clientes. Los primeros en aparecer son un matrimonio gay que quiere divorciarse.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x02.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un desvío provisional',
+        static::FIELD_SLUG => '4x03',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'La calle Desengaño sufre un inusual atasco debido a la construcción de un parking en la plaza que obliga a desviar temporalmente el tráfico. Los vecinos protestan por el ruido y Juan Cuesta inicia una recogida de firmas por el barrio para elevar una queja al Ayuntamiento.
+          Roberto regresa de su exilio en Puerto Banús completamente recuperado de su ruptura con Lucía, pero a Carlos no le sucede lo mismo y cada día está peor. Entre los dos alquilan el piso de Nieves que ahora está vacío.
+          Fernando contrata a Natalia de secretaria y Mauri se cela. Mientras Vicenta se recupera de la operación, Concha, en cambio, entra en una depresión porque la echan de las juntas al dejar de ser propietaria. Belén, que ahora sí participa en ellas, acude a su primera junta y se entera de la derrama que debe pagar.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x03.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una sequía',
+        static::FIELD_SLUG => '4x04',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Debido a la sequía el Ayuntamiento de la ciudad ha restringido el suministro de agua a sólo cinco horas al día. Los vecinos convocan una junta y deciden excavar un pozo en el patio.
+          Emilio consigue trabajo por las noches de agente de seguridad en un centro comercial y lo oculta a los vecinos.
+          Por su parte Belén, que está harta de estar sola, ha decidido volver con él. Y es que el idilio entre Bea y Ana cada día se hace más insufrible para Belén y Carmen, ambas sin pareja.
+          Entretanto, Lucía sigue sin conseguir que Yago le dedique toda su atención. Por otra parte, el padre de Fernando viene a pasar unos días con su hijo y divertirse en la noche gay.
+          Por último, Natalia se ofrece como madre de alquiler a un amigo de Fernando y su esposa que no pueden tener hijos.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x04.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un banco en la acera',
+        static::FIELD_SLUG => '4x05',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'El Ayuntamiento coloca un banco en la acera justo delante del telefonillo del portal. Los vecinos protestan y le piden a Juan que consiga que lo retiren. Pero Vicenta, Concha y Marisa cambian de opinión cuando se convierte en el lugar de reunión y confidencias de una extraña pareja: una mujer guardia civil y un joven subsahariano que viven un amor imposible.
+          Para Juan Cuesta todo son problemas. De un lado no sabe de donde saca Natalia tanto dinero, y, de otro, Marta, la presidenta de la otra comunidad, no cesa de mandarle mensajes de amor al móvil, y aunque él está enamorado de Isabel, no quiere dejar pasar la que puede ser su última oportunidad.
+          Bea necesita tiempo libre para salir con Ana, y Mauri para escribir su libro. Deciden contratar una niñera y es Fernando quien, a través de internet, contrata a una monja que en principio parece ser la candidata perfecta.
+          Desde que es propietaria a Belén se le acumulan las deudas. Entre la derrama y el dinero que debe a Lucía su vida es un infierno. Carmen le sugiere que grabe un video de porno casero con Emilio para sacar dinero.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x05.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una Navidad convulsa',
+        static::FIELD_SLUG => '4x06',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Los vecinos morosos pagan las derramas y en la comunidad reina la armonía. Como se acerca la Navidad, convocan una cena de confraternización para la Nochebuena en casa de Juan Cuesta.
+          A la cena se apuntan todos menos Mauri, que pensaba invitar a sus padres y salir a cenar con Fernando, pero a última hora recibe la noticia de la muerte de su padre.
+          Juan intenta recuperar a Isabel, que se ha refugiado en casa de Lucía, y le pide que se case con él. Isabel vuelve a casa, pero Juan tiene que hablar con Marta y dejarla definitivamente, algo con lo que Marta no va a estar de acuerdo ya que sigue decidida a luchar por él.
+          Mientras Emilio muestrasignos de arrepentimiento por lo mal que trata a Belén y decide gastarse el dinero del vídeo porno en invitarla a un viaje, ella ha encontrado trabajo en una empresa de moda y conoce a otro hombre.
+          Por su parte Lucía, sola y sin Yago, tiene una recaída con Roberto.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x06.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase la tercera Nochevieja',
+        static::FIELD_SLUG => '4x07',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Para no repetir el caos de Nochebuena, se celebra una junta y Juan Cuesta prohíbe celebrar más fiestas comunitarias el día de Nochevieja. Así pues, cada uno debe celebrarlo por su cuenta.
+          Pedro invita a Belén a cenar y le pide que se case con él. Emilio sigue empeñado en que le acompañe en el viaje a China y que le espera en el aeropuerto.
+          Mauri y Fernando se van a una isla perdida en el océano Índico, pero Mauri tiene remordimientos porque Ezequiel va a celebrar su primer cumpleaños con las campanadas y él no va a estar.
+          Mariano compra un pavo vivo a unos laboratorios que lo utilizaban para experimentar con animales y se lo vende a Vicenta que ellas sí han decido montar por su cuenta una fiesta en casa.
+          Lucía convoca a los tres pretendientes y les comunica que está enamorada de Yago. Le pide dinero a su padre para la derrama y otros gastos y éste se apunta a cenar para conocer a su nuevo novio.
+          Los padres de Isabel deciden venir a cenar con ellos. Aún no saben que ha dejado a Andrés y que vive con Juan. Isabel decide no decírselo y le pide a Andrés que haga de marido y a Juan que vaya con sus hijos a cenar a otra parte.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x07.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
+        static::FIELD_SLUG => '4x08',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Isabel intenta rehacer y estimular su vida sexual con Juan Cuesta y acaba metiéndole en un conflicto político-vecinal. Por otra parte, a Mauri se le acaba el plazo para presentar el libro, pero está bloqueado y Mariano se ofrece a ayudarle.
+          La madre de Belén sigue instalada en el piso y va a entrar en conflicto con el resto de las chicas. Mientras tanto, Belén está ocupada con los preparativos de la boda.
+          Por último, Marisa empieza a sufrir persecución por fumadora y al final, opta por dejar el tabaco.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x08.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una presidenta títere',
+        static::FIELD_SLUG => '4x09',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Belén empieza su mandato de presidenta de la comunidad con problemas porque las señoras la presionan para echar a Andrés Guerra del ático.
+          Mientras, Juan Cuesta intenta ocupar su tiempo libre aprendiendo a tocar el piano.
+          Por otra parte, Roberto se echa novia pero va a tener que soportar los celos de Carlos.
+          Y, por último, Ana encuentra trabajo de modelo y se hace muy popular, lo que va a despertar también los celos de Bea, su pareja.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x09.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un par de bodas',
+        static::FIELD_SLUG => '4x10',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Belén y Paco preparan sus respectivas bodas, Belén con Pedro y Paco con Lourdes. Sin embargo, la noche anterior a la ceremonia, Pedro le pide a Belén que firme la separación de bienes.
+          Por otra parte, Juan Cuesta le vende el 2º B a Carlos y se encuentra con 90.000 euros en dinero negro que tiene que esconder en casa.
+          Carlos ingresa en una secta extraña y el consejo de sabios se une para intentar que salga de ella lo antes posible.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x10.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una conexión wifi',
+        static::FIELD_SLUG => '4x11',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Juan Cuesta instala una conexión wifi de internet de la que los vecinos van a sacar provecho.
+          Mauri descubre un piso que se alquila en el edificio de enfrente y cree que puede se un buen sitio para que Fernando instale su oficina, pero alquilarlo no va a ser fácil ya que otros vecinos también lo quieren, y además el dueño es un señor mayor y para colmo homófobo.
+          Belén entra en contacto con el hijo de Pedro, ahora convertido en único heredero, y su madre le incita a que se lo ligue.
+          Emilio, por su parte, ve la oportunidad de sacar un dinero extra acudiendo a las televisiones para contar la historia.
+          Por último, el ático se ha quedado libre y la comunidad decide alquilarlo.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x11.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un vudú',
+        static::FIELD_SLUG => '4x12',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'María Jesús cada día tiene más problemas con Belén y empieza a hacerle vudú a Lucía para que le venda su piso.
+          Juan ya no aguanta más y quiere irse a vivir a un adosado, pero ahora son los vecinos los que se preocupan su marcha ya que a fin de cuentas es él quien siempre les soluciona los problemas.
+          Belén empieza a trabajar de telefonista de asistencia en carretera y Emilio le gasta una broma, pero se le va a ir de las manos.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x12.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un día de San Valentín',
+        static::FIELD_SLUG => '4x13',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Las parejas de la comunidad celebran san Valentín y se envían ramos de flores. Emilio intenta recuperar a Belén, Juan a Isabel, Fernando quiere tener un detalle con Mauri y Yago con Lucía. Pero según van llegando los ramos, Emilio se va a hacer un lío con las tarjetas y las cambia todas.
+          Mariano alquila el ático de picadero por horas, no sólo a los vecinos sino también a gente de fuera de la comunidad.
+          Bea y Ana rompen su relación por culpa de los celos. Ana se refugia en casa de Carlos y Roberto y provoca una crisis entre ambos.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x13.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una nueva vida',
+        static::FIELD_SLUG => '4x14',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Emilio y Belén consiguen engañar al seguro y cobrar el dinero. Deciden huir y comenzar una nueva vida juntos, lejos de la comunidad de vecinos.
+          Manolo ha vuelto con la intención de recuperar a Marisa, pero ella no quiere saber nada de él. En cambio, Vicenta sí, lo que provoca que las hermanas se enfaden, dejen de hablarse y Marisa se vaya a vivir con Mauri y Fernando.
+          Mientras tanto, Juan sigue en la pensión Loli, e Isabel, muy arrepentida, intenta hacerle volver.
+          Bea está llena de remordimientos porque ha destruido una familia y ahora no sabe cómo deshacerse de esa relación sin que Ana se entere.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
+      ],
     ];
   }
 }
