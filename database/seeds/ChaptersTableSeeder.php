@@ -24,6 +24,7 @@ class ChaptersTableSeeder extends Seeder
       $this->getChapters(2),
       $this->getChapters(3),
       $this->getChapters(4),
+      $this->getChapters(5),
     );
 
     foreach ($chapters as $chapter) {
@@ -43,6 +44,7 @@ class ChaptersTableSeeder extends Seeder
     if ($season === 2) $funcName = 'getSecondSeasonChapters';
     if ($season === 3) $funcName = 'getThirdSeasonChapters';
     if ($season === 4) $funcName = 'getFourthSeasonChapters';
+    if ($season === 5) $funcName = 'getFifthSeasonChapters';
 
     return $this->$funcName();
   }
@@ -837,6 +839,143 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto, Juan sigue en la pensión Loli, e Isabel, muy arrepentida, intenta hacerle volver.
           Bea está llena de remordimientos porque ha destruido una familia y ahora no sabe cómo deshacerse de esa relación sin que Ana se entere.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
+      ],
+    ];
+  }
+
+  public function getFifthSeasonChapters()
+  {
+    return [
+      [
+        static::FIELD_NAME => 'Érase una extradición',
+        static::FIELD_SLUG => '5x01',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'La policía encuentra a Belén y a Emilio en las Bahamas y los extradita a España, donde pasan a disposición judicial.
+          Mientras, en casa de los Cuesta las cosas siguen complicándose, sobre todo para Juan, que no entiende nada de lo que ocurre a su alrededor. Isabel sufre los primeros síntomas de la menopausia y no quiere que Juan se entere, y Natalia, que ya está en su sexto mes de embarazo, ha encontrado novio, pero no cree que Juan lo apruebe y prefiere no decírselo.
+          En casa de Lucía y mientras le reforman el chalet, se instala a vivir provisionalmente su padre, Rafael. María Jesús, la madre de Belén, enseguida se interesa por el nuevo inquilino.
+          Fernando tiene que viajar a Japón durante un mes para cerrar un acuerdo con una empresa local y Mauri teme que su boda termine por no celebrarse.
+          Por último, la crisis de Paco con Lourdes se agrava cada vez más, y para colmo, Paco ve peligrar su empleo porque Carlos ha puesto el videoclub en venta.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x01.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un colapso',
+        static::FIELD_SLUG => '5x02',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'A Juan le dan el alta y vuelve a casa. Isabel intenta convencerle para que deje la presidencia y evite los problemas. Pero va a tener que empezar solucionando el más urgente: ahora hay dos porteros, Emilio y Mariano.
+          Rafael ha comprado el videoclub y le da a Paco un mes de plazo para que ponga un negocio rentable. Intenta también hacerse con el piso de Carlos pero alguien se le ha adelantado. Es Higinio, que se viene a vivir al centro con su familia: Mamen, su mujer, Candela, la hija pequeña, y Raúl, su cuñado.
+          Belén deja a Emilio, pero él le pide que intenten solucionarlo yendo a terapia de pareja con un psicólogo argentino que le ha recomendado Paco.
+          Por último, Juan y Rafael se alían para echar a Yago, que no tiene papeles, del país.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x02.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un robot de cocina',
+        static::FIELD_SLUG => '5x03',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Mamen, la mujer de Higinio, invita a todos los vecinos a una cena en su casa para conocerse mejor. Mientras tanto, a Belén, que sigue con el psicólogo, le entran remordimientos por estar engañando a Emilio e intenta romper con él.
+          Mauri está completamente deprimido por la ausencia de Fernando. Bea y Ana le convencen para que se apunte con ellas a un gimnasio.
+          Yago empieza a trabajar en el colegio de Juan Cuesta y monta una huelga de profesores. Y, por último, José Miguel está cada día más enamorado de Candela, pero ella conoce a Pablo y se enamora de él.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x03.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un presidente de vacaciones',
+        static::FIELD_SLUG => '5x04',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Juan e Isabel preparan su viaje a Canarias. Yago y Natalia se apuntan a ir con ellos pero José Miguel consigue quedarse sólo y montar una fiesta para conquistar a Candela.
+          Rafael cierra los dos balcones de su piso y el resto de los vecinos, aprovechando que no está Juan, también se apuntan.
+          Ana y Bea se reconcilian y deciden tener otro niño. Esta vez es Ana la que se va a quedar embarazada.
+          Raúl-Raquel invita a Emilio al cine y él acepta encantado. Es el único del vecindario que no sabe que Raquel es un hombre pero nadie se lo dice.
+          Vicenta se venga del puñetazo que le dio María Jesús y le azuza a Valentín para que le muerda. Ella decide poner una denuncia.
+          Por último, Paco propone a Rafael montar en el videoclub un local para que los ejecutivos se echen una siesta.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x04.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un anuncio',
+        static::FIELD_SLUG => '5x05',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'En casa de Mamen van a grabar un anuncio, pero a última hora, los de la agencia cambian de idea y deciden que la cocina de los Cuesta es menos artificial y que lo van a grabar allí. Los Cuesta están encantados, porque así consiguen algo de dinero ya que Natalia en Tenerife los ha dejado en números rojos y hasta el día treinta no pueden disponer de dinero alguno. De hecho, su situación es límite y ya les han cortado el agua, pero ellos se niegan a pedir dinero prestado a los vecinos.
+          Por otra parte, Bea, Mauri y Fernando no saben cómo decirle a Ana que el padre de su hijo va a ser Mariano.
+          Mientras tanto, Emilio continúa su relación con Raúl-Raquel, aunque con muchas dudas. Mamen le invita a cenar a su casa e Higinio está encantado con la idea de deshacerse de su cuñado.
+          Belén se percata del interés que despierta Rafael en su madre y está encantada con la idea. Rafael le confiesa a su mayordomo que a pesar de todo el dinero que tiene, se siente sólo.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x05.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un billete de cincuenta euros',
+        static::FIELD_SLUG => '5x06',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Marisa y Concha deciden abandonar a Vicenta e irse a una residencia, que ahora tienen de todo.
+          Mientras tanto, a Vicenta le han colado un billete falso de cincuenta euros. En la peluquería se lo rechazan y cuando llega al banco con la intención de que se lo cambien por otro, Mariano le aconseja que elija entre las dos opciones: “ser buena ciudadana, dárselo al banco y perder cincuenta euros, o encasquetárselo a alguien”.
+          Tanto Belén, como Ana y Bea, echan de menos a María Jesús, aunque por distintos motivos. Belén se siente culpable y deciden prepararle una fiesta de cumpleaños.
+          Candela quiere una scooter, pero sus padres no se la compran. José Miguel, que escucha la conversación, ve la oportunidad y se ofrece a darle una vuelta en su moto. El problema es que no tiene y tendrá que conseguir una como sea.
+          Paco se separa de Lourdes y Pablo se ve obligado a hacerle un sitio en el ático.
+          Rafael abandona la comunidad, ya tiene su spa terminado y regresa a su chalet.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x06.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un escándalo',
+        static::FIELD_SLUG => '5x07',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Rafael encarga a Emilio que limpie el piso porque se lo va a dejar a un amigo suyo, un «señor muy importante», para un encuentro con su amante. En cuanto se enteran, los vecinos montan guardia para saber de quién se trata.
+          Los Cuesta necesitan otra habitación para José Miguel. Higinio se encargará de la obra, pero para que trabaje con tranquilidad, tienen que dejar el piso vacío. Vicenta, que sigue sola, les ofrece su casa a Juan e Isabel, y Mamen deja a José Miguel que comparta habitación con Candy.
+          Fernando vuelve a casa cansado y se queda dormido viendo una película con Mauri. Éste se ofende y se lo echa en cara al día siguiente, pero Fernando decide vengarse',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x07.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un descubrimiento macabro',
+        static::FIELD_SLUG => '5x08',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Los Cuesta siguen con obras en su casa y Mariano decide aprovechar también para hacer algunos arreglos en la portería. Tira un tabique y aparecen los huesos de un esqueleto humano. Se lo comunica a Juan e Isabel y, entre todos, inician una investigación.
+          Bea, Ana y Fernando están de acuerdo en que Ezequiel debe ir a una guardería. Mauri es el único que se niega en rotundo porque de pequeño tuvo una mala experiencia con una profesora.
+          Paco y Belén continúan su relación a escondidas. Belén quiere hacerlo público pero Paco aún no se atreve.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x08.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una emisora pirata',
+        static::FIELD_SLUG => '5x09',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'El padre Miguel le alquila a Paco la trastienda del videoclub para montar una radio pirata. Marisa, Vicenta y Concha aprovechan para hacer un programa de radio-patio.
+          Solo falta un día para la boda de Mauri y Fernando, ambos están nerviosos y surgen las dudas.
+          Belén y Paco siguen con su relación. Mariano aconseja a Emilio que se haga la víctima y les haga sentirse culpables para estropearles la relación.
+          Por último, Natalia ha decidido dar a luz en casa, pero la obra aún está sin terminar. Los Cuesta le alquilan a Rafael su piso durante un mes.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x09.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un funeral con sorpresa',
+        static::FIELD_SLUG => '5x10',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Los vecinos han pasado la noche en vela porque la nieta de los Cuesta no para de llorar. Natalia está pasando por una depresión post-parto y es Yago el que se tiene que ocupar la niña, a la que ha puesto Yamiley de nombre.
+          Ese día es el funeral de Paloma y radio-patio prepara una programación especial para cubrir el evento. Juan, Isabel y José Miguel, más algunos de los vecinos, acuden al tanatorio donde Paloma va a ser incinerada.
+          El Consejo de Sabios culpabiliza a Paco por haberle robado la novia a Emilio. Paco se va de la buhardilla de Pablo y se instala en casa de Belén.
+          Por último, Mauri al fin le descubre a Fernando el destino de
+          su viaje de novios: se van de safari a Kenia. Pero Fernando no se entusiasma tanto como Mauri esperaba.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x10.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase una lista de bodas',
+        static::FIELD_SLUG => '5x11',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Emilio y Belén necesitan dinero inmediatamente para pagar al abogado y reparten las invitaciones de boda entre los vecinos incluyendo una lista de bodas falsa con regalos carísimos.
+          El problema es que los habitantes de Desengaño, 21 están sin dinero: los Cuesta tienen que pagar la reforma, Mauri y Fernando a hacienda, Bea y Ana quieren ahorrar para buscarse un sitio donde vivir y las señoras solamente tienen su pensión.
+          Mientras tanto, Vicenta sigue sin aparecer y los Cuesta ya están muy preocupados. Para colmo, Rafael se venga de ellos por haberle denunciado por la emisora pirata y los echa de su casa.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x11.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un paripé',
+        static::FIELD_SLUG => '5x12',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Emilio y Belén ensayan la discusión que piensan interpretar ante el altar, a última hora, para cancelar la boda. La ceremonia es al día siguiente, a las dos de la tarde en un descampado, pero dos horas antes, ambos tienen que acudir al juicio por estafa que tienen pendiente.
+          Rafael y María Jesús le regalan a Belén un todoterreno de lujo y el vestido de novia diseñado por Vittorio y Lucchino. Mientras, Mariano recibe con gran disgusto la noticia de que Emilio ha invitado a su madre a la boda.
+          Por otra parte, la obra en casa de los Cuesta sigue parada. Juan ha conseguido los papeles para la licencia y ya sólo le falta la autorización de la comunidad de vecinos.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x12.jpg',
+      ], [
+        static::FIELD_NAME => 'Érase un adiós',
+        static::FIELD_SLUG => '5x13',
+        static::FIELD_SEASON => '5',
+        static::FIELD_SUMMARY =>
+          'Belén y Emilio se esconden en la pensión Loli una semana porque los vecinos piensan que están de luna de miel en la playa. Pero Paco, cada vez más celoso, descubre el engaño de la boda y se lo cuenta a todos.
+          Higinio termina al fin la obra en casa de los Cuesta, pero Mamen ha comprado muebles nuevos para la habitación y, ante la falta de espacio, obliga a su marido a tirar el tabique que separa ambas casas, quitándole unos metros a la habitación de los Cuesta.
+          Por último, Mariano también se pone a reformar la portería pero se va a encontrar con una desagradable sorpresa para todo el vecindario: hay termitas.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x13.jpg',
       ],
     ];
   }
