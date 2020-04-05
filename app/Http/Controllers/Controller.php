@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 /**
 * @OA\Info(
     title=SWAGGER_API_TITLE,
-    version="0.1.2"
+    version="0.2.0"
   )
 */
 
@@ -22,6 +22,13 @@ use Illuminate\Routing\Controller as BaseController;
  * @OA\Tag(
  *   name="characters",
  *   description="Recursos relacionados con los Personajes"
+ * )
+ */
+
+ /**
+ * @OA\Tag(
+ *   name="chapters",
+ *   description="Recursos relacionados con los Capítulos"
  * )
  */
 class Controller extends BaseController

@@ -191,7 +191,7 @@ class CharactersTableSeeder extends Seeder
                 static::FIELD_SECOND_SURNAME => '',
                 static::FIELD_SHORTNAME => 'Repartidor propaganda',
                 static::FIELD_NICKNAME => '',
-                static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/repartidor_propaganda.jpg',
+                static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/desconocido.jpg',
                 static::FIELD_SLUG => 'repartidor-propaganda'
             ], [
                 static::FIELD_NAME => 'Paco',
