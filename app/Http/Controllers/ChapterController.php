@@ -75,11 +75,11 @@ class ChapterController extends Controller
   /**
    * @OA\Get(
    *  path="/chapters/{slug}",
-   *  summary="Mostrar detalle de personaje",
+   *  summary="Mostrar detalle de capítulo",
    *  tags={"chapters"},
    *  @OA\Parameter(
    *    name="slug",
-   *    description="Slug que identifica al personaje de forma única",
+   *    description="Slug que identifica al capítulo de forma única",
    *    required=true,
    *    in="path",
    *    @OA\Schema(
@@ -88,7 +88,7 @@ class ChapterController extends Controller
    * ),
    *  @OA\Response(
    *    response=200,
-   *    description="Listado con los personajes consultados."
+   *    description="Detalle del capítulo consultado."
    *  )
    * )
    */
