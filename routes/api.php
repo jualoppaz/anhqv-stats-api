@@ -25,4 +25,5 @@ Route::prefix('characters')->group(function () {
 
 Route::prefix('chapters')->group(function () {
   Route::get('/', 'ChapterController@index');
+  Route::get('/{slug}', 'ChapterController@show');
 });
