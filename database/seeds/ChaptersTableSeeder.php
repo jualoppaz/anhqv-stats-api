@@ -249,6 +249,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Belén no consigue decidirse entre Carlos y Emilio. Carlos, viendo que a Belén le tira más el portero, le ofrece dinero para que deje de ver a la chica, algo que Emilio acepta encantado. Al final, Belén se entera de todo y decide dejarles a los dos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/5ypBFYgC#eSb7qodomilAHxvvngXn1sbkEP6AU3eup89UxK0NeZE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '24'),
       ], [
         static::FIELD_NAME => 'Érase un sueño erótico',
         static::FIELD_SLUG => '2x02',
@@ -260,6 +261,7 @@ class ChaptersTableSeeder extends Seeder
           Alicia se siente muy atraída por Álex y termina acostándose con él, sin saber que sólo tiene 21 años. Belén, por su parte, empieza a estar nerviosa porque Emilio no la llama. La culpa la tiene otra mujer; Rocío, la nueva cartera',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/70bVGY4QDZo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '31'),
       ], [
         static::FIELD_NAME => 'Érase un negocio',
         static::FIELD_SLUG => '2x03',
@@ -271,6 +273,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Andrés le hace pensar a Paloma que sus diseños son lo mejor del mundo y propone a Juan y a su esposa que monten por fin el negocio. A pesar de las reticencias de su marido, Paloma se gasta todo lo que tienen ahorrado en comprar telas y máquinas de coser… pero Andrés no consigue vender nada, así que convence a todos para hacer un desfile ilegal colándose en un ase de modelos para enseñar la firma PUF (Paloma Urban Fashion)',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/MQaVhkiwsl0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '14'),
       ], [
         static::FIELD_NAME => 'Érase un desafío',
         static::FIELD_SLUG => '2x04',
@@ -282,6 +285,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mauri conoce a Bea y le propone ser su nueva compañera de piso. Ella acepta y las vecinas empiezan a sospechar que Mauri se ha cambiado de acera y creen que su obligación es informar a Fernando.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XeykYqEemHs',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '21'),
       ], [
         static::FIELD_NAME => 'Érase una patrulla ciudadana',
         static::FIELD_SLUG => '2x05',
@@ -295,6 +299,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Alex se apuesta con Paco, José Miguel y Emilio a que es capaz de seducir a Natalia en menos de 48 horas. Parece que lo va a conseguir pero Paloma, viendo la posibilidad de librarse de su hija, lo precipita todo y quiere preparar la boda con la ayuda de Isabel. Como lo que pretendía Natalia era fastidiar a su madre liándose con el vecino y no lo consigue, le deja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_jZ8XMp7JlI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '28'),
       ], [
         static::FIELD_NAME => 'Érase un rastrillo',
         static::FIELD_SLUG => '2x06',
@@ -306,6 +311,7 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Juan, bajando un mueble, le da un ataque de hernia y tiene que ser hospitalizado, pero debido al lío del cuadro nadie se acuerda de él y empieza a sospechar que su mujer y Andrés tienen una aventura.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Lq7kJA8zWWI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '05'),
       ], [
         static::FIELD_NAME => 'Érase una huelga',
         static::FIELD_SLUG => '2x07',
@@ -316,6 +322,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mauri decide darle una sorpresa a Fernando y presentarse en Londres sin avisar… pero resulta que es el mismo fin de semana que Fernando había elegido para darle la misma sorpresa, por lo que Mauri está en Londres y Fernando en Madrid.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/q0z9FZpgRBg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '12'),
+
       ], [
         static::FIELD_NAME => 'Érase un piso en venta',
         static::FIELD_SLUG => '2x08',
@@ -329,6 +337,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri tiene destrozada la espalda de dormir en el sillón y Bea le propone compartir la cama en plan gay-lesbiana, cada uno en su sitio, pero Mauri sufre una erección y se plantea si es heterosexual',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9UFSz68tLPI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '19'),
       ], [
         static::FIELD_NAME => 'Érase una parabólica',
         static::FIELD_SLUG => '2x09',
@@ -339,6 +348,7 @@ class ChaptersTableSeeder extends Seeder
           Bea quiere dar una segunda oportunidad a Ines, su ex pareja, mientras Mauri, loco por salir de marcha y hacer vida social para recuperarse de su ruptura con Fernando, no consigue concretar una cita con ninguno de sus viejos amigos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QvE9OXqk7KE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '26'),
       ], [
         static::FIELD_NAME => 'Érase un vídeo casero',
         static::FIELD_SLUG => '2x10',
@@ -350,6 +360,7 @@ class ChaptersTableSeeder extends Seeder
           A Bea le entra un repentino instinto maternal y solicita la ayuda de Mauri para que la ayude a adoptar un niño.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qdUElBJjvuU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '02'),
       ], [
         static::FIELD_NAME => 'Érase unas elecciones',
         static::FIELD_SLUG => '2x11',
@@ -360,6 +371,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri decide ayudar a Bea a ser madre, se ofrece como donante de semen para la fertilización, y acuden a la clínica.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rX_fZofMAtc',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '09'),
       ], [
         static::FIELD_NAME => 'Érase una despedida de soltero',
         static::FIELD_SLUG => '2x12',
@@ -370,6 +382,7 @@ class ChaptersTableSeeder extends Seeder
           Paloma y Juan, después de un largo tiempo sin hacer el amor, han intentado reconciliarse sexualmente. Juan se queda preocupado porque tiene la sensación de que Paloma no disfruta y le pide consejo a Andrés.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HRRhxOLE9nA',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '16'),
       ], [
         static::FIELD_NAME => 'Érase una boda',
         static::FIELD_SLUG => '2x13',
@@ -380,6 +393,7 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto y después de las últimas crisis vividas en su matrimonio, Juan Cuesta piensa que Paloma le es infiel por lo que decide ponerle un detective privado.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WLC8geuwsbY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '23'),
       ], [
         static::FIELD_NAME => 'Érase un apoyo vecinal',
         static::FIELD_SLUG => '2x14',
@@ -389,6 +403,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Belén no quiere reanudar su relación con Emilio en las mismas condiciones que cuando lo dejaron. Como Emilio, por el momento, no quiere saber nada de otra boda, Belén le propone irse a vivir juntos. Alicia tratará de convencerla para que desista de esa idea.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/LyXTC2dCg0A',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '30'),
       ]
     ];
   }
