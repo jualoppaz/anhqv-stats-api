@@ -30,7 +30,7 @@ class CreateChaptersTable extends Migration
             $table->text(static::FIELD_SUMMARY)->nullable(false)->comment('Sinopsis del capítulo');
             $table->string(static::FIELD_IMAGE_URL, 100)->nullable(false)->comment('URL de la imagen del capítulo');
             $table->string(static::FIELD_VIDEO_URL, 100)->comment('URL del vídeo de Youtube con el capítulo');
-            $table->date(static::FIELD_RELEASE_DATE)->comment('Fecha de estreno del capítulo');
+            $table->date(static::FIELD_RELEASE_DATE)->nullable(true)->comment('Fecha de estreno del capítulo');
             $table->timestamps();
 
             // constraints
