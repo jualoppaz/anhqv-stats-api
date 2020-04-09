@@ -1030,6 +1030,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, la crisis de Paco con Lourdes se agrava cada vez más, y para colmo, Paco ve peligrar su empleo porque Carlos ha puesto el videoclub en venta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/43gRFCiR#6sL7-5-XNHLy7UryjvCwswO65b7-rcpbxt9dwZyOX8Q',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '06'),
       ], [
         static::FIELD_NAME => 'Érase un colapso',
         static::FIELD_SLUG => '5x02',
@@ -1041,6 +1042,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Juan y Rafael se alían para echar a Yago, que no tiene papeles, del país.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ZawV2nNEBkI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '20'),
       ], [
         static::FIELD_NAME => 'Érase un robot de cocina',
         static::FIELD_SLUG => '5x03',
@@ -1051,6 +1053,7 @@ class ChaptersTableSeeder extends Seeder
           Yago empieza a trabajar en el colegio de Juan Cuesta y monta una huelga de profesores. Y, por último, José Miguel está cada día más enamorado de Candela, pero ella conoce a Pablo y se enamora de él.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XzzSsvnaujw',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '27'),
       ], [
         static::FIELD_NAME => 'Érase un presidente de vacaciones',
         static::FIELD_SLUG => '5x04',
@@ -1064,6 +1067,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Paco propone a Rafael montar en el videoclub un local para que los ejecutivos se echen una siesta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/PzQoe3adRQM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '04'),
       ], [
         static::FIELD_NAME => 'Érase un anuncio',
         static::FIELD_SLUG => '5x05',
@@ -1075,6 +1079,7 @@ class ChaptersTableSeeder extends Seeder
           Belén se percata del interés que despierta Rafael en su madre y está encantada con la idea. Rafael le confiesa a su mayordomo que a pesar de todo el dinero que tiene, se siente sólo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/gQaRHURB2hI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '11'),
       ], [
         static::FIELD_NAME => 'Érase un billete de cincuenta euros',
         static::FIELD_SLUG => '5x06',
@@ -1088,6 +1093,7 @@ class ChaptersTableSeeder extends Seeder
           Rafael abandona la comunidad, ya tiene su spa terminado y regresa a su chalet.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Emxr8Gb-8gg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '18'),
       ], [
         static::FIELD_NAME => 'Érase un escándalo',
         static::FIELD_SLUG => '5x07',
@@ -1098,6 +1104,7 @@ class ChaptersTableSeeder extends Seeder
           Fernando vuelve a casa cansado y se queda dormido viendo una película con Mauri. Éste se ofende y se lo echa en cara al día siguiente, pero Fernando decide vengarse',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wQm9ZqLvA1s',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '25'),
       ], [
         static::FIELD_NAME => 'Érase un descubrimiento macabro',
         static::FIELD_SLUG => '5x08',
@@ -1108,6 +1115,7 @@ class ChaptersTableSeeder extends Seeder
           Paco y Belén continúan su relación a escondidas. Belén quiere hacerlo público pero Paco aún no se atreve.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rprJBkKwy2g',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '01'),
       ], [
         static::FIELD_NAME => 'Érase una emisora pirata',
         static::FIELD_SLUG => '5x09',
@@ -1119,6 +1127,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Natalia ha decidido dar a luz en casa, pero la obra aún está sin terminar. Los Cuesta le alquilan a Rafael su piso durante un mes.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Vc6Djz3Zqak',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '08'),
       ], [
         static::FIELD_NAME => 'Érase un funeral con sorpresa',
         static::FIELD_SLUG => '5x10',
@@ -1131,6 +1140,7 @@ class ChaptersTableSeeder extends Seeder
           su viaje de novios: se van de safari a Kenia. Pero Fernando no se entusiasma tanto como Mauri esperaba.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Ot8eMGAdNJM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '15'),
       ], [
         static::FIELD_NAME => 'Érase una lista de bodas',
         static::FIELD_SLUG => '5x11',
@@ -1141,6 +1151,7 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto, Vicenta sigue sin aparecer y los Cuesta ya están muy preocupados. Para colmo, Rafael se venga de ellos por haberle denunciado por la emisora pirata y los echa de su casa.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ir9p6ZfxcaI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '22'),
       ], [
         static::FIELD_NAME => 'Érase un paripé',
         static::FIELD_SLUG => '5x12',
@@ -1151,6 +1162,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, la obra en casa de los Cuesta sigue parada. Juan ha conseguido los papeles para la licencia y ya sólo le falta la autorización de la comunidad de vecinos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/OCE0RFXvd74',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '29'),
       ], [
         static::FIELD_NAME => 'Érase un adiós',
         static::FIELD_SLUG => '5x13',
@@ -1161,6 +1173,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mariano también se pone a reformar la portería pero se va a encontrar con una desagradable sorpresa para todo el vecindario: hay termitas.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/vO00kOK8Lzs',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '07', '06'),
       ],
     ];
   }
