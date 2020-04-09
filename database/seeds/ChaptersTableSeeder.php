@@ -387,7 +387,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Lucía y Roberto vuelven de vacaciones en crisis y deciden separarse: no se aguantan mutuamente. Roberto se traslada a vivir a la buhardilla y allí se encuentra con Andrés, que está provisionalmente escondido de la policía.
           El embarazo sigue su curso pero Mauri, hecho un autentico padrazo y sin Fernando otra vez, desespera a Bea.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x01.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/z8t2B6AZybU',
       ], [
         static::FIELD_NAME => 'Érase un okupa',
         static::FIELD_SLUG => '3x02',
@@ -402,7 +402,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri se compra un monovolumen familiar para cuando nazca el bebé y lo aparca frente a su casa, pero descubre que le han puesto una multa.
           El Ayuntamiento ha hecho la calle zona azul y Belén, que ha conseguido trabajo, es la nueva empleada que pone las multas.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x02.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/2z9PDyUDca0',
       ], [
         static::FIELD_NAME => 'Érase un matrimonio de conveniencia',
         static::FIELD_SLUG => '3x03',
@@ -412,7 +412,7 @@ class ChaptersTableSeeder extends Seeder
           Entretanto, Roberto, instalado en el ático y sin dinero, convencido por José Miguel, empieza a atracar por las noches la nevera de Lucía. Cuando Lucía lo descubre piensa que es Alicia que tiene problemas con la comida, pero ésta piensa lo mismo de Lucía a la que ha dicho que está gorda, ambas desconfían una de otra y tratan de convencer a la contraria para acudir a un especialista.
           Carlos, el ex novio de Lucía y también de Belén, decide que su fracaso con las mujeres es debido a que en realidad es gay. Así que acude a Mauri para que le enseñe como ser un gay, pero Mauri está encantado con el cubano de Vicenta, que le echa los tejos, y trata de deshacerse como puede del pesado de Carlos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x03.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/NJiv22MXT_A',
       ], [
         static::FIELD_NAME => 'Érase una inauguración',
         static::FIELD_SLUG => '3x04',
@@ -425,7 +425,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri conoce a Diego, el hermano de Lucía, y se enamora perdidamente de él; está seguro hasta tal punto que ni se cuestiona su identidad sexual.
           La atracción entre Juan Cuesta e Isabel va en aumento, y la situación se complica: de un lado Andrés sigue obsesionado, y de otro, José Miguel, como los ha descubierto, se dedica a chantajear a su padre. Deciden ponerle fin con una noche de pasión en un hotel para desfogarse y poder recobrar así la normalidad.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x04.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/pB3FG9Lde9g',
       ], [
         static::FIELD_NAME => 'Érase un combate',
         static::FIELD_SLUG => '3x05',
@@ -437,7 +437,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri y Diego se reencuentran, pero Diego aún duda de su condición de homosexual y no quiere separarse de su mujer.
           Juan e Isabel deciden dejarlo y volver a la normalidad. Pero Andrés, que sigue preocupado por las sospechas de infidelidad de Isabel, trae un psicólogo a casa para hacer terapia familiar y conocer así el secreto',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x05.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bYlYxTWh2uU',
       ],[
         static::FIELD_NAME => 'Érase un canario',
         static::FIELD_SLUG => '3x06',
@@ -448,7 +448,7 @@ class ChaptersTableSeeder extends Seeder
           Los que sí lo están son Roberto, Pablo, Paco y José Miguel, que se van a la facultad de Emilio para ver si ellos también encuentran alguna chica así de guapa para ligar.
           Diego y Alba se presentan en casa de Mauri para acompañar a Bea a la ecografía. Como Alba se va a un congreso, Diego le propone a Mauri pasar los dos días juntos pero encerrados en su casa para que nadie los vea. Así que Mauri envía a Bea a casa de Lucía y los dos se preparan para un fin de semana romántico y solos para conocerse mejor.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x06.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WZWeqALDN4w',
       ],[
         static::FIELD_NAME => 'Érase un mal de ojo',
         static::FIELD_SLUG => '3x07',
@@ -460,7 +460,7 @@ class ChaptersTableSeeder extends Seeder
           Bea ya no soporta más el lío en que Mauri y su amante Diego le han metido al decirle a la mujer de Diego que era ella la que estaba enrollada con su marido, y amenaza a Mauri con decir la verdad si ellos no lo hacen antes.
           Por otra parte, Andrés, ya reconciliado con Isabel, se preocupa por Juan y le busca una amiga de yoga de Isabel para una cita: una cena en su casa los cuatro juntos. Juan se ofende porque cree que Isabel está de acuerdo, e Isabel se cela al ver que Juan se pone muy contento con la cita.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/w3ZOB7EyJUI',
       ],[
         static::FIELD_NAME => 'Érase un aniversario',
         static::FIELD_SLUG => '3x07b',
@@ -470,7 +470,7 @@ class ChaptersTableSeeder extends Seeder
           Al ser domingo, el presi sólo puede contar con la ayuda de Mariano. Los vecinos tienen muchas peticiones que hacer. Mauri cambiaría a los vecinos, las «supernenas» creen que ya es hora de que las cosas funcionen. El «comité de sabios» se reúne y llegan a una conclusión: en los últimos tiempos, ha habido mucho amor en la escalera.
           La conclusión final es clara, esta comunidad es un auténtico manicomio, pero todos ellos son irremplazables. Por eso celebran con una fiesta por todo lo alto el aniversario presidencial de Juan Cuesta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07b.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.dailymotion.com/embed/video/x5wo6b7',
       ],[
         static::FIELD_NAME => 'Érase un famoso',
         static::FIELD_SLUG => '3x08',
@@ -480,7 +480,7 @@ class ChaptersTableSeeder extends Seeder
           Vicenta se va de viaje a visitar a una tía suya enferma y Marisa y Concha, que nunca hacen las tareas de la casa, llaman a un anuncio de jóvenes voluntarios diciendo que están incapacitadas para conseguir que alguien les haga todo gratis durante esos días.
           Mauri está agotado con su nueva relación con Diego. Todas las noches salen de marcha y los días lo pasan haciendo puenting y deportes de riesgo. Pero él no quiere dejar solo a Diego un momento para que no se lo quiten, así que tiene que aguantar como puede.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x08.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7vWjTlcw9o4',
       ],[
         static::FIELD_NAME => 'Érase un desalojo',
         static::FIELD_SLUG => '3x09',
@@ -492,7 +492,7 @@ class ChaptersTableSeeder extends Seeder
           A Bea la despiden de la clínica veterinaria por estar embarazada. Mauri comienza una cruzada a favor de los derechos de las embarazadas, pero en medio se cruza Rosa, la abogada de la clínica, que también resultará ser lesbiana.
           Alicia conoce al padre de Carlos y le gusta, así que deja a Carlos que otra vez se vuelca en Lucía.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x09.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wWVkFfwYNM4',
       ],[
         static::FIELD_NAME => 'Érase un belén',
         static::FIELD_SLUG => '3x10',
@@ -503,7 +503,7 @@ class ChaptersTableSeeder extends Seeder
           Roberto, picado por Carlos que le culpa de que Lucía se haya rendido y tenga que volver a trabajar con su padre, decide resucitar el restaurante, y junto con José Miguel, Paco, Alex, Natalia y la inestimable colaboración de Mariano como cómico, ponen en marcha un restaurante de comida rápida.
           Entretanto Mauri está preocupado, de un lado porque Rosa, la nueva novia de Bea, se quiere apropiar de la paternidad de su hijo y, de otro, porque ha sorprendido a Diego mirándole el culo a una chica guapa.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x10.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/U07T8YObV9o',
       ],[
         static::FIELD_NAME => 'Érase una Nochevieja',
         static::FIELD_SLUG => '3x11',
@@ -516,7 +516,7 @@ class ChaptersTableSeeder extends Seeder
           Pero no todo son fiestas, ya que tras descubrirse el idilio entre Juan e Isabel, en ambas familias todos están enfadados con todos y la tensión crece cuando Juan convoca una Junta para invitar a los vecinos a cenar y así, reconciliarse.
           Andrés, picado, también los invita a todos a cenar en su casa. Así pues, Marisa, Concha, Vicenta y Mariano (los únicos que no tenían planes para esa noche), sopesan ambas ofertas antes de decidir cual aceptar..',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x11.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/32tSpeiqaFI',
       ],[
         static::FIELD_NAME => 'Érase una grieta',
         static::FIELD_SLUG => '3x12',
@@ -527,7 +527,7 @@ class ChaptersTableSeeder extends Seeder
           Roberto le deja a Andrés el ático pensando que va a volver con Lucía, pero ella prefiere ir poco a poco, y además Carlos se ha instalado en su casa para esconderse de Alba, que no para de acosarle tras la breve relación que mantuvieron en fin de año.
           Emilio sigue en la portería, con su padre. Belén no quiere saber nada de él, pero Victoria, la madre de Alicia, una actriz de la época del destape, viene a pasar unos días con su hija, y le tira los tejos a Emilio, destapando los celos de Belén a la vez que el deseo de Mariano.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x12.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kYYq_lQVA38',
       ],[
         static::FIELD_NAME => 'Érase unos nuevos inquilinos',
         static::FIELD_SLUG => '3x13',
@@ -540,7 +540,7 @@ class ChaptersTableSeeder extends Seeder
           Belén sigue preocupada con el posible embarazo pero no quiere hacerse la prueba.
           Tanto ella como Lucía comienzan a tener celos de Alicia porque ha encontrado al hombre perfecto y deciden seguirle para descubrir qué oculta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x13.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/BAtShBnYwkI',
       ],[
         static::FIELD_NAME => 'Érase un bautizo',
         static::FIELD_SLUG => '3x14',
@@ -551,7 +551,7 @@ class ChaptersTableSeeder extends Seeder
           Emilio sigue empeñado en que Belén se haga la prueba del embarazo. Belén, ya harta, le pide a Alba que se haga la prueba para enseñarle el predictor con el resultado negativo a Emilio. Pero la prueba da positiva.
           Nieves declara la guerra a Isabel y recluta a Andrés y a sus hijos para que le ayuden a hacer la vida imposible a la nueva pareja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x14.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8nLplcMQiFw',
       ],[
         static::FIELD_NAME => 'Érase una academia',
         static::FIELD_SLUG => '3x15',
@@ -562,7 +562,7 @@ class ChaptersTableSeeder extends Seeder
           Lucía, con problemas de dinero desde la discusión con su padre, ha encontrado trabajo vendiendo aspiradores. Carlos, para ayudarle, le compra un coche, y Roberto, que no quiere ser menos, también quiere hacerle un regalo. Como él tampoco tiene dinero, se ofrece a dar clases de conducir a Natalia para conseguirlo. Para ello le coge el coche prestado a Lucía y acaban teniendo un accidente.
           Diego va a jugar un partido de fútbol con sus amigos del barrio, que no saben que es gay, y le prohíbe a Mauri que vaya a verle. Pero Mauri hace todo lo contrario y se convierte en la estrella del equipo',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x15.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/0YzrLMEzN84',
       ],[
         static::FIELD_NAME => 'Érase unos estatutos',
         static::FIELD_SLUG => '3x16',
@@ -574,7 +574,7 @@ class ChaptersTableSeeder extends Seeder
           Mauri y Bea no pueden con Ezequiel y se dan cuenta de que necesitan una niñera. Mauri se toma muy en serio la búsqueda de la niñera adecuada.
           Por su parte, Lucía y Alicia están pasando una mala racha. Después de mucho buscar, consiguen trabajo como chicas del telecupón.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x16.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Fcwp6A7SYMk',
       ],[
         static::FIELD_NAME => 'Érase unas alumnas',
         static::FIELD_SLUG => '3x17',
@@ -585,7 +585,7 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Emilio sigue saliendo con su profesora parece que las cosas van viento en popa. El problema aparece cuando ella le plantea tener una cena en casa de sus padres.
           Lucía necesita dinero y sentirse útil, Carlos está dispuesto a ayudarla una vez más y le ofrece la posibilidad de trabajar como dependienta en el videoclub.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x17.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/YE5vXzE6ics',
       ],[
         static::FIELD_NAME => 'Érase un juicio',
         static::FIELD_SLUG => '3x18',
@@ -596,7 +596,7 @@ class ChaptersTableSeeder extends Seeder
           Lucía no está segura de que deba volver con Roberto y le sugiere que solamente compartan piso. Por su parte, Belén, que ya no tiene a Alicia en casa, está buscando a otra persona para pagar el alquiler. Se lo pide a Roberto, éste acepta y se traslada a vivir con ella. Como consecuencia, Lucía se ve obligada a buscar a otro inquilino y Mauri le presenta a un amigo suyo gay.
           Entretanto, Mauri continúa con su triángulo amoroso y cree que tanto Diego como Abel están enamorados de él.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x18.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Pxsm9ToDsWc',
       ],[
         static::FIELD_NAME => 'Érase un disco-pub videoclub',
         static::FIELD_SLUG => '3x19',
@@ -606,7 +606,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Belén consigue una nueva compañera de piso. Se trata de una recién divorciada dispuesta a disfrutar de la vida. Belén y Lucía a su lado se sienten viejas y trasnochadas, por lo que deciden apuntarse con ella a ligar «yogurines»
           A Concha le toca un bingo especial pero prefiere ocultárselo a todos. Debe ya cinco meses a la comunidad y están todos sin calefacción por su culpa. Todo esto provoca que Marisa, Vicenta, Mauri, Emilio, y la mayoría de afectados, monten un comando para conseguir que pague lo que debe y así poder volver a tener calefacción.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x19.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nwWE9zjDkBI',
       ],[
         static::FIELD_NAME => 'Érase una cobaya',
         static::FIELD_SLUG => '3x20',
@@ -618,7 +618,7 @@ class ChaptersTableSeeder extends Seeder
           Mientras, Emilio y Carmen cumplen un mes juntos y lo van a celebrar. Emilio se obsesiona con el regalo y recurre a Belén.
           Por último, Roberto escucha a una amiga de Bea que también quiere ser madre, como le pide a Mauri que le haga el mismo favor a cambio de dinero. Se lo comunica al «Consejo de Sabios» y enseguida se apuntan a donar esperma.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x20.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GUZqRwI0DuU',
       ],[
         static::FIELD_NAME => 'Érase un premio',
         static::FIELD_SLUG => '3x21',
@@ -630,7 +630,7 @@ class ChaptersTableSeeder extends Seeder
           Entretanto, Emilio está muy arrepentido de haber dejado a Carmen y trata de recuperarla.
           Y, por último, Mauri le encarga a un becario de su periódico ue investigue la fecha de la boda entre Diego y Abelde su periódico ue investigue la fecha de la boda entre Diego y Abel',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x21.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GOMo8aTs9bU',
       ],[
         static::FIELD_NAME => 'Érase unas puertas blindadas',
         static::FIELD_SLUG => '3x22',
@@ -641,7 +641,7 @@ class ChaptersTableSeeder extends Seeder
           Juan empieza a dar clases a una niña y José Miguel se enamora por primera vez.
           Entretanto, Lucía monta una guardería en casa para sacar dinero, y Belén cambia de agencia matrimonial y conoce a un hombre maravilloso.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x22.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_5nJzL3E2WE',
       ],[
         static::FIELD_NAME => 'Érase un vicio',
         static::FIELD_SLUG => '3x23',
@@ -652,7 +652,7 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto, Roberto, desesperado por recuperar a Lucía, finge estar con Belén. Pero Lucía se lo cree y, ante la sorpresa de su ex, piensa que ambos hacen muy buena pareja.
           Por último, Mauri también tiene problemas, se aproxima la fecha de la boda de Abel y Diego y no tiene con quien acudir, pues Bea no está por la labor.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x23.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8R6Uz3ZiQ-A',
       ],[
         static::FIELD_NAME => 'Érase un administrador',
         static::FIELD_SLUG => '3x24',
@@ -662,7 +662,7 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Mauri empieza a estar preocupado por la edad y se ve lleno de arrugas. Carlos le aconseja que haga igual que su padre y recurra a las nuevas técnicas que la cirugía estética ofrece hoy en día.
           Lucía y Carlos comienzan su relación de convivencia, pero mientras Carlos intenta ir poco a poco para no equivocarse y no quiere aún acostarse con Lucía, ella está desesperada porque no ha vuelto a tener relaciones desde que lo dejó con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x24.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5GSWKXKlUvs',
       ],[
         static::FIELD_NAME => 'Érase una traición',
         static::FIELD_SLUG => '3x25',
@@ -671,7 +671,7 @@ class ChaptersTableSeeder extends Seeder
           'A Emilio le cumple el plazo para abandonar la portería y decide declararle la guerra a la comunidad. Acampa delante de la portería y, aconsejado por Carmen, demanda a la comunidad por los años que ha estado trabajando sin contrato. Comienza una guerra en la que Emilio va a contar con algunos aliados, aunque, al final, siempre lo sean por su propio interés.
           Carlos y Lucía siguen como pareja y descubren los celos mutuos. Lucía, ya harta de ser una mantenida, pone un sitio de masajes en la portería y contrata a un fisioterapeuta, pero, entretanto, en Natalia aflora un repentino interés por Carlos. Mauri, por su parte, va a tener que elegir entre volver con Fernando que se lo ha pedido y parece que ahora va en serio, y Diego, que ya se arrepiente de haberse casado.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7eo21F4lEoc',
       ],[
         static::FIELD_NAME => 'Érase una visita guiada',
         static::FIELD_SLUG => '3x25b',
@@ -680,7 +680,7 @@ class ChaptersTableSeeder extends Seeder
           'El nuevo administrador, Gregorio, realiza una visita a la comunidad para sacar información sobre la vida de los vecinos. La razón es que como ve con su mujer las cintas en las que se graban las juntas, ella se ha enganchado y quiere conocer más a fondo a nuestros protagonistas. Aborda primero a Mariano y a José Miguel, que se ofrecen a hacerle un ‘tour’ por el vecindario y contarle los secretos de ‘esta nuestra comunidad’.
           Pero, como siempre, los vecinos están ocupados con sus propios problemas. A Juan le han rayado el coche y firman la fechoría las Chinchón Kings; Lucía y Carlos vuelven del puente tras pasar el primer atasco en la carretera juntos, como pareja. Y, ya por último, la noticia que mantiene a todos expectantes es que Paco está a punto de llegar y presentar oficialmente a Lourdes, su novia, de la que se enamoró en la boda de Diego y Abel, y a que únicamente han visto en la foto que hizo con el móvil.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25b.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/1WfUg0MJ7CY',
       ],[
         static::FIELD_NAME => 'Érase el primer presidente gay',
         static::FIELD_SLUG => '3x26',
@@ -688,7 +688,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_SUMMARY =>
           'El administrador se hace eco de las peticiones de los vecinos y destituyen a Juan de presidente. Ante la ausencia de candidatos, se hace el pertinente sorteo y sale Mauri. Él intenta escaquearse, pero el administrador le advierte que sin causa justificada es delito. Pero he aquí que el niño tiene sarampión y se lo contagia y, como tener una enfermedad grave es un eximente, se inventa que es un desconocido virus de origen africano que le ha pegado Fernando al volver de unas vacaciones. El problema es que parte de los vecinos no han pasado el sarampión y la cosa empieza a propagarse por la comunidad.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x26.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XnYNV6pOz3U',
       ],[
         static::FIELD_NAME => 'Érase unas tragaperras',
         static::FIELD_SLUG => '3x27',
@@ -697,7 +697,7 @@ class ChaptersTableSeeder extends Seeder
           'La comunidad obliga a Mauri a seguir siendo presidente y, para cobrar las cuotas pendientes que debe Concha, instala una máquina tragaperras. Efectivamente, Concha, Vicenta y Marisa agotan sus pensiones en la máquina, pero la sorpresa la da Isabel, que se engancha al juego hasta el punto de hacer sospechar a Juan que tiene un amante.
           Por otra parte, Lucía y Carlos siguen con los preparativos de boda; pero reaparece Alba, ya embarazadísima, y le confiesa a Carlos que el niño es fruto del pasional encuentro que tuvieron en Nochevieja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x27.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QjwTVidHBec',
       ],[
         static::FIELD_NAME => 'Érase un desgobierno',
         static::FIELD_SLUG => '3x28',
@@ -707,7 +707,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Lucía cancela su boda y su padre, que ya ha hecho los preparativos, le pide que lo reconsidere. Roberto se ofrece voluntario para casarse con ella y Lucía acepta, pero Carlos, arrepentido, le pide perdón y Lucía también acepta.
           Por último, Belén, celosa de que Lucía tenga dos pretendientes y ella ninguno, conoce a un chico que resulta ser un gran aficionado al deporte. Ella, por supuesto, también se declara gran deportista y se van juntos a practicar ciclismo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x28.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/UQt9fLMsxB0',
       ],[
         static::FIELD_NAME => 'Érase un regalo de boda',
         static::FIELD_SLUG => '3x29',
@@ -717,7 +717,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, la comunidad se divide entre chicos y chicas para acudir a las respectivas despedidas de solteros, pero Mauri y Fernando no saben muy bien donde encajar. Mauri, harto de que sea Fernando el que siempre parece que tiene menos pluma, cambia los papeles y le manda a la despedida de las chicas, mientras él se va con loschicos.
           Por último, Juan quiere retomar la vida familiar, pero sus hijos no le hacen caso. Isabel le hace ver que eso es lógico porque ya son mayores, pero a Juan se le ocurre la idea de tener otro hijo, idea que Isabel no comparte en absoluto aunque se dispongan a intentarlo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x29.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qgp9zPwF-Y0',
       ],[
         static::FIELD_NAME => 'Érase otra boda',
         static::FIELD_SLUG => '3x30',
@@ -727,7 +727,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, José Miguel tiene otro incidente con la policía por los grafitis y deciden mandarle a un internado a Irlanda. Natalia, con el dinero ahorrado en el videoclub, también se ha independizado y Alex está en Ibiza poniendo copas. Juan e Isabel están, al fin, solos, pero entonces descubren que se aburren.
           Una antigua amante de Mariano a la que hacía ocho años que no veía, reaparece en su vida tras la muerte de su marido. Pero durante los veintiséis años que estuvieron de amantes Mariano le había estado mintiendo sobre su vida y recurre a Juan Cuesta para que le deje su casa y preparar allí una cena romántica.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x30.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8L4PpqgZbqc',
       ],[
         static::FIELD_NAME => 'Érase una luna de miel',
         static::FIELD_SLUG => '3x31',
@@ -737,7 +737,7 @@ class ChaptersTableSeeder extends Seeder
           Emilio y Belén retoman su relación y, además, Emilio consigue sus primeras vacaciones. No les han tocado los billetes pero Ana, como trabaja de azafata, les consigue unos gratis para Cuba. El problema es que Belén no ha salido nunca de España y Emilio ni siquiera ha montado en avión.
           Por otra parte, Isabel y Juan toman la decisión de adoptar un niño, pero no van a ser ellos solos, ya que Mauri y Fernando también se deciden porque ven que Bea va rehaciendo cada día su vida y disfrutan de Ezequiel cada vez menos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x31.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nC9Lm2Y3oZE',
       ],[
         static::FIELD_NAME => 'Érase un cirujano plástico',
         static::FIELD_SLUG => '3x32',
@@ -747,7 +747,7 @@ class ChaptersTableSeeder extends Seeder
           Belén encuentra trabajo de socorrista en la piscina de una urbanización, a pesar de no saber nadar, y Lucía busca la nulidad matrimonial a través del padre Miguel y contrata a Fernando como abogado.
           Por su parte, Mauri y Fernando no saben como desembarazarse del hijo que han adoptado, Chenchu, que además se ha hecho amigo de José Miguel y Juan Cuesta ya empieza a quejarse de la mala influencia que ejerce.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x32.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kQAbCv6lurQ',
       ],[
         static::FIELD_NAME => 'Érase unas vacaciones',
         static::FIELD_SLUG => '3x33',
@@ -758,7 +758,7 @@ class ChaptersTableSeeder extends Seeder
           Pero no todos aceptan la invitación; Lucía y Carlos prefieren ir a un buen hotel. Mientras, Mauri tiene que trabajar y se queda en Madrid y Belén y Emilio ya se han ido al camping.
           Pero, como es habitual en esta loca comunidad de vecinos, las cosas no van a salir como ellos piensan y las vacaciones van a traer muchas sorpresas a todos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x33.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/irca8N_D9gk',
       ]
     ];
   }
