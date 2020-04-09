@@ -846,6 +846,7 @@ class ChaptersTableSeeder extends Seeder
           Fernando está agobiado porque no le gusta su trabajo y Mauri, para ayudarle a que se independice y monte su propio despacho, accede a trabajar de tertuliano en un programa del corazón.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Tjan12ollCY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '09'),
       ], [
         static::FIELD_NAME => 'Érase un cultivo',
         static::FIELD_SLUG => '4x02',
@@ -857,6 +858,7 @@ class ChaptersTableSeeder extends Seeder
           Fernando no encuentra local para su oficina y atiende en su casa a los clientes. Los primeros en aparecer son un matrimonio gay que quiere divorciarse.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ytsa_gCoKqI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '16'),
       ], [
         static::FIELD_NAME => 'Érase un desvío provisional',
         static::FIELD_SLUG => '4x03',
@@ -867,6 +869,7 @@ class ChaptersTableSeeder extends Seeder
           Fernando contrata a Natalia de secretaria y Mauri se cela. Mientras Vicenta se recupera de la operación, Concha, en cambio, entra en una depresión porque la echan de las juntas al dejar de ser propietaria. Belén, que ahora sí participa en ellas, acude a su primera junta y se entera de la derrama que debe pagar.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/aP2U1bPUaD4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '23'),
       ], [
         static::FIELD_NAME => 'Érase una sequía',
         static::FIELD_SLUG => '4x04',
@@ -879,6 +882,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Natalia se ofrece como madre de alquiler a un amigo de Fernando y su esposa que no pueden tener hijos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hSuCxuNyrHg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '30'),
       ], [
         static::FIELD_NAME => 'Érase un banco en la acera',
         static::FIELD_SLUG => '4x05',
@@ -890,6 +894,7 @@ class ChaptersTableSeeder extends Seeder
           Desde que es propietaria a Belén se le acumulan las deudas. Entre la derrama y el dinero que debe a Lucía su vida es un infierno. Carmen le sugiere que grabe un video de porno casero con Emilio para sacar dinero.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dWc9MSkOdn0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '14'),
       ], [
         static::FIELD_NAME => 'Érase una Navidad convulsa',
         static::FIELD_SLUG => '4x06',
@@ -902,6 +907,7 @@ class ChaptersTableSeeder extends Seeder
           Por su parte Lucía, sola y sin Yago, tiene una recaída con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dzBY5SbOMU4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '21'),
       ], [
         static::FIELD_NAME => 'Érase la tercera Nochevieja',
         static::FIELD_SLUG => '4x07',
@@ -915,6 +921,7 @@ class ChaptersTableSeeder extends Seeder
           Los padres de Isabel deciden venir a cenar con ellos. Aún no saben que ha dejado a Andrés y que vive con Juan. Isabel decide no decírselo y le pide a Andrés que haga de marido y a Juan que vaya con sus hijos a cenar a otra parte.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6ri4WBMoQOI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '31'),
       ], [
         static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
         static::FIELD_SLUG => '4x08',
@@ -925,6 +932,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, Marisa empieza a sufrir persecución por fumadora y al final, opta por dejar el tabaco.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HEHJaOWxhBY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '11'),
       ], [
         static::FIELD_NAME => 'Érase una presidenta títere',
         static::FIELD_SLUG => '4x09',
@@ -936,6 +944,7 @@ class ChaptersTableSeeder extends Seeder
           Y, por último, Ana encuentra trabajo de modelo y se hace muy popular, lo que va a despertar también los celos de Bea, su pareja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/O1c0IEB4hBo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '18'),
       ], [
         static::FIELD_NAME => 'Érase un par de bodas',
         static::FIELD_SLUG => '4x10',
@@ -946,6 +955,7 @@ class ChaptersTableSeeder extends Seeder
           Carlos ingresa en una secta extraña y el consejo de sabios se une para intentar que salga de ella lo antes posible.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ipoOtixtIqI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '25'),
       ], [
         static::FIELD_NAME => 'Érase una conexión wifi',
         static::FIELD_SLUG => '4x11',
@@ -958,6 +968,7 @@ class ChaptersTableSeeder extends Seeder
           Por último, el ático se ha quedado libre y la comunidad decide alquilarlo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/mCMiF39d9CI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '01'),
       ], [
         static::FIELD_NAME => 'Érase un vudú',
         static::FIELD_SLUG => '4x12',
@@ -968,6 +979,7 @@ class ChaptersTableSeeder extends Seeder
           Belén empieza a trabajar de telefonista de asistencia en carretera y Emilio le gasta una broma, pero se le va a ir de las manos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9stkzaZn64o',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '08'),
       ], [
         static::FIELD_NAME => 'Érase un día de San Valentín',
         static::FIELD_SLUG => '4x13',
@@ -978,6 +990,7 @@ class ChaptersTableSeeder extends Seeder
           Bea y Ana rompen su relación por culpa de los celos. Ana se refugia en casa de Carlos y Roberto y provoca una crisis entre ambos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/4bQoSY9ZMHA',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '15'),
       ], [
         static::FIELD_NAME => 'Érase una nueva vida',
         static::FIELD_SLUG => '4x14',
@@ -989,6 +1002,7 @@ class ChaptersTableSeeder extends Seeder
           Bea está llena de remordimientos porque ha destruido una familia y ahora no sabe cómo deshacerse de esa relación sin que Ana se entere.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qruFMagazF8',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '22'),
       ], [
         static::FIELD_NAME => 'Érase un consuelo',
         static::FIELD_SLUG => '4x15',
