@@ -777,7 +777,7 @@ class ChaptersTableSeeder extends Seeder
           Concha le sube el alquiler a Belén y la amenaza con poner el piso en venta. Belén, que ahora tiene trabajo de vendedora de seguros, se decide a comprarlo y pide una hipoteca al banco.
           Fernando está agobiado porque no le gusta su trabajo y Mauri, para ayudarle a que se independice y monte su propio despacho, accede a trabajar de tertuliano en un programa del corazón.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Tjan12ollCY',
       ], [
         static::FIELD_NAME => 'Érase un cultivo',
         static::FIELD_SLUG => '4x02',
@@ -788,7 +788,7 @@ class ChaptersTableSeeder extends Seeder
           Lucía ya no sabe qué hacer para atraer a Yago, y cuando él se presenta en su casa y le dice que le ha echado la novia, enseguida le sugiere que se quede a vivir en la suya.
           Fernando no encuentra local para su oficina y atiende en su casa a los clientes. Los primeros en aparecer son un matrimonio gay que quiere divorciarse.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x02.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ytsa_gCoKqI',
       ], [
         static::FIELD_NAME => 'Érase un desvío provisional',
         static::FIELD_SLUG => '4x03',
@@ -798,7 +798,7 @@ class ChaptersTableSeeder extends Seeder
           Roberto regresa de su exilio en Puerto Banús completamente recuperado de su ruptura con Lucía, pero a Carlos no le sucede lo mismo y cada día está peor. Entre los dos alquilan el piso de Nieves que ahora está vacío.
           Fernando contrata a Natalia de secretaria y Mauri se cela. Mientras Vicenta se recupera de la operación, Concha, en cambio, entra en una depresión porque la echan de las juntas al dejar de ser propietaria. Belén, que ahora sí participa en ellas, acude a su primera junta y se entera de la derrama que debe pagar.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x03.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/aP2U1bPUaD4',
       ], [
         static::FIELD_NAME => 'Érase una sequía',
         static::FIELD_SLUG => '4x04',
@@ -810,7 +810,7 @@ class ChaptersTableSeeder extends Seeder
           Entretanto, Lucía sigue sin conseguir que Yago le dedique toda su atención. Por otra parte, el padre de Fernando viene a pasar unos días con su hijo y divertirse en la noche gay.
           Por último, Natalia se ofrece como madre de alquiler a un amigo de Fernando y su esposa que no pueden tener hijos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x04.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hSuCxuNyrHg',
       ], [
         static::FIELD_NAME => 'Érase un banco en la acera',
         static::FIELD_SLUG => '4x05',
@@ -821,7 +821,7 @@ class ChaptersTableSeeder extends Seeder
           Bea necesita tiempo libre para salir con Ana, y Mauri para escribir su libro. Deciden contratar una niñera y es Fernando quien, a través de internet, contrata a una monja que en principio parece ser la candidata perfecta.
           Desde que es propietaria a Belén se le acumulan las deudas. Entre la derrama y el dinero que debe a Lucía su vida es un infierno. Carmen le sugiere que grabe un video de porno casero con Emilio para sacar dinero.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x05.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dWc9MSkOdn0',
       ], [
         static::FIELD_NAME => 'Érase una Navidad convulsa',
         static::FIELD_SLUG => '4x06',
@@ -833,7 +833,7 @@ class ChaptersTableSeeder extends Seeder
           Mientras Emilio muestrasignos de arrepentimiento por lo mal que trata a Belén y decide gastarse el dinero del vídeo porno en invitarla a un viaje, ella ha encontrado trabajo en una empresa de moda y conoce a otro hombre.
           Por su parte Lucía, sola y sin Yago, tiene una recaída con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x06.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dzBY5SbOMU4',
       ], [
         static::FIELD_NAME => 'Érase la tercera Nochevieja',
         static::FIELD_SLUG => '4x07',
@@ -846,7 +846,7 @@ class ChaptersTableSeeder extends Seeder
           Lucía convoca a los tres pretendientes y les comunica que está enamorada de Yago. Le pide dinero a su padre para la derrama y otros gastos y éste se apunta a cenar para conocer a su nuevo novio.
           Los padres de Isabel deciden venir a cenar con ellos. Aún no saben que ha dejado a Andrés y que vive con Juan. Isabel decide no decírselo y le pide a Andrés que haga de marido y a Juan que vaya con sus hijos a cenar a otra parte.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x07.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6ri4WBMoQOI',
       ], [
         static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
         static::FIELD_SLUG => '4x08',
@@ -856,7 +856,7 @@ class ChaptersTableSeeder extends Seeder
           La madre de Belén sigue instalada en el piso y va a entrar en conflicto con el resto de las chicas. Mientras tanto, Belén está ocupada con los preparativos de la boda.
           Por último, Marisa empieza a sufrir persecución por fumadora y al final, opta por dejar el tabaco.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x08.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HEHJaOWxhBY',
       ], [
         static::FIELD_NAME => 'Érase una presidenta títere',
         static::FIELD_SLUG => '4x09',
@@ -867,7 +867,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Roberto se echa novia pero va a tener que soportar los celos de Carlos.
           Y, por último, Ana encuentra trabajo de modelo y se hace muy popular, lo que va a despertar también los celos de Bea, su pareja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x09.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/O1c0IEB4hBo',
       ], [
         static::FIELD_NAME => 'Érase un par de bodas',
         static::FIELD_SLUG => '4x10',
@@ -877,7 +877,7 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Juan Cuesta le vende el 2º B a Carlos y se encuentra con 90.000 euros en dinero negro que tiene que esconder en casa.
           Carlos ingresa en una secta extraña y el consejo de sabios se une para intentar que salga de ella lo antes posible.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x10.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ipoOtixtIqI',
       ], [
         static::FIELD_NAME => 'Érase una conexión wifi',
         static::FIELD_SLUG => '4x11',
@@ -889,7 +889,7 @@ class ChaptersTableSeeder extends Seeder
           Emilio, por su parte, ve la oportunidad de sacar un dinero extra acudiendo a las televisiones para contar la historia.
           Por último, el ático se ha quedado libre y la comunidad decide alquilarlo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x11.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/mCMiF39d9CI',
       ], [
         static::FIELD_NAME => 'Érase un vudú',
         static::FIELD_SLUG => '4x12',
@@ -899,7 +899,7 @@ class ChaptersTableSeeder extends Seeder
           Juan ya no aguanta más y quiere irse a vivir a un adosado, pero ahora son los vecinos los que se preocupan su marcha ya que a fin de cuentas es él quien siempre les soluciona los problemas.
           Belén empieza a trabajar de telefonista de asistencia en carretera y Emilio le gasta una broma, pero se le va a ir de las manos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x12.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9stkzaZn64o',
       ], [
         static::FIELD_NAME => 'Érase un día de San Valentín',
         static::FIELD_SLUG => '4x13',
@@ -909,7 +909,7 @@ class ChaptersTableSeeder extends Seeder
           Mariano alquila el ático de picadero por horas, no sólo a los vecinos sino también a gente de fuera de la comunidad.
           Bea y Ana rompen su relación por culpa de los celos. Ana se refugia en casa de Carlos y Roberto y provoca una crisis entre ambos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x13.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/4bQoSY9ZMHA',
       ], [
         static::FIELD_NAME => 'Érase una nueva vida',
         static::FIELD_SLUG => '4x14',
@@ -920,7 +920,15 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto, Juan sigue en la pensión Loli, e Isabel, muy arrepentida, intenta hacerle volver.
           Bea está llena de remordimientos porque ha destruido una familia y ahora no sabe cómo deshacerse de esa relación sin que Ana se entere.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
-        static::FIELD_VIDEO_URL => '',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qruFMagazF8',
+      ], [
+        static::FIELD_NAME => 'Érase un consuelo',
+        static::FIELD_SLUG => '4x15',
+        static::FIELD_SEASON => '4',
+        static::FIELD_SUMMARY =>
+          'Capítulo especial en el que se muestran escenas inéditas y tomas falsas previas al lanzamiento de la temporada 5.',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x15.jpg',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bfr_w8e_hJk',
       ],
     ];
   }
