@@ -17,9 +17,10 @@ class Chapter extends BaseEntity
 
     protected $appends = [
       'parsed_duration',
+      'parsed_release_date'
     ];
 
-    public function getReleaseDateAttribute()
+    public function getParsedReleaseDateAttribute()
     {
       return Carbon::parse($this->attributes['release_date'])->format('d/m/Y');
     }
