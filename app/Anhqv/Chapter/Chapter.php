@@ -34,7 +34,7 @@ class Chapter extends BaseEntity
         $parsed_min = intval(gmdate('i', $duration_sec));
 
         if ($parsed_hour > 0) $res = $parsed_hour . 'h';
-        if ($parsed_min > 0) $res .= ' ' . $parsed_min . 'm';
+        if ($parsed_min > 0) $res = (isset($res) ? $res . ' ' : '') . $parsed_min . 'm';
 
         return $res;
       }
