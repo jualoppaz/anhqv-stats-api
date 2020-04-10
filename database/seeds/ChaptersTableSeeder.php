@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class ChaptersTableSeeder extends Seeder
 {
@@ -12,6 +13,8 @@ class ChaptersTableSeeder extends Seeder
   const FIELD_SUMMARY = 'summary';
   const FIELD_IMAGE_URL = 'image_url';
   const FIELD_VIDEO_URL = 'video_url';
+  const FIELD_RELEASE_DATE = 'release_date';
+  const FIELD_DURATION = 'duration';
 
   /**
    * Run the database seeds.
@@ -36,6 +39,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_SUMMARY => $chapter[static::FIELD_SUMMARY],
         static::FIELD_IMAGE_URL => $chapter[static::FIELD_IMAGE_URL],
         static::FIELD_VIDEO_URL => $chapter[static::FIELD_VIDEO_URL],
+        static::FIELD_RELEASE_DATE => isset($chapter[static::FIELD_RELEASE_DATE]) ? $chapter[static::FIELD_RELEASE_DATE] : null,
+        static::FIELD_DURATION => isset($chapter[static::FIELD_DURATION]) ? $chapter[static::FIELD_DURATION] : null,
       ]);
     }
   }
@@ -64,6 +69,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Alicia y Belén, al ser sábado por la noche, se disponen a salir, pero se quedan encerradas en el ascensor con el portero, el único que sabe cómo hacerlo funcionar de nuevo, osea, que va para largo…',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ZHROGEt6aTo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '07'),
+        static::FIELD_DURATION => 50,
       ],
       [
         static::FIELD_NAME => 'Érase una reforma',
@@ -75,6 +82,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Vicenta y Marisa sufren un robo en su casa, así que deciden instalar una alarma. No consiguen comprender su funcionamiento y salta todas las noches sin motivo, para desesperación del resto de vecinos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/myODyGnGUM8',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '14'),
+        static::FIELD_DURATION => 49,
       ], [
         static::FIELD_NAME => 'Érase el reciclaje',
         static::FIELD_SLUG => '1x03',
@@ -84,6 +93,8 @@ class ChaptersTableSeeder extends Seeder
           El ayuntamiento inicia una campaña de reciclaje en el barrio y pide a los vecinos que utilicen los diferentes cubos para separar las basuras. Cuando esto llega al Edificio, se montan un lío y no consiguen ponerse de acuerdo sobre nada. Por último, Doña Concha está decidida a echar a Alicia y a Belén del piso y empieza a enseñarlo a posibles Compradores.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6fWIkTItWgo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '21'),
+        static::FIELD_DURATION => 53,
       ], [
         static::FIELD_NAME => 'Érase un rumor',
         static::FIELD_SLUG => '1x04',
@@ -93,6 +104,8 @@ class ChaptersTableSeeder extends Seeder
           Asimismo, Roberto recibe la visita de una ex novia, Nuria, que se ha mudado al edificio para hacerle la vida imposible. Fernando también tiene visita, la de sus padres. El joven abogado intenta hacer pasar a Alicia por su novia para ocultarles que es gay.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qt7gYFJLWxk',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '28'),
+        static::FIELD_DURATION => 60,
       ], [
         static::FIELD_NAME => 'Érase un niño',
         static::FIELD_SLUG => '1x05',
@@ -102,6 +115,8 @@ class ChaptersTableSeeder extends Seeder
           Entre tanto maternalismo, Roberto empieza a descuidar peligrosamente su relación con Lucía. Roberto traba amistad con José Miguel a pesar de la diferencia de edad, descuidando su relación con su Novia. Por otra parte, el nuevo novio de Alicia se siente también muy atraído por Belén y no le importa mucho jugar a dos bandas.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/BL2grk6E6bg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '05'),
+        static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un resbalón',
         static::FIELD_SLUG => '1x06',
@@ -112,6 +127,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Roberto y Lucía contratan a una asistenta que resulta ser una cotilla e informa a todos los vecinos de lo que pasa en la casa, incluyendo que Lucía tiene un retraso de varias semanas y puede estar embarazada.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5N1yaHZ8iwY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '12'),
+        static::FIELD_DURATION => 63,
       ], [
         static::FIELD_NAME => 'Érase una rata',
         static::FIELD_SLUG => '1x07',
@@ -121,6 +138,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Chema, un amigo de Roberto, se presenta en la casa de la pareja dispuesto a pasar unos días allí. No hace más que causar problemas hasta que Lucía no puede más y les echa a los dos de casa. Roberto vuelve con sus padres.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QM04G_tEZr0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '19'),
+        static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un indigente',
         static::FIELD_SLUG => '1x08',
@@ -131,6 +150,8 @@ class ChaptersTableSeeder extends Seeder
           Roberto vuelve a casa para intentar reconciliarse con Lucía pero se encuentra allí a Carlos, el ex novio de la chica. Vuelven a discutir y decide mudarse definitivamente. Emilio, Carlos y José Miguel quieren ayudarle a recuperar a Lucía pero no hacen mas que meterle en líos y empeorar las cosas. Como última medida, Roberto finge ante Lucía que ha empezado a salir con Natalia, la hija de Juan y Paloma.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/shjKQ3fqJrM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '26'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una de miedo',
         static::FIELD_SLUG => '1x09',
@@ -142,6 +163,8 @@ class ChaptersTableSeeder extends Seeder
           Roberto y Lucía preparan la boda y la chica, por consejo de su padre, cree que lo mejor es hacer separación de bienes. Cuando Roberto se entera piensa que ella cree que sólo va a por su dinero.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/TVR-mRqSLCA',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '02'),
+        static::FIELD_DURATION => 57,
       ], [
         static::FIELD_NAME => 'Érase un dilema',
         static::FIELD_SLUG => '1x10',
@@ -152,6 +175,8 @@ class ChaptersTableSeeder extends Seeder
           Al final descubren que el inspector del Ayuntamiento estaba comprado por el constructor.Emilio, temiendo que vendan el edificio, le pide a Belén que se vayan a vivir juntos. Ella se indigna y le dice que no son novios. Más tarde, se lo piensa pero Emilio ya a cambiado de opinión y corta con ella. Alicia decide hacer un último intento de acercamiento a Fernando y utiliza a Mauri para darle celos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QBpA5mHrl2M',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '09'),
+        static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un traspaso',
         static::FIELD_SLUG => '1x11',
@@ -161,6 +186,8 @@ class ChaptersTableSeeder extends Seeder
           Natalia se ha echado un nuevo novio y Paloma y Juan se empeñan en conocerle y se llevan una gran sorpresa al descubrir que es un hombre de 38 años. Tras el disgusto inicial, Paloma descubre que es millonario y cree que le puede ayudar a montar una cadena de tiendas de ropa.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WtTb7MEG02s',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '16'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un sustituto',
         static::FIELD_SLUG => '1x12',
@@ -169,6 +196,8 @@ class ChaptersTableSeeder extends Seeder
           'A Emilio le da un ataque de apendicitis y tiene que ser ingresado, por lo que Juan busca un sustituto para hacerse cargo del edificio. El portero suplente resulta ser Amador, un atractivo y competente hombre del que se enamoran Concha, Vicenta y Marisa. Mauri encuentra una revista porno en un cajón de Fernando. Cuando le pregunta, éste le dice que es de Armando. A cambio de decir que es suya, Armando le pide la casa para quedar con una chica, pero Mauri llega y sorprende a la mujer con su albornoz.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/n0xaBSfvE_4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '23'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una fiesta',
         static::FIELD_SLUG => '1x13',
@@ -177,6 +206,8 @@ class ChaptersTableSeeder extends Seeder
           'Lucía decide hacer una fiesta en su casa pese a las reticencias de los vecinos. Paloma revoluciona a su familia con la noticia de que está embarazada. Juan intenta hacerle entender que se trata de la menopausia. Belén, tras romper con Emilio, conoce a otro hombre, mientras Fernando y Mauri, en pleno proceso de separación, deciden vender su piso.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_TL0_6d2-I8',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '30'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase una avería',
         static::FIELD_SLUG => '1x14',
@@ -185,6 +216,8 @@ class ChaptersTableSeeder extends Seeder
           'La caldera del edificio sufre una avería que deja sin calefacción y sin agua caliente a todos los vecinos. Fernando tiene una cena con sus compañeros de trabajo y decide llevar a Luis y confesarles a todos que es gay. Belén sigue su relación con Carlos y Emilio está cada vez más celoso. Paco está sin dinero y con la ayuda de Emilio idea un plan para sacarse unos euros: colocar cámaras en el piso de Belén y Alicia para grabar unas imágenes y colgarlas en internet.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8mmBtJTDUXM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '07'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un anillo',
         static::FIELD_SLUG => '1x15',
@@ -193,6 +226,8 @@ class ChaptersTableSeeder extends Seeder
           'Juan Cuesta, arrastrado por su espíritu navideño, decide organizar un intercambio de regalos entre los vecinos, para mejorar las relaciones dentro de la comunidad. Esta bonita iniciativa provocará más conflictos que beneficios. Carlos propone a Belén irse a vivir juntos. Alicia, angustiada por la idea de tener que pagar el alquiler sola, comienza a hacer de celestina para intentar reconciliar a Belén con Emilio. La hermana de Lucía llega para ayudarla con los preparativos de la boda y entra en conflicto con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/f6kvnEVsvM8',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '14'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una Nochebuena',
         static::FIELD_SLUG => '1x16',
@@ -202,6 +237,8 @@ class ChaptersTableSeeder extends Seeder
           El vecindario juega un décimo compartido a la lotería de Navidad y resulta que les toca el tercer premio. Ante la presión de Paloma, Juan decide fingir que le han atracado para quedarse con todo el dinero, pero los remordimientos y que existe una grabación del supuesto atraco hacen que haga lo correcto… pero cuando cobra el premio le atracan de verdad.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x16.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hx2k1GLLNHM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '21'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase un fin de año',
         static::FIELD_SLUG => '1x17',
@@ -210,6 +247,8 @@ class ChaptersTableSeeder extends Seeder
           'La comunidad se prepara para dar la bienvenida al nuevo año. Por diversas circunstancias, varios vecinos se ven privados de las uvas de la suerte, lo que aprovechará el padre de Emilio para especular con tan codiciado fruto. Mientras tanto, Paco y Emilio aprovechan la ausencia de Concha para alquilar su piso para un rodaje de cine. Lo que ignoran es que trata de una película X. Fernando y Mauri, por su parte, empiezan a pagar las consecuencias de salir del armario.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x17.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hUjulga6y4w',
+        static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '31'),
+        static::FIELD_DURATION => 44,
       ]
     ];
   }
@@ -229,6 +268,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Belén no consigue decidirse entre Carlos y Emilio. Carlos, viendo que a Belén le tira más el portero, le ofrece dinero para que deje de ver a la chica, algo que Emilio acepta encantado. Al final, Belén se entera de todo y decide dejarles a los dos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/5ypBFYgC#eSb7qodomilAHxvvngXn1sbkEP6AU3eup89UxK0NeZE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '24'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un sueño erótico',
         static::FIELD_SLUG => '2x02',
@@ -240,6 +281,8 @@ class ChaptersTableSeeder extends Seeder
           Alicia se siente muy atraída por Álex y termina acostándose con él, sin saber que sólo tiene 21 años. Belén, por su parte, empieza a estar nerviosa porque Emilio no la llama. La culpa la tiene otra mujer; Rocío, la nueva cartera',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/70bVGY4QDZo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '31'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un negocio',
         static::FIELD_SLUG => '2x03',
@@ -251,6 +294,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Andrés le hace pensar a Paloma que sus diseños son lo mejor del mundo y propone a Juan y a su esposa que monten por fin el negocio. A pesar de las reticencias de su marido, Paloma se gasta todo lo que tienen ahorrado en comprar telas y máquinas de coser… pero Andrés no consigue vender nada, así que convence a todos para hacer un desfile ilegal colándose en un ase de modelos para enseñar la firma PUF (Paloma Urban Fashion)',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/MQaVhkiwsl0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '14'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un desafío',
         static::FIELD_SLUG => '2x04',
@@ -262,6 +307,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mauri conoce a Bea y le propone ser su nueva compañera de piso. Ella acepta y las vecinas empiezan a sospechar que Mauri se ha cambiado de acera y creen que su obligación es informar a Fernando.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XeykYqEemHs',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '21'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase una patrulla ciudadana',
         static::FIELD_SLUG => '2x05',
@@ -275,6 +322,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Alex se apuesta con Paco, José Miguel y Emilio a que es capaz de seducir a Natalia en menos de 48 horas. Parece que lo va a conseguir pero Paloma, viendo la posibilidad de librarse de su hija, lo precipita todo y quiere preparar la boda con la ayuda de Isabel. Como lo que pretendía Natalia era fastidiar a su madre liándose con el vecino y no lo consigue, le deja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_jZ8XMp7JlI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '28'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un rastrillo',
         static::FIELD_SLUG => '2x06',
@@ -286,6 +335,8 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Juan, bajando un mueble, le da un ataque de hernia y tiene que ser hospitalizado, pero debido al lío del cuadro nadie se acuerda de él y empieza a sospechar que su mujer y Andrés tienen una aventura.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Lq7kJA8zWWI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '05'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase una huelga',
         static::FIELD_SLUG => '2x07',
@@ -296,6 +347,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mauri decide darle una sorpresa a Fernando y presentarse en Londres sin avisar… pero resulta que es el mismo fin de semana que Fernando había elegido para darle la misma sorpresa, por lo que Mauri está en Londres y Fernando en Madrid.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/q0z9FZpgRBg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '12'),
+        static::FIELD_DURATION => 71,
       ], [
         static::FIELD_NAME => 'Érase un piso en venta',
         static::FIELD_SLUG => '2x08',
@@ -309,6 +362,8 @@ class ChaptersTableSeeder extends Seeder
           Mauri tiene destrozada la espalda de dormir en el sillón y Bea le propone compartir la cama en plan gay-lesbiana, cada uno en su sitio, pero Mauri sufre una erección y se plantea si es heterosexual',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9UFSz68tLPI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '19'),
+        static::FIELD_DURATION => 69,
       ], [
         static::FIELD_NAME => 'Érase una parabólica',
         static::FIELD_SLUG => '2x09',
@@ -319,6 +374,8 @@ class ChaptersTableSeeder extends Seeder
           Bea quiere dar una segunda oportunidad a Ines, su ex pareja, mientras Mauri, loco por salir de marcha y hacer vida social para recuperarse de su ruptura con Fernando, no consigue concretar una cita con ninguno de sus viejos amigos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QvE9OXqk7KE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '26'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un vídeo casero',
         static::FIELD_SLUG => '2x10',
@@ -330,6 +387,8 @@ class ChaptersTableSeeder extends Seeder
           A Bea le entra un repentino instinto maternal y solicita la ayuda de Mauri para que la ayude a adoptar un niño.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qdUElBJjvuU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '02'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase unas elecciones',
         static::FIELD_SLUG => '2x11',
@@ -340,6 +399,8 @@ class ChaptersTableSeeder extends Seeder
           Mauri decide ayudar a Bea a ser madre, se ofrece como donante de semen para la fertilización, y acuden a la clínica.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rX_fZofMAtc',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '09'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una despedida de soltero',
         static::FIELD_SLUG => '2x12',
@@ -350,6 +411,8 @@ class ChaptersTableSeeder extends Seeder
           Paloma y Juan, después de un largo tiempo sin hacer el amor, han intentado reconciliarse sexualmente. Juan se queda preocupado porque tiene la sensación de que Paloma no disfruta y le pide consejo a Andrés.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HRRhxOLE9nA',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '16'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una boda',
         static::FIELD_SLUG => '2x13',
@@ -360,6 +423,8 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto y después de las últimas crisis vividas en su matrimonio, Juan Cuesta piensa que Paloma le es infiel por lo que decide ponerle un detective privado.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WLC8geuwsbY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '23'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un apoyo vecinal',
         static::FIELD_SLUG => '2x14',
@@ -369,6 +434,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Belén no quiere reanudar su relación con Emilio en las mismas condiciones que cuando lo dejaron. Como Emilio, por el momento, no quiere saber nada de otra boda, Belén le propone irse a vivir juntos. Alicia tratará de convencerla para que desista de esa idea.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/LyXTC2dCg0A',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '30'),
+        static::FIELD_DURATION => 57,
       ]
     ];
   }
@@ -388,6 +455,8 @@ class ChaptersTableSeeder extends Seeder
           El embarazo sigue su curso pero Mauri, hecho un autentico padrazo y sin Fernando otra vez, desespera a Bea.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/z8t2B6AZybU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '06'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un okupa',
         static::FIELD_SLUG => '3x02',
@@ -403,6 +472,8 @@ class ChaptersTableSeeder extends Seeder
           El Ayuntamiento ha hecho la calle zona azul y Belén, que ha conseguido trabajo, es la nueva empleada que pone las multas.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/2z9PDyUDca0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '13'),
+        static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un matrimonio de conveniencia',
         static::FIELD_SLUG => '3x03',
@@ -413,6 +484,8 @@ class ChaptersTableSeeder extends Seeder
           Carlos, el ex novio de Lucía y también de Belén, decide que su fracaso con las mujeres es debido a que en realidad es gay. Así que acude a Mauri para que le enseñe como ser un gay, pero Mauri está encantado con el cubano de Vicenta, que le echa los tejos, y trata de deshacerse como puede del pesado de Carlos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/NJiv22MXT_A',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '20'),
+        static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase una inauguración',
         static::FIELD_SLUG => '3x04',
@@ -426,6 +499,8 @@ class ChaptersTableSeeder extends Seeder
           La atracción entre Juan Cuesta e Isabel va en aumento, y la situación se complica: de un lado Andrés sigue obsesionado, y de otro, José Miguel, como los ha descubierto, se dedica a chantajear a su padre. Deciden ponerle fin con una noche de pasión en un hotel para desfogarse y poder recobrar así la normalidad.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/pB3FG9Lde9g',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '27'),
+        static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase un combate',
         static::FIELD_SLUG => '3x05',
@@ -438,6 +513,8 @@ class ChaptersTableSeeder extends Seeder
           Juan e Isabel deciden dejarlo y volver a la normalidad. Pero Andrés, que sigue preocupado por las sospechas de infidelidad de Isabel, trae un psicólogo a casa para hacer terapia familiar y conocer así el secreto',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bYlYxTWh2uU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '03'),
+        static::FIELD_DURATION => 61,
       ],[
         static::FIELD_NAME => 'Érase un canario',
         static::FIELD_SLUG => '3x06',
@@ -449,6 +526,8 @@ class ChaptersTableSeeder extends Seeder
           Diego y Alba se presentan en casa de Mauri para acompañar a Bea a la ecografía. Como Alba se va a un congreso, Diego le propone a Mauri pasar los dos días juntos pero encerrados en su casa para que nadie los vea. Así que Mauri envía a Bea a casa de Lucía y los dos se preparan para un fin de semana romántico y solos para conocerse mejor.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WZWeqALDN4w',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '10'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un mal de ojo',
         static::FIELD_SLUG => '3x07',
@@ -461,6 +540,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Andrés, ya reconciliado con Isabel, se preocupa por Juan y le busca una amiga de yoga de Isabel para una cita: una cena en su casa los cuatro juntos. Juan se ofende porque cree que Isabel está de acuerdo, e Isabel se cela al ver que Juan se pone muy contento con la cita.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/w3ZOB7EyJUI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '17'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un aniversario',
         static::FIELD_SLUG => '3x07b',
@@ -471,6 +552,7 @@ class ChaptersTableSeeder extends Seeder
           La conclusión final es clara, esta comunidad es un auténtico manicomio, pero todos ellos son irremplazables. Por eso celebran con una fiesta por todo lo alto el aniversario presidencial de Juan Cuesta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07b.jpg',
         static::FIELD_VIDEO_URL => 'https://www.dailymotion.com/embed/video/x5wo6b7',
+        static::FIELD_DURATION => 57,
       ],[
         static::FIELD_NAME => 'Érase un famoso',
         static::FIELD_SLUG => '3x08',
@@ -481,6 +563,8 @@ class ChaptersTableSeeder extends Seeder
           Mauri está agotado con su nueva relación con Diego. Todas las noches salen de marcha y los días lo pasan haciendo puenting y deportes de riesgo. Pero él no quiere dejar solo a Diego un momento para que no se lo quiten, así que tiene que aguantar como puede.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7vWjTlcw9o4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '24'),
+        static::FIELD_DURATION => 69,
       ],[
         static::FIELD_NAME => 'Érase un desalojo',
         static::FIELD_SLUG => '3x09',
@@ -493,6 +577,8 @@ class ChaptersTableSeeder extends Seeder
           Alicia conoce al padre de Carlos y le gusta, así que deja a Carlos que otra vez se vuelca en Lucía.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wWVkFfwYNM4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '01'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un belén',
         static::FIELD_SLUG => '3x10',
@@ -504,6 +590,8 @@ class ChaptersTableSeeder extends Seeder
           Entretanto Mauri está preocupado, de un lado porque Rosa, la nueva novia de Bea, se quiere apropiar de la paternidad de su hijo y, de otro, porque ha sorprendido a Diego mirándole el culo a una chica guapa.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/U07T8YObV9o',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '15'),
+        static::FIELD_DURATION => 60,
       ],[
         static::FIELD_NAME => 'Érase una Nochevieja',
         static::FIELD_SLUG => '3x11',
@@ -517,6 +605,8 @@ class ChaptersTableSeeder extends Seeder
           Andrés, picado, también los invita a todos a cenar en su casa. Así pues, Marisa, Concha, Vicenta y Mariano (los únicos que no tenían planes para esa noche), sopesan ambas ofertas antes de decidir cual aceptar..',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/32tSpeiqaFI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '31'),
+        static::FIELD_DURATION => 63,
       ],[
         static::FIELD_NAME => 'Érase una grieta',
         static::FIELD_SLUG => '3x12',
@@ -528,6 +618,8 @@ class ChaptersTableSeeder extends Seeder
           Emilio sigue en la portería, con su padre. Belén no quiere saber nada de él, pero Victoria, la madre de Alicia, una actriz de la época del destape, viene a pasar unos días con su hija, y le tira los tejos a Emilio, destapando los celos de Belén a la vez que el deseo de Mariano.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kYYq_lQVA38',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '12'),
+        static::FIELD_DURATION => 66,
       ],[
         static::FIELD_NAME => 'Érase unos nuevos inquilinos',
         static::FIELD_SLUG => '3x13',
@@ -541,6 +633,8 @@ class ChaptersTableSeeder extends Seeder
           Tanto ella como Lucía comienzan a tener celos de Alicia porque ha encontrado al hombre perfecto y deciden seguirle para descubrir qué oculta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/BAtShBnYwkI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '19'),
+        static::FIELD_DURATION => 76,
       ],[
         static::FIELD_NAME => 'Érase un bautizo',
         static::FIELD_SLUG => '3x14',
@@ -552,6 +646,8 @@ class ChaptersTableSeeder extends Seeder
           Nieves declara la guerra a Isabel y recluta a Andrés y a sus hijos para que le ayuden a hacer la vida imposible a la nueva pareja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8nLplcMQiFw',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '26'),
+        static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una academia',
         static::FIELD_SLUG => '3x15',
@@ -563,6 +659,8 @@ class ChaptersTableSeeder extends Seeder
           Diego va a jugar un partido de fútbol con sus amigos del barrio, que no saben que es gay, y le prohíbe a Mauri que vaya a verle. Pero Mauri hace todo lo contrario y se convierte en la estrella del equipo',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/0YzrLMEzN84',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '02'),
+        static::FIELD_DURATION => 88,
       ],[
         static::FIELD_NAME => 'Érase unos estatutos',
         static::FIELD_SLUG => '3x16',
@@ -575,6 +673,8 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Lucía y Alicia están pasando una mala racha. Después de mucho buscar, consiguen trabajo como chicas del telecupón.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x16.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Fcwp6A7SYMk',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '09'),
+        static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase unas alumnas',
         static::FIELD_SLUG => '3x17',
@@ -586,6 +686,8 @@ class ChaptersTableSeeder extends Seeder
           Lucía necesita dinero y sentirse útil, Carlos está dispuesto a ayudarla una vez más y le ofrece la posibilidad de trabajar como dependienta en el videoclub.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x17.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/YE5vXzE6ics',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '16'),
+        static::FIELD_DURATION => 89,
       ],[
         static::FIELD_NAME => 'Érase un juicio',
         static::FIELD_SLUG => '3x18',
@@ -597,6 +699,8 @@ class ChaptersTableSeeder extends Seeder
           Entretanto, Mauri continúa con su triángulo amoroso y cree que tanto Diego como Abel están enamorados de él.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x18.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Pxsm9ToDsWc',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '23'),
+        static::FIELD_DURATION => 86,
       ],[
         static::FIELD_NAME => 'Érase un disco-pub videoclub',
         static::FIELD_SLUG => '3x19',
@@ -607,6 +711,8 @@ class ChaptersTableSeeder extends Seeder
           A Concha le toca un bingo especial pero prefiere ocultárselo a todos. Debe ya cinco meses a la comunidad y están todos sin calefacción por su culpa. Todo esto provoca que Marisa, Vicenta, Mauri, Emilio, y la mayoría de afectados, monten un comando para conseguir que pague lo que debe y así poder volver a tener calefacción.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x19.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nwWE9zjDkBI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '02'),
+        static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una cobaya',
         static::FIELD_SLUG => '3x20',
@@ -619,6 +725,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Roberto escucha a una amiga de Bea que también quiere ser madre, como le pide a Mauri que le haga el mismo favor a cambio de dinero. Se lo comunica al «Consejo de Sabios» y enseguida se apuntan a donar esperma.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x20.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GUZqRwI0DuU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '09'),
+        static::FIELD_DURATION => 87,
       ],[
         static::FIELD_NAME => 'Érase un premio',
         static::FIELD_SLUG => '3x21',
@@ -631,6 +739,8 @@ class ChaptersTableSeeder extends Seeder
           Y, por último, Mauri le encarga a un becario de su periódico ue investigue la fecha de la boda entre Diego y Abelde su periódico ue investigue la fecha de la boda entre Diego y Abel',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x21.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GOMo8aTs9bU',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '16'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase unas puertas blindadas',
         static::FIELD_SLUG => '3x22',
@@ -642,6 +752,8 @@ class ChaptersTableSeeder extends Seeder
           Entretanto, Lucía monta una guardería en casa para sacar dinero, y Belén cambia de agencia matrimonial y conoce a un hombre maravilloso.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x22.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_5nJzL3E2WE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '06'),
+        static::FIELD_DURATION => 80,
       ],[
         static::FIELD_NAME => 'Érase un vicio',
         static::FIELD_SLUG => '3x23',
@@ -653,6 +765,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mauri también tiene problemas, se aproxima la fecha de la boda de Abel y Diego y no tiene con quien acudir, pues Bea no está por la labor.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x23.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8R6Uz3ZiQ-A',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '14'),
+        static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase un administrador',
         static::FIELD_SLUG => '3x24',
@@ -663,6 +777,8 @@ class ChaptersTableSeeder extends Seeder
           Lucía y Carlos comienzan su relación de convivencia, pero mientras Carlos intenta ir poco a poco para no equivocarse y no quiere aún acostarse con Lucía, ella está desesperada porque no ha vuelto a tener relaciones desde que lo dejó con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x24.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5GSWKXKlUvs',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '20'),
+        static::FIELD_DURATION => 84,
       ],[
         static::FIELD_NAME => 'Érase una traición',
         static::FIELD_SLUG => '3x25',
@@ -672,6 +788,8 @@ class ChaptersTableSeeder extends Seeder
           Carlos y Lucía siguen como pareja y descubren los celos mutuos. Lucía, ya harta de ser una mantenida, pone un sitio de masajes en la portería y contrata a un fisioterapeuta, pero, entretanto, en Natalia aflora un repentino interés por Carlos. Mauri, por su parte, va a tener que elegir entre volver con Fernando que se lo ha pedido y parece que ahora va en serio, y Diego, que ya se arrepiente de haberse casado.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7eo21F4lEoc',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '27'),
+        static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase una visita guiada',
         static::FIELD_SLUG => '3x25b',
@@ -681,6 +799,7 @@ class ChaptersTableSeeder extends Seeder
           Pero, como siempre, los vecinos están ocupados con sus propios problemas. A Juan le han rayado el coche y firman la fechoría las Chinchón Kings; Lucía y Carlos vuelven del puente tras pasar el primer atasco en la carretera juntos, como pareja. Y, ya por último, la noticia que mantiene a todos expectantes es que Paco está a punto de llegar y presentar oficialmente a Lourdes, su novia, de la que se enamoró en la boda de Diego y Abel, y a que únicamente han visto en la foto que hizo con el móvil.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25b.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/1WfUg0MJ7CY',
+        static::FIELD_DURATION => 12,
       ],[
         static::FIELD_NAME => 'Érase el primer presidente gay',
         static::FIELD_SLUG => '3x26',
@@ -689,6 +808,8 @@ class ChaptersTableSeeder extends Seeder
           'El administrador se hace eco de las peticiones de los vecinos y destituyen a Juan de presidente. Ante la ausencia de candidatos, se hace el pertinente sorteo y sale Mauri. Él intenta escaquearse, pero el administrador le advierte que sin causa justificada es delito. Pero he aquí que el niño tiene sarampión y se lo contagia y, como tener una enfermedad grave es un eximente, se inventa que es un desconocido virus de origen africano que le ha pegado Fernando al volver de unas vacaciones. El problema es que parte de los vecinos no han pasado el sarampión y la cosa empieza a propagarse por la comunidad.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x26.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XnYNV6pOz3U',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '11'),
+        static::FIELD_DURATION => 83,
       ],[
         static::FIELD_NAME => 'Érase unas tragaperras',
         static::FIELD_SLUG => '3x27',
@@ -698,6 +819,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Lucía y Carlos siguen con los preparativos de boda; pero reaparece Alba, ya embarazadísima, y le confiesa a Carlos que el niño es fruto del pasional encuentro que tuvieron en Nochevieja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x27.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QjwTVidHBec',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '18'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un desgobierno',
         static::FIELD_SLUG => '3x28',
@@ -708,6 +831,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Belén, celosa de que Lucía tenga dos pretendientes y ella ninguno, conoce a un chico que resulta ser un gran aficionado al deporte. Ella, por supuesto, también se declara gran deportista y se van juntos a practicar ciclismo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x28.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/UQt9fLMsxB0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '25'),
+        static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase un regalo de boda',
         static::FIELD_SLUG => '3x29',
@@ -718,6 +843,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Juan quiere retomar la vida familiar, pero sus hijos no le hacen caso. Isabel le hace ver que eso es lógico porque ya son mayores, pero a Juan se le ocurre la idea de tener otro hijo, idea que Isabel no comparte en absoluto aunque se dispongan a intentarlo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x29.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qgp9zPwF-Y0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '01'),
+        static::FIELD_DURATION => 73,
       ],[
         static::FIELD_NAME => 'Érase otra boda',
         static::FIELD_SLUG => '3x30',
@@ -728,6 +855,8 @@ class ChaptersTableSeeder extends Seeder
           Una antigua amante de Mariano a la que hacía ocho años que no veía, reaparece en su vida tras la muerte de su marido. Pero durante los veintiséis años que estuvieron de amantes Mariano le había estado mintiendo sobre su vida y recurre a Juan Cuesta para que le deje su casa y preparar allí una cena romántica.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x30.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8L4PpqgZbqc',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '08'),
+        static::FIELD_DURATION => 82,
       ],[
         static::FIELD_NAME => 'Érase una luna de miel',
         static::FIELD_SLUG => '3x31',
@@ -738,6 +867,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, Isabel y Juan toman la decisión de adoptar un niño, pero no van a ser ellos solos, ya que Mauri y Fernando también se deciden porque ven que Bea va rehaciendo cada día su vida y disfrutan de Ezequiel cada vez menos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x31.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nC9Lm2Y3oZE',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '15'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un cirujano plástico',
         static::FIELD_SLUG => '3x32',
@@ -748,6 +879,8 @@ class ChaptersTableSeeder extends Seeder
           Por su parte, Mauri y Fernando no saben como desembarazarse del hijo que han adoptado, Chenchu, que además se ha hecho amigo de José Miguel y Juan Cuesta ya empieza a quejarse de la mala influencia que ejerce.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x32.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kQAbCv6lurQ',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '22'),
+        static::FIELD_DURATION => 81,
       ],[
         static::FIELD_NAME => 'Érase unas vacaciones',
         static::FIELD_SLUG => '3x33',
@@ -759,6 +892,8 @@ class ChaptersTableSeeder extends Seeder
           Pero, como es habitual en esta loca comunidad de vecinos, las cosas no van a salir como ellos piensan y las vacaciones van a traer muchas sorpresas a todos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x33.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/irca8N_D9gk',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '29'),
+        static::FIELD_DURATION => 69,
       ]
     ];
   }
@@ -778,6 +913,8 @@ class ChaptersTableSeeder extends Seeder
           Fernando está agobiado porque no le gusta su trabajo y Mauri, para ayudarle a que se independice y monte su propio despacho, accede a trabajar de tertuliano en un programa del corazón.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Tjan12ollCY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '09'),
+        static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un cultivo',
         static::FIELD_SLUG => '4x02',
@@ -789,6 +926,8 @@ class ChaptersTableSeeder extends Seeder
           Fernando no encuentra local para su oficina y atiende en su casa a los clientes. Los primeros en aparecer son un matrimonio gay que quiere divorciarse.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ytsa_gCoKqI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '16'),
+        static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase un desvío provisional',
         static::FIELD_SLUG => '4x03',
@@ -799,6 +938,8 @@ class ChaptersTableSeeder extends Seeder
           Fernando contrata a Natalia de secretaria y Mauri se cela. Mientras Vicenta se recupera de la operación, Concha, en cambio, entra en una depresión porque la echan de las juntas al dejar de ser propietaria. Belén, que ahora sí participa en ellas, acude a su primera junta y se entera de la derrama que debe pagar.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/aP2U1bPUaD4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '23'),
+        static::FIELD_DURATION => 80,
       ], [
         static::FIELD_NAME => 'Érase una sequía',
         static::FIELD_SLUG => '4x04',
@@ -811,6 +952,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Natalia se ofrece como madre de alquiler a un amigo de Fernando y su esposa que no pueden tener hijos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hSuCxuNyrHg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '30'),
+        static::FIELD_DURATION => 85,
       ], [
         static::FIELD_NAME => 'Érase un banco en la acera',
         static::FIELD_SLUG => '4x05',
@@ -822,6 +965,8 @@ class ChaptersTableSeeder extends Seeder
           Desde que es propietaria a Belén se le acumulan las deudas. Entre la derrama y el dinero que debe a Lucía su vida es un infierno. Carmen le sugiere que grabe un video de porno casero con Emilio para sacar dinero.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dWc9MSkOdn0',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '14'),
+        static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase una Navidad convulsa',
         static::FIELD_SLUG => '4x06',
@@ -834,6 +979,8 @@ class ChaptersTableSeeder extends Seeder
           Por su parte Lucía, sola y sin Yago, tiene una recaída con Roberto.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dzBY5SbOMU4',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '21'),
+        static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase la tercera Nochevieja',
         static::FIELD_SLUG => '4x07',
@@ -847,6 +994,8 @@ class ChaptersTableSeeder extends Seeder
           Los padres de Isabel deciden venir a cenar con ellos. Aún no saben que ha dejado a Andrés y que vive con Juan. Isabel decide no decírselo y le pide a Andrés que haga de marido y a Juan que vaya con sus hijos a cenar a otra parte.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6ri4WBMoQOI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '31'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
         static::FIELD_SLUG => '4x08',
@@ -857,6 +1006,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Marisa empieza a sufrir persecución por fumadora y al final, opta por dejar el tabaco.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HEHJaOWxhBY',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '11'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una presidenta títere',
         static::FIELD_SLUG => '4x09',
@@ -868,6 +1019,8 @@ class ChaptersTableSeeder extends Seeder
           Y, por último, Ana encuentra trabajo de modelo y se hace muy popular, lo que va a despertar también los celos de Bea, su pareja.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/O1c0IEB4hBo',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '18'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un par de bodas',
         static::FIELD_SLUG => '4x10',
@@ -878,6 +1031,8 @@ class ChaptersTableSeeder extends Seeder
           Carlos ingresa en una secta extraña y el consejo de sabios se une para intentar que salga de ella lo antes posible.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ipoOtixtIqI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '25'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una conexión wifi',
         static::FIELD_SLUG => '4x11',
@@ -890,6 +1045,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, el ático se ha quedado libre y la comunidad decide alquilarlo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/mCMiF39d9CI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '01'),
+        static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un vudú',
         static::FIELD_SLUG => '4x12',
@@ -900,6 +1057,8 @@ class ChaptersTableSeeder extends Seeder
           Belén empieza a trabajar de telefonista de asistencia en carretera y Emilio le gasta una broma, pero se le va a ir de las manos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9stkzaZn64o',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '08'),
+        static::FIELD_DURATION => 86,
       ], [
         static::FIELD_NAME => 'Érase un día de San Valentín',
         static::FIELD_SLUG => '4x13',
@@ -910,6 +1069,8 @@ class ChaptersTableSeeder extends Seeder
           Bea y Ana rompen su relación por culpa de los celos. Ana se refugia en casa de Carlos y Roberto y provoca una crisis entre ambos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/4bQoSY9ZMHA',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '15'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una nueva vida',
         static::FIELD_SLUG => '4x14',
@@ -921,6 +1082,8 @@ class ChaptersTableSeeder extends Seeder
           Bea está llena de remordimientos porque ha destruido una familia y ahora no sabe cómo deshacerse de esa relación sin que Ana se entere.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qruFMagazF8',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '22'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un consuelo',
         static::FIELD_SLUG => '4x15',
@@ -929,6 +1092,7 @@ class ChaptersTableSeeder extends Seeder
           'Capítulo especial en el que se muestran escenas inéditas y tomas falsas previas al lanzamiento de la temporada 5.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bfr_w8e_hJk',
+        static::FIELD_DURATION => 23,
       ],
     ];
   }
@@ -948,6 +1112,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, la crisis de Paco con Lourdes se agrava cada vez más, y para colmo, Paco ve peligrar su empleo porque Carlos ha puesto el videoclub en venta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/43gRFCiR#6sL7-5-XNHLy7UryjvCwswO65b7-rcpbxt9dwZyOX8Q',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '06'),
+        static::FIELD_DURATION => 84,
       ], [
         static::FIELD_NAME => 'Érase un colapso',
         static::FIELD_SLUG => '5x02',
@@ -959,6 +1125,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Juan y Rafael se alían para echar a Yago, que no tiene papeles, del país.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ZawV2nNEBkI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '20'),
+        static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un robot de cocina',
         static::FIELD_SLUG => '5x03',
@@ -969,6 +1137,8 @@ class ChaptersTableSeeder extends Seeder
           Yago empieza a trabajar en el colegio de Juan Cuesta y monta una huelga de profesores. Y, por último, José Miguel está cada día más enamorado de Candela, pero ella conoce a Pablo y se enamora de él.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XzzSsvnaujw',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '27'),
+        static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un presidente de vacaciones',
         static::FIELD_SLUG => '5x04',
@@ -982,6 +1152,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Paco propone a Rafael montar en el videoclub un local para que los ejecutivos se echen una siesta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/PzQoe3adRQM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '04'),
+        static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase un anuncio',
         static::FIELD_SLUG => '5x05',
@@ -993,6 +1165,8 @@ class ChaptersTableSeeder extends Seeder
           Belén se percata del interés que despierta Rafael en su madre y está encantada con la idea. Rafael le confiesa a su mayordomo que a pesar de todo el dinero que tiene, se siente sólo.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/gQaRHURB2hI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '11'),
+        static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un billete de cincuenta euros',
         static::FIELD_SLUG => '5x06',
@@ -1006,6 +1180,8 @@ class ChaptersTableSeeder extends Seeder
           Rafael abandona la comunidad, ya tiene su spa terminado y regresa a su chalet.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Emxr8Gb-8gg',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '18'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un escándalo',
         static::FIELD_SLUG => '5x07',
@@ -1016,6 +1192,8 @@ class ChaptersTableSeeder extends Seeder
           Fernando vuelve a casa cansado y se queda dormido viendo una película con Mauri. Éste se ofende y se lo echa en cara al día siguiente, pero Fernando decide vengarse',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wQm9ZqLvA1s',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '25'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un descubrimiento macabro',
         static::FIELD_SLUG => '5x08',
@@ -1026,6 +1204,8 @@ class ChaptersTableSeeder extends Seeder
           Paco y Belén continúan su relación a escondidas. Belén quiere hacerlo público pero Paco aún no se atreve.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rprJBkKwy2g',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '01'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una emisora pirata',
         static::FIELD_SLUG => '5x09',
@@ -1037,6 +1217,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Natalia ha decidido dar a luz en casa, pero la obra aún está sin terminar. Los Cuesta le alquilan a Rafael su piso durante un mes.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Vc6Djz3Zqak',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '08'),
+        static::FIELD_DURATION => 75,
       ], [
         static::FIELD_NAME => 'Érase un funeral con sorpresa',
         static::FIELD_SLUG => '5x10',
@@ -1049,6 +1231,8 @@ class ChaptersTableSeeder extends Seeder
           su viaje de novios: se van de safari a Kenia. Pero Fernando no se entusiasma tanto como Mauri esperaba.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Ot8eMGAdNJM',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '15'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una lista de bodas',
         static::FIELD_SLUG => '5x11',
@@ -1059,6 +1243,8 @@ class ChaptersTableSeeder extends Seeder
           Mientras tanto, Vicenta sigue sin aparecer y los Cuesta ya están muy preocupados. Para colmo, Rafael se venga de ellos por haberle denunciado por la emisora pirata y los echa de su casa.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ir9p6ZfxcaI',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '22'),
+        static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un paripé',
         static::FIELD_SLUG => '5x12',
@@ -1069,6 +1255,8 @@ class ChaptersTableSeeder extends Seeder
           Por otra parte, la obra en casa de los Cuesta sigue parada. Juan ha conseguido los papeles para la licencia y ya sólo le falta la autorización de la comunidad de vecinos.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/OCE0RFXvd74',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '29'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un adiós',
         static::FIELD_SLUG => '5x13',
@@ -1079,6 +1267,8 @@ class ChaptersTableSeeder extends Seeder
           Por último, Mariano también se pone a reformar la portería pero se va a encontrar con una desagradable sorpresa para todo el vecindario: hay termitas.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/vO00kOK8Lzs',
+        static::FIELD_RELEASE_DATE => Carbon::create('2006', '07', '06'),
+        static::FIELD_DURATION => 74,
       ],
     ];
   }

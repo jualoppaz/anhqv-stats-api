@@ -43,6 +43,14 @@ class ChapterController extends Controller
    *  path="/chapters",
    *  summary="Mostrar capítulos",
    *  tags={"chapters"},
+   *  @OA\Parameter(
+   *    name="season",
+   *    description="Número de temporada",
+   *    in="query",
+   *    @OA\Schema(
+   *      type="string"
+   *    )
+   *  ),
    *  @OA\Response(
    *    response=200,
    *    description="Listado con los capítulos consultados."
@@ -85,7 +93,7 @@ class ChapterController extends Controller
    *    @OA\Schema(
    *      type="string"
    *    )
-   * ),
+   *  ),
    *  @OA\Response(
    *    response=200,
    *    description="Detalle del capítulo consultado."
