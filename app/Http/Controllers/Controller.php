@@ -8,15 +8,15 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
 /**
-* @OA\Info(
-    title=SWAGGER_API_TITLE,
-    version="0.2.1"
-  )
-*/
+ * @OA\Info(
+ *  title=SWAGGER_API_TITLE,
+ *  version="0.2.2"
+ * )
+ */
 
 /**
-* @OA\Server(url=SWAGGER_API_URL)
-*/
+ * @OA\Server(url=SWAGGER_API_URL)
+ */
 
 /**
  * @OA\Tag(
@@ -25,7 +25,7 @@ use Illuminate\Routing\Controller as BaseController;
  * )
  */
 
- /**
+/**
  * @OA\Tag(
  *   name="chapters",
  *   description="Recursos relacionados con los Capítulos"
