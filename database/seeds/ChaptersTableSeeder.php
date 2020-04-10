@@ -14,6 +14,7 @@ class ChaptersTableSeeder extends Seeder
   const FIELD_IMAGE_URL = 'image_url';
   const FIELD_VIDEO_URL = 'video_url';
   const FIELD_RELEASE_DATE = 'release_date';
+  const FIELD_DURATION = 'duration';
 
   /**
    * Run the database seeds.
@@ -39,6 +40,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => $chapter[static::FIELD_IMAGE_URL],
         static::FIELD_VIDEO_URL => $chapter[static::FIELD_VIDEO_URL],
         static::FIELD_RELEASE_DATE => isset($chapter[static::FIELD_RELEASE_DATE]) ? $chapter[static::FIELD_RELEASE_DATE] : null,
+        static::FIELD_DURATION => isset($chapter[static::FIELD_DURATION]) ? $chapter[static::FIELD_DURATION] : null,
       ]);
     }
   }
@@ -68,6 +70,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ZHROGEt6aTo',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '07'),
+        static::FIELD_DURATION => 50,
       ],
       [
         static::FIELD_NAME => 'Érase una reforma',
@@ -80,6 +83,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/myODyGnGUM8',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '14'),
+        static::FIELD_DURATION => 49,
       ], [
         static::FIELD_NAME => 'Érase el reciclaje',
         static::FIELD_SLUG => '1x03',
@@ -90,6 +94,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6fWIkTItWgo',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '21'),
+        static::FIELD_DURATION => 53,
       ], [
         static::FIELD_NAME => 'Érase un rumor',
         static::FIELD_SLUG => '1x04',
@@ -100,6 +105,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qt7gYFJLWxk',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '09', '28'),
+        static::FIELD_DURATION => 60,
       ], [
         static::FIELD_NAME => 'Érase un niño',
         static::FIELD_SLUG => '1x05',
@@ -110,6 +116,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/BL2grk6E6bg',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '05'),
+        static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un resbalón',
         static::FIELD_SLUG => '1x06',
@@ -121,6 +128,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5N1yaHZ8iwY',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '12'),
+        static::FIELD_DURATION => 63,
       ], [
         static::FIELD_NAME => 'Érase una rata',
         static::FIELD_SLUG => '1x07',
@@ -131,6 +139,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QM04G_tEZr0',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '19'),
+        static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un indigente',
         static::FIELD_SLUG => '1x08',
@@ -142,6 +151,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/shjKQ3fqJrM',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '26'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una de miedo',
         static::FIELD_SLUG => '1x09',
@@ -154,6 +164,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/TVR-mRqSLCA',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '02'),
+        static::FIELD_DURATION => 57,
       ], [
         static::FIELD_NAME => 'Érase un dilema',
         static::FIELD_SLUG => '1x10',
@@ -165,6 +176,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QBpA5mHrl2M',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '09'),
+        static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un traspaso',
         static::FIELD_SLUG => '1x11',
@@ -175,6 +187,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WtTb7MEG02s',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '16'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un sustituto',
         static::FIELD_SLUG => '1x12',
@@ -184,6 +197,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/n0xaBSfvE_4',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '23'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una fiesta',
         static::FIELD_SLUG => '1x13',
@@ -193,6 +207,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_TL0_6d2-I8',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '11', '30'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase una avería',
         static::FIELD_SLUG => '1x14',
@@ -202,6 +217,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8mmBtJTDUXM',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '07'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un anillo',
         static::FIELD_SLUG => '1x15',
@@ -211,6 +227,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/f6kvnEVsvM8',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '14'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una Nochebuena',
         static::FIELD_SLUG => '1x16',
@@ -221,6 +238,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x16.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hx2k1GLLNHM',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '21'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase un fin de año',
         static::FIELD_SLUG => '1x17',
@@ -230,6 +248,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/1x17.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hUjulga6y4w',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '12', '31'),
+        static::FIELD_DURATION => 44,
       ]
     ];
   }
@@ -250,6 +269,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/5ypBFYgC#eSb7qodomilAHxvvngXn1sbkEP6AU3eup89UxK0NeZE',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '24'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un sueño erótico',
         static::FIELD_SLUG => '2x02',
@@ -262,6 +282,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/70bVGY4QDZo',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '03', '31'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un negocio',
         static::FIELD_SLUG => '2x03',
@@ -274,6 +295,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/MQaVhkiwsl0',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '14'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un desafío',
         static::FIELD_SLUG => '2x04',
@@ -286,6 +308,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XeykYqEemHs',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '21'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase una patrulla ciudadana',
         static::FIELD_SLUG => '2x05',
@@ -300,6 +323,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_jZ8XMp7JlI',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '04', '28'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un rastrillo',
         static::FIELD_SLUG => '2x06',
@@ -312,6 +336,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Lq7kJA8zWWI',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '05'),
+        static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase una huelga',
         static::FIELD_SLUG => '2x07',
@@ -323,7 +348,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/q0z9FZpgRBg',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '12'),
-
+        static::FIELD_DURATION => 71,
       ], [
         static::FIELD_NAME => 'Érase un piso en venta',
         static::FIELD_SLUG => '2x08',
@@ -338,6 +363,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9UFSz68tLPI',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '19'),
+        static::FIELD_DURATION => 69,
       ], [
         static::FIELD_NAME => 'Érase una parabólica',
         static::FIELD_SLUG => '2x09',
@@ -349,6 +375,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QvE9OXqk7KE',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '05', '26'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un vídeo casero',
         static::FIELD_SLUG => '2x10',
@@ -361,6 +388,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qdUElBJjvuU',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '02'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase unas elecciones',
         static::FIELD_SLUG => '2x11',
@@ -372,6 +400,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rX_fZofMAtc',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '09'),
+        static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una despedida de soltero',
         static::FIELD_SLUG => '2x12',
@@ -383,6 +412,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HRRhxOLE9nA',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '16'),
+        static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una boda',
         static::FIELD_SLUG => '2x13',
@@ -394,6 +424,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WLC8geuwsbY',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '23'),
+        static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un apoyo vecinal',
         static::FIELD_SLUG => '2x14',
@@ -404,6 +435,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/2x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/LyXTC2dCg0A',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '30'),
+        static::FIELD_DURATION => 57,
       ]
     ];
   }
@@ -424,6 +456,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/z8t2B6AZybU',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '06'),
+        static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un okupa',
         static::FIELD_SLUG => '3x02',
@@ -440,6 +473,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/2z9PDyUDca0',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '13'),
+        static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un matrimonio de conveniencia',
         static::FIELD_SLUG => '3x03',
@@ -451,6 +485,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/NJiv22MXT_A',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '20'),
+        static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase una inauguración',
         static::FIELD_SLUG => '3x04',
@@ -465,6 +500,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/pB3FG9Lde9g',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '10', '27'),
+        static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase un combate',
         static::FIELD_SLUG => '3x05',
@@ -478,6 +514,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bYlYxTWh2uU',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '03'),
+        static::FIELD_DURATION => 61,
       ],[
         static::FIELD_NAME => 'Érase un canario',
         static::FIELD_SLUG => '3x06',
@@ -490,6 +527,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/WZWeqALDN4w',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '10'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un mal de ojo',
         static::FIELD_SLUG => '3x07',
@@ -503,6 +541,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/w3ZOB7EyJUI',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '17'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un aniversario',
         static::FIELD_SLUG => '3x07b',
@@ -513,6 +552,7 @@ class ChaptersTableSeeder extends Seeder
           La conclusión final es clara, esta comunidad es un auténtico manicomio, pero todos ellos son irremplazables. Por eso celebran con una fiesta por todo lo alto el aniversario presidencial de Juan Cuesta.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x07b.jpg',
         static::FIELD_VIDEO_URL => 'https://www.dailymotion.com/embed/video/x5wo6b7',
+        static::FIELD_DURATION => 57,
       ],[
         static::FIELD_NAME => 'Érase un famoso',
         static::FIELD_SLUG => '3x08',
@@ -524,6 +564,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7vWjTlcw9o4',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '11', '24'),
+        static::FIELD_DURATION => 69,
       ],[
         static::FIELD_NAME => 'Érase un desalojo',
         static::FIELD_SLUG => '3x09',
@@ -537,6 +578,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wWVkFfwYNM4',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '01'),
+        static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un belén',
         static::FIELD_SLUG => '3x10',
@@ -549,6 +591,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/U07T8YObV9o',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '15'),
+        static::FIELD_DURATION => 60,
       ],[
         static::FIELD_NAME => 'Érase una Nochevieja',
         static::FIELD_SLUG => '3x11',
@@ -563,6 +606,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/32tSpeiqaFI',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '12', '31'),
+        static::FIELD_DURATION => 63,
       ],[
         static::FIELD_NAME => 'Érase una grieta',
         static::FIELD_SLUG => '3x12',
@@ -575,6 +619,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kYYq_lQVA38',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '12'),
+        static::FIELD_DURATION => 66,
       ],[
         static::FIELD_NAME => 'Érase unos nuevos inquilinos',
         static::FIELD_SLUG => '3x13',
@@ -589,6 +634,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/BAtShBnYwkI',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '19'),
+        static::FIELD_DURATION => 76,
       ],[
         static::FIELD_NAME => 'Érase un bautizo',
         static::FIELD_SLUG => '3x14',
@@ -601,6 +647,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8nLplcMQiFw',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '01', '26'),
+        static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una academia',
         static::FIELD_SLUG => '3x15',
@@ -613,6 +660,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/0YzrLMEzN84',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '02'),
+        static::FIELD_DURATION => 88,
       ],[
         static::FIELD_NAME => 'Érase unos estatutos',
         static::FIELD_SLUG => '3x16',
@@ -626,6 +674,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x16.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Fcwp6A7SYMk',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '09'),
+        static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase unas alumnas',
         static::FIELD_SLUG => '3x17',
@@ -638,6 +687,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x17.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/YE5vXzE6ics',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '16'),
+        static::FIELD_DURATION => 89,
       ],[
         static::FIELD_NAME => 'Érase un juicio',
         static::FIELD_SLUG => '3x18',
@@ -650,6 +700,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x18.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Pxsm9ToDsWc',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '02', '23'),
+        static::FIELD_DURATION => 86,
       ],[
         static::FIELD_NAME => 'Érase un disco-pub videoclub',
         static::FIELD_SLUG => '3x19',
@@ -661,6 +712,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x19.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nwWE9zjDkBI',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '02'),
+        static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una cobaya',
         static::FIELD_SLUG => '3x20',
@@ -674,6 +726,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x20.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GUZqRwI0DuU',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '09'),
+        static::FIELD_DURATION => 87,
       ],[
         static::FIELD_NAME => 'Érase un premio',
         static::FIELD_SLUG => '3x21',
@@ -687,6 +740,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x21.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/GOMo8aTs9bU',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '03', '16'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase unas puertas blindadas',
         static::FIELD_SLUG => '3x22',
@@ -699,6 +753,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x22.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/_5nJzL3E2WE',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '06'),
+        static::FIELD_DURATION => 80,
       ],[
         static::FIELD_NAME => 'Érase un vicio',
         static::FIELD_SLUG => '3x23',
@@ -711,6 +766,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x23.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8R6Uz3ZiQ-A',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '14'),
+        static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase un administrador',
         static::FIELD_SLUG => '3x24',
@@ -722,6 +778,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x24.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5GSWKXKlUvs',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '20'),
+        static::FIELD_DURATION => 84,
       ],[
         static::FIELD_NAME => 'Érase una traición',
         static::FIELD_SLUG => '3x25',
@@ -732,6 +789,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/7eo21F4lEoc',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '04', '27'),
+        static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase una visita guiada',
         static::FIELD_SLUG => '3x25b',
@@ -741,6 +799,7 @@ class ChaptersTableSeeder extends Seeder
           Pero, como siempre, los vecinos están ocupados con sus propios problemas. A Juan le han rayado el coche y firman la fechoría las Chinchón Kings; Lucía y Carlos vuelven del puente tras pasar el primer atasco en la carretera juntos, como pareja. Y, ya por último, la noticia que mantiene a todos expectantes es que Paco está a punto de llegar y presentar oficialmente a Lourdes, su novia, de la que se enamoró en la boda de Diego y Abel, y a que únicamente han visto en la foto que hizo con el móvil.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x25b.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/1WfUg0MJ7CY',
+        static::FIELD_DURATION => 12,
       ],[
         static::FIELD_NAME => 'Érase el primer presidente gay',
         static::FIELD_SLUG => '3x26',
@@ -750,6 +809,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x26.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XnYNV6pOz3U',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '11'),
+        static::FIELD_DURATION => 83,
       ],[
         static::FIELD_NAME => 'Érase unas tragaperras',
         static::FIELD_SLUG => '3x27',
@@ -760,6 +820,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x27.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/QjwTVidHBec',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '18'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un desgobierno',
         static::FIELD_SLUG => '3x28',
@@ -771,6 +832,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x28.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/UQt9fLMsxB0',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '05', '25'),
+        static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase un regalo de boda',
         static::FIELD_SLUG => '3x29',
@@ -782,6 +844,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x29.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qgp9zPwF-Y0',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '01'),
+        static::FIELD_DURATION => 73,
       ],[
         static::FIELD_NAME => 'Érase otra boda',
         static::FIELD_SLUG => '3x30',
@@ -793,6 +856,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x30.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/8L4PpqgZbqc',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '08'),
+        static::FIELD_DURATION => 82,
       ],[
         static::FIELD_NAME => 'Érase una luna de miel',
         static::FIELD_SLUG => '3x31',
@@ -804,6 +868,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x31.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/nC9Lm2Y3oZE',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '15'),
+        static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un cirujano plástico',
         static::FIELD_SLUG => '3x32',
@@ -815,6 +880,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x32.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/kQAbCv6lurQ',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '22'),
+        static::FIELD_DURATION => 81,
       ],[
         static::FIELD_NAME => 'Érase unas vacaciones',
         static::FIELD_SLUG => '3x33',
@@ -827,6 +893,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/3x33.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/irca8N_D9gk',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '06', '29'),
+        static::FIELD_DURATION => 69,
       ]
     ];
   }
@@ -847,6 +914,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Tjan12ollCY',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '09'),
+        static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un cultivo',
         static::FIELD_SLUG => '4x02',
@@ -859,6 +927,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ytsa_gCoKqI',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '16'),
+        static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase un desvío provisional',
         static::FIELD_SLUG => '4x03',
@@ -870,6 +939,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/aP2U1bPUaD4',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '23'),
+        static::FIELD_DURATION => 80,
       ], [
         static::FIELD_NAME => 'Érase una sequía',
         static::FIELD_SLUG => '4x04',
@@ -883,6 +953,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/hSuCxuNyrHg',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '11', '30'),
+        static::FIELD_DURATION => 85,
       ], [
         static::FIELD_NAME => 'Érase un banco en la acera',
         static::FIELD_SLUG => '4x05',
@@ -895,6 +966,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dWc9MSkOdn0',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '14'),
+        static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase una Navidad convulsa',
         static::FIELD_SLUG => '4x06',
@@ -908,6 +980,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/dzBY5SbOMU4',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '21'),
+        static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase la tercera Nochevieja',
         static::FIELD_SLUG => '4x07',
@@ -922,6 +995,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/6ri4WBMoQOI',
         static::FIELD_RELEASE_DATE => Carbon::create('2005', '12', '31'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
         static::FIELD_SLUG => '4x08',
@@ -933,6 +1007,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/HEHJaOWxhBY',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '11'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una presidenta títere',
         static::FIELD_SLUG => '4x09',
@@ -945,6 +1020,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/O1c0IEB4hBo',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '18'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un par de bodas',
         static::FIELD_SLUG => '4x10',
@@ -956,6 +1032,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ipoOtixtIqI',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '01', '25'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una conexión wifi',
         static::FIELD_SLUG => '4x11',
@@ -969,6 +1046,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/mCMiF39d9CI',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '01'),
+        static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un vudú',
         static::FIELD_SLUG => '4x12',
@@ -980,6 +1058,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/9stkzaZn64o',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '08'),
+        static::FIELD_DURATION => 86,
       ], [
         static::FIELD_NAME => 'Érase un día de San Valentín',
         static::FIELD_SLUG => '4x13',
@@ -991,6 +1070,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/4bQoSY9ZMHA',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '15'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una nueva vida',
         static::FIELD_SLUG => '4x14',
@@ -1003,6 +1083,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x14.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/qruFMagazF8',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '02', '22'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un consuelo',
         static::FIELD_SLUG => '4x15',
@@ -1011,6 +1092,7 @@ class ChaptersTableSeeder extends Seeder
           'Capítulo especial en el que se muestran escenas inéditas y tomas falsas previas al lanzamiento de la temporada 5.',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/4x15.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/bfr_w8e_hJk',
+        static::FIELD_DURATION => 23,
       ],
     ];
   }
@@ -1031,6 +1113,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x01.jpg',
         static::FIELD_VIDEO_URL => 'https://mega.nz/embed/43gRFCiR#6sL7-5-XNHLy7UryjvCwswO65b7-rcpbxt9dwZyOX8Q',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '06'),
+        static::FIELD_DURATION => 84,
       ], [
         static::FIELD_NAME => 'Érase un colapso',
         static::FIELD_SLUG => '5x02',
@@ -1043,6 +1126,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x02.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ZawV2nNEBkI',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '20'),
+        static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un robot de cocina',
         static::FIELD_SLUG => '5x03',
@@ -1054,6 +1138,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x03.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/XzzSsvnaujw',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '04', '27'),
+        static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un presidente de vacaciones',
         static::FIELD_SLUG => '5x04',
@@ -1068,6 +1153,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x04.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/PzQoe3adRQM',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '04'),
+        static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase un anuncio',
         static::FIELD_SLUG => '5x05',
@@ -1080,6 +1166,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x05.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/gQaRHURB2hI',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '11'),
+        static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un billete de cincuenta euros',
         static::FIELD_SLUG => '5x06',
@@ -1094,6 +1181,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x06.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Emxr8Gb-8gg',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '18'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un escándalo',
         static::FIELD_SLUG => '5x07',
@@ -1105,6 +1193,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x07.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/wQm9ZqLvA1s',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '05', '25'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un descubrimiento macabro',
         static::FIELD_SLUG => '5x08',
@@ -1116,6 +1205,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x08.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rprJBkKwy2g',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '01'),
+        static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una emisora pirata',
         static::FIELD_SLUG => '5x09',
@@ -1128,6 +1218,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x09.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Vc6Djz3Zqak',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '08'),
+        static::FIELD_DURATION => 75,
       ], [
         static::FIELD_NAME => 'Érase un funeral con sorpresa',
         static::FIELD_SLUG => '5x10',
@@ -1141,6 +1232,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x10.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/Ot8eMGAdNJM',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '15'),
+        static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una lista de bodas',
         static::FIELD_SLUG => '5x11',
@@ -1152,6 +1244,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x11.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/ir9p6ZfxcaI',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '22'),
+        static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un paripé',
         static::FIELD_SLUG => '5x12',
@@ -1163,6 +1256,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x12.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/OCE0RFXvd74',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '06', '29'),
+        static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un adiós',
         static::FIELD_SLUG => '5x13',
@@ -1174,6 +1268,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/chapters/5x13.jpg',
         static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/vO00kOK8Lzs',
         static::FIELD_RELEASE_DATE => Carbon::create('2006', '07', '06'),
+        static::FIELD_DURATION => 74,
       ],
     ];
   }
