@@ -9,6 +9,7 @@ class ChaptersTableSeeder extends Seeder
   const TABLE_NAME = 'chapters';
   const FIELD_NAME = 'name';
   const FIELD_SLUG = 'slug';
+  const FIELD_NATURAL_ID = 'natural_id';
   const FIELD_SEASON = 'season';
   const FIELD_SUMMARY = 'summary';
   const FIELD_IMAGE_URL = 'image_url';
@@ -35,6 +36,7 @@ class ChaptersTableSeeder extends Seeder
       DB::table(static::TABLE_NAME)->insert([
         static::FIELD_NAME => $chapter[static::FIELD_NAME],
         static::FIELD_SLUG => $chapter[static::FIELD_SLUG],
+        static::FIELD_NATURAL_ID => $chapter[static::FIELD_NATURAL_ID],
         static::FIELD_SEASON => $chapter[static::FIELD_SEASON],
         static::FIELD_SUMMARY => $chapter[static::FIELD_SUMMARY],
         static::FIELD_IMAGE_URL => $chapter[static::FIELD_IMAGE_URL],
@@ -61,7 +63,8 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase una mudanza',
-        static::FIELD_SLUG => '1x01',
+        static::FIELD_SLUG => '1x01-erase-una-mudanza',
+        static::FIELD_NATURAL_ID => '1x01',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Roberto y Lucía, una pareja joven, se está mudando ilusionada a un edificio de clase media de una gran ciudad. En su primer día nada les sale como habían pensado, empezando cuando no encuentran al portero para que les dé la llave de su piso y terminando cuando a Roberto se le cierra la puerta de la casa vestido únicamente con una toalla y habiéndose dejado el grifo de la bañera abierto, lo que provoca humedades en casa de sus vecinos de abajo.
@@ -74,7 +77,8 @@ class ChaptersTableSeeder extends Seeder
       ],
       [
         static::FIELD_NAME => 'Érase una reforma',
-        static::FIELD_SLUG => '1x02',
+        static::FIELD_SLUG => '1x02-erase-una-reforma',
+        static::FIELD_NATURAL_ID => '1x02',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Roberto y Lucía ya están instalados en el edificio y se disponen a hacer unas reformas en el piso. Los ruidos que provocan los obreros molestan a todos los vecinos, que deciden poner una queja formal ante Juan, el Presidente. Cuando Juan trata de parar las obras, Lucía amenaza con denunciar a la comunidad por la anomalías que han venido observando esos días.
@@ -86,7 +90,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 49,
       ], [
         static::FIELD_NAME => 'Érase el reciclaje',
-        static::FIELD_SLUG => '1x03',
+        static::FIELD_SLUG => '1x03-erase-el-reciclaje',
+        static::FIELD_NATURAL_ID => '1x03',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Ante las presiones de los vecinos, Juan termina renunciando a su cargo como Presidente de la Comunidad, por lo que automáticamente pasa a ejercer Lucía. En sus primeros días como nueva Presidenta descubre que todo es un desastre y que para arreglar las cosas habría que subir la cuota mensual, algo que no hace ninguna gracia a los vecinos, que empiezan a pensar que Lucía les quiere robar.
@@ -97,7 +102,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 53,
       ], [
         static::FIELD_NAME => 'Érase un rumor',
-        static::FIELD_SLUG => '1x04',
+        static::FIELD_SLUG => '1x04-erase-un-rumor',
+        static::FIELD_NATURAL_ID => '1x04',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'La Comunidad convive con la rumorología: los vecinos sospechan que Alicia y Belén son prostitutas. Esto provoca diversas reacciones en el vecindario, que se moviliza en masa para comprobar si es cierto.
@@ -108,7 +114,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 60,
       ], [
         static::FIELD_NAME => 'Érase un niño',
-        static::FIELD_SLUG => '1x05',
+        static::FIELD_SLUG => '1x05-erase-un-nino',
+        static::FIELD_NATURAL_ID => '1x05',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Un Bebé Abandonado aparece en el portal de la comunidad. Alguien lo ha dejado allí, provocando que algunos vecinos con vocación de madre se lo disputen. El sentimiento maternal aparece en los personajes más insospechados. Todos son ahora unas madrazas.
@@ -119,7 +126,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un resbalón',
-        static::FIELD_SLUG => '1x06',
+        static::FIELD_SLUG => '1x06-erase-un-resbalon',
+        static::FIELD_NATURAL_ID => '1x06',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Mauri se resbala y cae por la escalera del edificio y acaba con una pierna escayolada. Fernando habla con Juan Cuesta para que informe al seguro pero resulta que llevan sin pagarlo tres años. Los vecinos deciden enviar al padre de Emilio para que se haga pasar por el perito y que les den la indemnización que consideran justa: 187 euros. Fernando descubre el engaño y amenaza con denunciar a la comunidad, pero se presentan todos los vecinos pidiendo disculpas y acaba tranquilizándose.
@@ -131,7 +139,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 63,
       ], [
         static::FIELD_NAME => 'Érase una rata',
-        static::FIELD_SLUG => '1x07',
+        static::FIELD_SLUG => '1x07-erase-una-rata',
+        static::FIELD_NATURAL_ID => '1x07',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Emilio y Juan descubren una rata en el portal y deciden cazarla sin decir nada a los vecinos para que no cunda el pánico. Se quedan dormidos esperando sorprenderla por la noche y cuando Juan llega a casa por la mañana, Paloma sospecha que su marido tiene una aventura. La caza de la rata se complica cada vez más y parece que los bichos se van multiplicando. Al final, deciden llamar a un desratizador… pero la empresa resulta ser una tapadera de una banda de delincuentes que se dedican a desvalijar casas.
@@ -142,7 +151,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un indigente',
-        static::FIELD_SLUG => '1x08',
+        static::FIELD_SLUG => '1x08-erase-un-indigente',
+        static::FIELD_NATURAL_ID => '1x08',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Un mendigo millonario revoluciona a los vecinos. Además, Roberto hará cualquier cosa para recuperar a Lucía.
@@ -154,7 +164,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una de miedo',
-        static::FIELD_SLUG => '1x09',
+        static::FIELD_SLUG => '1x09-erase-una-de-miedo',
+        static::FIELD_NATURAL_ID => '1x09',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Los vecinos, protagonistas de una película de miedo. Además, Roberto y Lucía comienzan con los preparativos de su boda.
@@ -167,7 +178,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 57,
       ], [
         static::FIELD_NAME => 'Érase un dilema',
-        static::FIELD_SLUG => '1x10',
+        static::FIELD_SLUG => '1x10-erase-un-dilema',
+        static::FIELD_NATURAL_ID => '1x10',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Emilio le pide a Belén que se vayan a vivir juntos.Los vecinos sufren una inspección técnica del edificio que les lleva a tener que plantearse hacer obras por valor de 24 millones de pesetas si no quieren que les desalojen.
@@ -179,7 +191,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 58,
       ], [
         static::FIELD_NAME => 'Érase un traspaso',
-        static::FIELD_SLUG => '1x11',
+        static::FIELD_SLUG => '1x11-erase-un-traspaso',
+        static::FIELD_NATURAL_ID => '1x11',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'El local del videoclub se traspasa y se alquila para poner una funeraria. Los vecinos no están dispuestos a ello y tratan de acabar con el nuevo negocio robando uno de los cuerpos. A punto de ser descubiertos, el muerto acaba en el cubo de la basura y todo apunta a que el camión se lo acabará llevando. Belén, que trabaja de recepcionista en la funeraria, habla con la viuda y la convence para que incinere el cuerpo. Entonces aparecen Emilio y Juan con el cadáver, que Armando había robado.
@@ -190,7 +203,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un sustituto',
-        static::FIELD_SLUG => '1x12',
+        static::FIELD_SLUG => '1x12-erase-un-sustituto',
+        static::FIELD_NATURAL_ID => '1x12',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'A Emilio le da un ataque de apendicitis y tiene que ser ingresado, por lo que Juan busca un sustituto para hacerse cargo del edificio. El portero suplente resulta ser Amador, un atractivo y competente hombre del que se enamoran Concha, Vicenta y Marisa. Mauri encuentra una revista porno en un cajón de Fernando. Cuando le pregunta, éste le dice que es de Armando. A cambio de decir que es suya, Armando le pide la casa para quedar con una chica, pero Mauri llega y sorprende a la mujer con su albornoz.',
@@ -200,7 +214,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una fiesta',
-        static::FIELD_SLUG => '1x13',
+        static::FIELD_SLUG => '1x13-erase-una-fiesta',
+        static::FIELD_NATURAL_ID => '1x13',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Lucía decide hacer una fiesta en su casa pese a las reticencias de los vecinos. Paloma revoluciona a su familia con la noticia de que está embarazada. Juan intenta hacerle entender que se trata de la menopausia. Belén, tras romper con Emilio, conoce a otro hombre, mientras Fernando y Mauri, en pleno proceso de separación, deciden vender su piso.',
@@ -210,7 +225,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase una avería',
-        static::FIELD_SLUG => '1x14',
+        static::FIELD_SLUG => '1x14-erase-una-averia',
+        static::FIELD_NATURAL_ID => '1x14',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'La caldera del edificio sufre una avería que deja sin calefacción y sin agua caliente a todos los vecinos. Fernando tiene una cena con sus compañeros de trabajo y decide llevar a Luis y confesarles a todos que es gay. Belén sigue su relación con Carlos y Emilio está cada vez más celoso. Paco está sin dinero y con la ayuda de Emilio idea un plan para sacarse unos euros: colocar cámaras en el piso de Belén y Alicia para grabar unas imágenes y colgarlas en internet.',
@@ -220,7 +236,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un anillo',
-        static::FIELD_SLUG => '1x15',
+        static::FIELD_SLUG => '1x15-erase-un-anillo',
+        static::FIELD_NATURAL_ID => '1x15',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'Juan Cuesta, arrastrado por su espíritu navideño, decide organizar un intercambio de regalos entre los vecinos, para mejorar las relaciones dentro de la comunidad. Esta bonita iniciativa provocará más conflictos que beneficios. Carlos propone a Belén irse a vivir juntos. Alicia, angustiada por la idea de tener que pagar el alquiler sola, comienza a hacer de celestina para intentar reconciliar a Belén con Emilio. La hermana de Lucía llega para ayudarla con los preparativos de la boda y entra en conflicto con Roberto.',
@@ -230,7 +247,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una Nochebuena',
-        static::FIELD_SLUG => '1x16',
+        static::FIELD_SLUG => '1x16-erase-una-nochebuena',
+        static::FIELD_NATURAL_ID => '1x16',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'En el edificio, cada familia prepara la cena de Nochebuena a su manera: Lucía y Roberto deciden celebrarla en su piso con los padres de ambos; Juan y Paloma con la hermana de ella; Marisa y Vicenta con Mariano, el padre de Emilio; Belén en casa de los padres de Carlos; Emilio en la portería… pero nada sale como tenían previsto.
@@ -241,7 +259,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase un fin de año',
-        static::FIELD_SLUG => '1x17',
+        static::FIELD_SLUG => '1x17-erase-un-fin-de-ano',
+        static::FIELD_NATURAL_ID => '1x17',
         static::FIELD_SEASON => '1',
         static::FIELD_SUMMARY =>
           'La comunidad se prepara para dar la bienvenida al nuevo año. Por diversas circunstancias, varios vecinos se ven privados de las uvas de la suerte, lo que aprovechará el padre de Emilio para especular con tan codiciado fruto. Mientras tanto, Paco y Emilio aprovechan la ausencia de Concha para alquilar su piso para un rodaje de cine. Lo que ignoran es que trata de una película X. Fernando y Mauri, por su parte, empiezan a pagar las consecuencias de salir del armario.',
@@ -258,7 +277,8 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase una derrama',
-        static::FIELD_SLUG => '2x01',
+        static::FIELD_SLUG => '2x01-erase-una-derrama',
+        static::FIELD_NATURAL_ID => '2x01',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Los vecinos se reúnen para decidir si hacen una derrama para pintar la fachada del edificio, que ya está muy estropeada. Para sorpresa general, por primera vez están todos de acuerdo en algo, incluida doña Concha. El motivo es que acaba de vender el piso y se marcha a un chalet adosado, lo que provoca un ataque de envidia en Paloma.
@@ -272,7 +292,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un sueño erótico',
-        static::FIELD_SLUG => '2x02',
+        static::FIELD_SLUG => '2x02-erase-un-sueno-erotico',
+        static::FIELD_NATURAL_ID => '2x02',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Lucía tiene un sueño erótico con Juan Cuesta y pronto se enteran todos los vecinos. Juan se siente halagado y empieza a cuidar su aspecto, mientras que Lucía se agobia cada vez más porque el sueño se vuelve a repetir.
@@ -285,7 +306,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase un negocio',
-        static::FIELD_SLUG => '2x03',
+        static::FIELD_SLUG => '2x03-erase-un-negocio',
+        static::FIELD_NATURAL_ID => '2x03',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Paco, José Miguel y Roberto presionan a Emilio para que se acueste de una vez con la cartera o se convertirá únicamente en una amigo para ella. Lucía y Alicia se enfadan con los chicos porque Belén lo está pasando muy mal y les piden que eviten que ocurra nada entre el portero y Rocío.
@@ -298,7 +320,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un desafío',
-        static::FIELD_SLUG => '2x04',
+        static::FIELD_SLUG => '2x04-erase-un-desafio',
+        static::FIELD_NATURAL_ID => '2x04',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'En el vecindario se enteran de que se organiza un campeonato de baloncesto entre comunidades de vecinos y que el premio es un viaje a Atenas con todos los gastos pagados. Todos se apuntan para formar parte del equipo pero la selección la hace Juan Cuesta… y sólo elige a los chicos, para enfado de las mujeres.
@@ -311,7 +334,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase una patrulla ciudadana',
-        static::FIELD_SLUG => '2x05',
+        static::FIELD_SLUG => '2x05-erase-una-patrulla-ciudadana',
+        static::FIELD_NATURAL_ID => '2x05',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Una serie de robos tienen preocupado al vecindario, así que, en la Comunidad deciden organizar patrullas de vigilancia.
@@ -326,7 +350,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase un rastrillo',
-        static::FIELD_SLUG => '2x06',
+        static::FIELD_SLUG => '2x06-erase-un-rastrillo',
+        static::FIELD_NATURAL_ID => '2x06',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Emilio está tan enamorado de Rocío que decide pedirla que se case con él. Mariano y José Miguel le ayudan a elegir el anillo de compromiso pero resulta que todos se salen de presupuesto, así que el niño roba uno, pero resulta ser el del Príncipe Felipe. Al final, Emilio consigue lanzarse, pero su sorpresa es mayúscula cuando se entera de que Rocío ya está casada y tiene un hijo de seis años.
@@ -339,7 +364,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 66,
       ], [
         static::FIELD_NAME => 'Érase una huelga',
-        static::FIELD_SLUG => '2x07',
+        static::FIELD_SLUG => '2x07-erase-una-huelga',
+        static::FIELD_NATURAL_ID => '2x07',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Una subida de tensión hace que los vecinos pierdan algunos de sus electrodomésticos. Juan les dice que no deben preocuparse porque les tienen que pagar los desperfectos… lo que aprovechan para romperlo todo y así conseguir una mayor indemnización. Lo malo viene cuando el perito les dice que, debido al mal estado de las instalaciones, la empresa eléctrica no se hace cargo de los desperfectos. Capitaneados por Juan e Isabel, los vecinos deciden hacer una huelga de hambre hasta que les reconozcan sus derechos.
@@ -351,7 +377,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 71,
       ], [
         static::FIELD_NAME => 'Érase un piso en venta',
-        static::FIELD_SLUG => '2x08',
+        static::FIELD_SLUG => '2x08-erase-un-piso-en-venta',
+        static::FIELD_NATURAL_ID => '2x08',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'A Emilio le ha salido un trabajo de portero en una finca de lujo, en donde le pagan el doble, y no duda ni un momento en abandonar a sus queridos vecinos.
@@ -366,7 +393,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 69,
       ], [
         static::FIELD_NAME => 'Érase una parabólica',
-        static::FIELD_SLUG => '2x09',
+        static::FIELD_SLUG => '2x09-erase-una-parabolica',
+        static::FIELD_NATURAL_ID => '2x09',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Lucía ha instalado, sin consultar con la comunidad, una antena parabólica en su balcón. El hecho provoca la indignación y envidia de Paloma que intenta desviar la dirección de la antena para que no tengan señal. Juan Cuesta convoca una junta de vecinos para tratar del tema y será Belén, como nueva portera del edificio, la que ocupe el puesto de Emilio.
@@ -378,7 +406,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un vídeo casero',
-        static::FIELD_SLUG => '2x10',
+        static::FIELD_SLUG => '2x10-erase-un-video-casero',
+        static::FIELD_NATURAL_ID => '2x10',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Paloma pasa una crisis existencial y decide irse a un balneario. A Juan se le presenta, por primera vez en su vida, la oportunidad de dar salida a sus traumas sexuales siendo infiel a su mujer.
@@ -391,7 +420,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase unas elecciones',
-        static::FIELD_SLUG => '2x11',
+        static::FIELD_SLUG => '2x11-erase-unas-elecciones',
+        static::FIELD_NATURAL_ID => '2x11',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Paloma comienza su mandato de presidenta de la comunidad haciendo algunos cambios en el portal: coloca una fuente, una alfombra roja.., lo suficiente para que los vecinos convoquen elecciones apresuradamente. En radio patio se celebra el primer debate electoral entre las dos contrincantes: Paloma y la Hierbas.
@@ -403,7 +433,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ], [
         static::FIELD_NAME => 'Érase una despedida de soltero',
-        static::FIELD_SLUG => '2x12',
+        static::FIELD_SLUG => '2x12-erase-una-despedida-de-soltero',
+        static::FIELD_NATURAL_ID => '2x12',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Rocío y Emilio ya tienen todo organizado para la boda, pero ha surgido un problema: Emilio y Belén han tenido un fortuito encuentro sexual y ambos se sienten culpables, especialmente el portero que pretenderá evitar por todos los medios que Rocío se entere de su infidelidad.
@@ -415,7 +446,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ], [
         static::FIELD_NAME => 'Érase una boda',
-        static::FIELD_SLUG => '2x13',
+        static::FIELD_SLUG => '2x13-erase-una-boda',
+        static::FIELD_NATURAL_ID => '2x13',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Emilio y Rocío ya tienen todo preparado para la boda, a la que están invitados todos los vecinos de la comunidad. Casualmente, dos horas antes de casarse, el portero, tiene el examen de ingreso a la Universidad. Vestido de novio y acompañado por Juan Cuesta , que intentará soplarle las respuestas, Emilio se presenta al examen mientras Rocío le espera en la puerta de la iglesia.
@@ -427,7 +459,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 68,
       ], [
         static::FIELD_NAME => 'Érase un apoyo vecinal',
-        static::FIELD_SLUG => '2x14',
+        static::FIELD_SLUG => '2x14-erase-un-apoyo-vecinal',
+        static::FIELD_NATURAL_ID => '2x14',
         static::FIELD_SEASON => '2',
         static::FIELD_SUMMARY =>
           'Paloma está ingresada en el hospital en estado muy grave y los vecinos celebran una junta «especial» para apoyar a Juan Cuesta en esos difíciles momentos. En esta junta se recordarán los mejores momentos vividos por lo vecinos a lo largo de la segunda temporada de la serie.
@@ -445,7 +478,8 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase un caos',
-        static::FIELD_SLUG => '3x01',
+        static::FIELD_SLUG => '3x01-erase-un-caos',
+        static::FIELD_NATURAL_ID => '3x01',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'En la comunidad de vecinos reina el caos. Por una parte, Emilio se traslada a vivir con Belén sin la aprobación de Alicia y mucho menos la de Concha, aunque sí la de Mariano que se queda con la portería para él solo.
@@ -459,7 +493,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 65,
       ], [
         static::FIELD_NAME => 'Érase un okupa',
-        static::FIELD_SLUG => '3x02',
+        static::FIELD_SLUG => '3x02-erase-un-okupa',
+        static::FIELD_NATURAL_ID => '3x02',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Juan e Isabel comienzan a sentirse atraídos sexualmente. Juan le confiesa a su hermana esa atracción aunque no le da nombres, y Nieves, muy posesiva, se ofende.
@@ -476,7 +511,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 70,
       ], [
         static::FIELD_NAME => 'Érase un matrimonio de conveniencia',
-        static::FIELD_SLUG => '3x03',
+        static::FIELD_SLUG => '3x03-erase-un-matrimonio-de-conveniencia',
+        static::FIELD_NATURAL_ID => '3x03',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Vicenta reúne en su casa a todos los vecinos para comunicarles su boda con Néstor, un cubano. Los vecinos creen que Vicenta está siendo engañada, pero cuando ella misma les confiesa que se trata de un matrimonio de conveniencia, por el que va a recibir la nada despreciable cantidad de cinco mil euros, son muchos los que se apuntan, y así, la comunidad de vecinos se prepara para celebrar nada menos que cinco bodas al mismo tiempo.
@@ -488,7 +524,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase una inauguración',
-        static::FIELD_SLUG => '3x04',
+        static::FIELD_SLUG => '3x04-erase-una-inauguracion',
+        static::FIELD_NATURAL_ID => '3x04',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Emilio empieza la universidad y deja a su padre de sustituto en la portería. El primer día de clase se siente desplazado entre los jóvenes y vuelve deprimido a casa, pero en seguida Emilio va a aprender qué hacer para integrarse.
@@ -503,7 +540,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 74,
       ], [
         static::FIELD_NAME => 'Érase un combate',
-        static::FIELD_SLUG => '3x05',
+        static::FIELD_SLUG => '3x05-erase-un-combate',
+        static::FIELD_NATURAL_ID => '3x05',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Un niño nuevo del colegio le pega y le roba las zapatillas a José Miguel. Mientras Juan Cuesta le sugiere dialogar con él, su tía Nieves le aconseja lo contrario, que se defienda y le pegue.
@@ -517,7 +555,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 61,
       ],[
         static::FIELD_NAME => 'Érase un canario',
-        static::FIELD_SLUG => '3x06',
+        static::FIELD_SLUG => '3x06-erase-un-canario',
+        static::FIELD_NATURAL_ID => '3x06',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Gustavo, el director del colegio, se va de puente y le deja el canario a Juan para que se lo cuide. Juan, que aspira a conseguir el puesto de director de estudios está encantado, y Nieves, su hermana, aún más. Pero no así los vecinos, que con los cánticos del canario no consiguen pegar ojo en toda la noche y convocan una junta especial, sin Juan Cuesta, obviamente, para decidir cómo «deshacerse» del pájaro.
@@ -530,7 +569,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un mal de ojo',
-        static::FIELD_SLUG => '3x07',
+        static::FIELD_SLUG => '3x07-erase-un-mal-de-ojo',
+        static::FIELD_NATURAL_ID => '3x07',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Una pitonisa ambulante le echa mal de ojo a Emilio y las desgracias se suceden en la comunidad de vecinos: la caldera se rompe, el ascensor se estropea, Belén cree estar embarazada, y Alicia -que por fin ha conseguido su primer papel con frase en una película-, se cae por la escalera.
@@ -544,7 +584,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un aniversario',
-        static::FIELD_SLUG => '3x07b',
+        static::FIELD_SLUG => '3x07b-erase-un-aniversario',
+        static::FIELD_NATURAL_ID => '3x07b',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'En este capítulo, el Presidente Juan Cuesta cumple 13 años al frente de la presidencia de esta nuestra comunidad, y decide ir piso por piso recogiendo iniciativas de los vecinos para mejorar la convivencia en el edificio y plasmarlo todo en un libro blanco.
@@ -555,7 +596,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 57,
       ],[
         static::FIELD_NAME => 'Érase un famoso',
-        static::FIELD_SLUG => '3x08',
+        static::FIELD_SLUG => '3x08-erase-un-famoso',
+        static::FIELD_NATURAL_ID => '3x08',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Un famoso torero va celebrar su boda con una modelo en el restaurante de Lucía para evitar a los fotógrafos de la prensa rosa. Lucía les da el día libre a todos los empleados y contrata personal cualificado para que la celebración sea un éxito.
@@ -567,7 +609,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 69,
       ],[
         static::FIELD_NAME => 'Érase un desalojo',
-        static::FIELD_SLUG => '3x09',
+        static::FIELD_SLUG => '3x09-erase-un-desalojo',
+        static::FIELD_NATURAL_ID => '3x09',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'La fachada del edificio aparece una mañana pintada con grafitis firmados por un tal Tornado. La policía sorprende al autor que no es otro que José Miguel. Una asistente social recomienda a Juan Cuesta que pase más tiempo con su hijo y él decide dejar la presidencia de la comunidad para dedicarse de lleno a la familia.
@@ -581,7 +624,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 64,
       ],[
         static::FIELD_NAME => 'Érase un belén',
-        static::FIELD_SLUG => '3x10',
+        static::FIELD_SLUG => '3x10-erase-un-belen',
+        static::FIELD_NATURAL_ID => '3x10',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'La archidiócesis ha convocado un concurso de belenes vivientes y Juan Cuesta celebra una junta especial para proponer a los vecinos «participar e impregnarse así del espíritu navideño tan propio de estas fechas. Además de optar a un premio en metálico de mil quinientos euros para los ganadores.
@@ -594,7 +638,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 60,
       ],[
         static::FIELD_NAME => 'Érase una Nochevieja',
-        static::FIELD_SLUG => '3x11',
+        static::FIELD_SLUG => '3x11-erase-una-nochevieja',
+        static::FIELD_NATURAL_ID => '3x11',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Los vecinos se preparan para recibir al nuevo año y todos se han buscado un plan para divertirse a tope.
@@ -609,7 +654,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 63,
       ],[
         static::FIELD_NAME => 'Érase una grieta',
-        static::FIELD_SLUG => '3x12',
+        static::FIELD_SLUG => '3x12-erase-una-grieta',
+        static::FIELD_NATURAL_ID => '3x12',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Mauri necesita una habitación para el niño que no para de llorar y así evitar que Bea decida irse a vivir a casa de Rosa que tiene un piso más grande. Andrés convoca su primera Junta como presidente en la que no se aprueba la reforma. Aún así Mauri decide seguir adelante, y Marisa, Vicenta y Concha preparan un plan para boicotear la reforma.
@@ -622,7 +668,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 66,
       ],[
         static::FIELD_NAME => 'Érase unos nuevos inquilinos',
-        static::FIELD_SLUG => '3x13',
+        static::FIELD_SLUG => '3x13-erase-unos-nuevos-inquilinos',
+        static::FIELD_NATURAL_ID => '3x13',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Isabel vende su piso a una inmobiliaria que lo alquila a un grupo de macarras para que hagan la vida imposible a los vecinos y tengan que vender más barato.
@@ -637,7 +684,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 76,
       ],[
         static::FIELD_NAME => 'Érase un bautizo',
-        static::FIELD_SLUG => '3x14',
+        static::FIELD_SLUG => '3x14-erase-un-bautizo',
+        static::FIELD_NATURAL_ID => '3x14',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Mauri y Bea se preparan para bautizar a su hijo sin que los vecinos se enteren. Como eso es algo imposible, radio patio enseguida da la noticia. El día anterior al bautizo, Bea se va de viaje y le deja el niño a Mauri, quien recibe una llamada de su revista diciéndole que tiene que ir urgentemente a París a hacer una entrevista. Así pues, es Diego quien se queda al cuidado de Ezequiel.
@@ -650,7 +698,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una academia',
-        static::FIELD_SLUG => '3x15',
+        static::FIELD_SLUG => '3x15-erase-una-academia',
+        static::FIELD_NATURAL_ID => '3x15',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Belén ha decidido dar un vuelco en su vida y recurre a una agencia matrimonial. En su primera cita conoce a su hombre ideal, y como no quiere precipitarse, se despiden con un simple beso. Lucía le aconseja que no pierda el tiempo porque que ya no tiene edad y que se acueste con él.
@@ -663,7 +712,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 88,
       ],[
         static::FIELD_NAME => 'Érase unos estatutos',
-        static::FIELD_SLUG => '3x16',
+        static::FIELD_SLUG => '3x16-erase-unos-estatutos',
+        static::FIELD_NATURAL_ID => '3x16',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Carlos compra el videoclub y asiste a su primera junta de vecinos como propietario, una junta en la que, como es habitual, todos discuten por las cosas más absurdas, y en la que también se descubre que nadie conoce los estatutos.
@@ -677,7 +727,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase unas alumnas',
-        static::FIELD_SLUG => '3x17',
+        static::FIELD_SLUG => '3x17-erase-unas-alumnas',
+        static::FIELD_NATURAL_ID => '3x17',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Carlos comienza con éxito su mandato de presidente de la comunidad introduciendo grandes mejoras, como un ascensor, etc, etc. Por su parte, Juan Cuesta se queda sin alumnos en la academia por lo que tiene que pedirle ayuda a Mariano. Al padre de Emilio sólo se le ocurre llenar la academia con unas prostitutas que él conoce.
@@ -690,7 +741,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 89,
       ],[
         static::FIELD_NAME => 'Érase un juicio',
-        static::FIELD_SLUG => '3x18',
+        static::FIELD_SLUG => '3x18-erase-un-juicio',
+        static::FIELD_NATURAL_ID => '3x18',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Emilio decide buscar a su verdadero padre. Para asegurarse de quien es realmente su progenitor, llama a su madre, pero ésta, demasiado ocupada viendo la televisión, no le hace mucho caso.
@@ -703,7 +755,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 86,
       ],[
         static::FIELD_NAME => 'Érase un disco-pub videoclub',
-        static::FIELD_SLUG => '3x19',
+        static::FIELD_SLUG => '3x19-erase-un-disco-pub-videoclub',
+        static::FIELD_NATURAL_ID => '3x19',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Carlos, debido a la baja rentabilidad del videoclub, decide convertirlo en un espacio multifuncional y monta un bar de copas nocturno. Juan descubre un trapicheo de pastillas en la puerta y tiene un problema con un camello.
@@ -715,7 +768,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 74,
       ],[
         static::FIELD_NAME => 'Érase una cobaya',
-        static::FIELD_SLUG => '3x20',
+        static::FIELD_SLUG => '3x20-erase-una-cobaya',
+        static::FIELD_NATURAL_ID => '3x20',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Para sacarse algún dinero Juan se ofrece de cobaya a unos laboratorios farmaceuticos y prueba una píldora para el crecimiento del cabello. Isabel, que escucha una conversación en el hospital, está convencida que Juan se va a morir y que le quedan pocos días. Se lo comunica a los vecinos que enseguida convocan una junta extraordinaria para hacerle la vida más fácil y llevadera al ex presidente. La «hierbas», además, decide adelantar la boda.
@@ -729,7 +783,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 87,
       ],[
         static::FIELD_NAME => 'Érase un premio',
-        static::FIELD_SLUG => '3x21',
+        static::FIELD_SLUG => '3x21-erase-un-premio',
+        static::FIELD_NATURAL_ID => '3x21',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Lucía y Belén consiguen trabajo de cajeras en un supermercado. Se enteran de que se va a celebrar un sorteo para promocionar una marca de aceitunas y que el premio viene en una de las mil latas que el supermercado va a recibir.
@@ -743,7 +798,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase unas puertas blindadas',
-        static::FIELD_SLUG => '3x22',
+        static::FIELD_SLUG => '3x22-erase-unas-puertas-blindadas',
+        static::FIELD_NATURAL_ID => '3x22',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Aprovechando una ola de robos por la zona, Juan y Andrés fingen un robo en casa de Nieves para convencer a los vecinos de que pongan puertas blindadas en sus casas.Por supuesto, ellos acuerdan una comisión con el amigo de Andrés que instala las puertas.
@@ -756,7 +812,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 80,
       ],[
         static::FIELD_NAME => 'Érase un vicio',
-        static::FIELD_SLUG => '3x23',
+        static::FIELD_SLUG => '3x23-erase-un-vicio',
+        static::FIELD_NATURAL_ID => '3x23',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'A raíz de un conato de incendio por una colilla mal apagada, los vecinos prohíben fumar en el edificio.
@@ -769,7 +826,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 85,
       ],[
         static::FIELD_NAME => 'Érase un administrador',
-        static::FIELD_SLUG => '3x24',
+        static::FIELD_SLUG => '3x24-erase-un-administrador',
+        static::FIELD_NATURAL_ID => '3x24',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Los vecinos, debido a la situación agónica en que se encuentran las cuentas de la comunidad, deciden recurrir a un administrador. La primera medida que acuerdan para reducir gastos es prescindir del portero y encargarse ellos mismos, por turnos, de las tareas de limpieza y recogida de basura. A Emilio le dan quince días para que abandone la portería y, agobiado por su situación laboral, pero aún más por el acoso sexual al que Belén le tiene sometido ahora que son amantes, sufre un gatillazo con Carmen.
@@ -781,7 +839,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 84,
       ],[
         static::FIELD_NAME => 'Érase una traición',
-        static::FIELD_SLUG => '3x25',
+        static::FIELD_SLUG => '3x25-erase-una-traicion',
+        static::FIELD_NATURAL_ID => '3x25',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'A Emilio le cumple el plazo para abandonar la portería y decide declararle la guerra a la comunidad. Acampa delante de la portería y, aconsejado por Carmen, demanda a la comunidad por los años que ha estado trabajando sin contrato. Comienza una guerra en la que Emilio va a contar con algunos aliados, aunque, al final, siempre lo sean por su propio interés.
@@ -792,7 +851,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase una visita guiada',
-        static::FIELD_SLUG => '3x25b',
+        static::FIELD_SLUG => '3x25b-erase-una-visita-guiada',
+        static::FIELD_NATURAL_ID => '3x25b',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'El nuevo administrador, Gregorio, realiza una visita a la comunidad para sacar información sobre la vida de los vecinos. La razón es que como ve con su mujer las cintas en las que se graban las juntas, ella se ha enganchado y quiere conocer más a fondo a nuestros protagonistas. Aborda primero a Mariano y a José Miguel, que se ofrecen a hacerle un ‘tour’ por el vecindario y contarle los secretos de ‘esta nuestra comunidad’.
@@ -802,7 +862,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 12,
       ],[
         static::FIELD_NAME => 'Érase el primer presidente gay',
-        static::FIELD_SLUG => '3x26',
+        static::FIELD_SLUG => '3x26-erase-el-primer-presidente-gay',
+        static::FIELD_NATURAL_ID => '3x26',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'El administrador se hace eco de las peticiones de los vecinos y destituyen a Juan de presidente. Ante la ausencia de candidatos, se hace el pertinente sorteo y sale Mauri. Él intenta escaquearse, pero el administrador le advierte que sin causa justificada es delito. Pero he aquí que el niño tiene sarampión y se lo contagia y, como tener una enfermedad grave es un eximente, se inventa que es un desconocido virus de origen africano que le ha pegado Fernando al volver de unas vacaciones. El problema es que parte de los vecinos no han pasado el sarampión y la cosa empieza a propagarse por la comunidad.',
@@ -812,7 +873,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 83,
       ],[
         static::FIELD_NAME => 'Érase unas tragaperras',
-        static::FIELD_SLUG => '3x27',
+        static::FIELD_SLUG => '3x27-erase-unas-tragaperras',
+        static::FIELD_NATURAL_ID => '3x27',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'La comunidad obliga a Mauri a seguir siendo presidente y, para cobrar las cuotas pendientes que debe Concha, instala una máquina tragaperras. Efectivamente, Concha, Vicenta y Marisa agotan sus pensiones en la máquina, pero la sorpresa la da Isabel, que se engancha al juego hasta el punto de hacer sospechar a Juan que tiene un amante.
@@ -823,7 +885,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un desgobierno',
-        static::FIELD_SLUG => '3x28',
+        static::FIELD_SLUG => '3x28-erase-un-desgobierno',
+        static::FIELD_NATURAL_ID => '3x28',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Mauri decide adoptar la postura de presidente pasota hasta agotar la legislatura y en el vecindario reina la anarquía: Lucía instala aire acondicionado, las señoras una parabólica y Mariano una piscina en la azotea. Lo que no ha calculado Mariano es que la piscina, unido al peso de Concha, van a hundir el techo de la casa de Lucía.
@@ -835,7 +898,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 78,
       ],[
         static::FIELD_NAME => 'Érase un regalo de boda',
-        static::FIELD_SLUG => '3x29',
+        static::FIELD_SLUG => '3x29-erase-un-regalo-de-boda',
+        static::FIELD_NATURAL_ID => '3x29',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Lucía invita a todos los vecinos a su boda, pero a cambio tienen que hacerle, lógicamente, un regalo. Como ya tiene la casa amueblada, les pasa una lista de bodas llena de caprichos caros y los vecinos deciden unirse para regalarle un sillón relajante. Lo trasladan en secreto a la comunidad donde todos quieren probar los masajes que da el sillón.
@@ -847,7 +911,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 73,
       ],[
         static::FIELD_NAME => 'Érase otra boda',
-        static::FIELD_SLUG => '3x30',
+        static::FIELD_SLUG => '3x30-erase-otra-boda',
+        static::FIELD_NATURAL_ID => '3x30',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Los preparativos para la boda siguen adelante y las de Lucía y Roberto también. Además, justo el día anterior, la comunidad de vecinos se entera de los cuernos que Roberto le puso a Lucía con la azafata.
@@ -859,7 +924,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 82,
       ],[
         static::FIELD_NAME => 'Érase una luna de miel',
-        static::FIELD_SLUG => '3x31',
+        static::FIELD_SLUG => '3x31-erase-una-luna-de-miel',
+        static::FIELD_NATURAL_ID => '3x31',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Lucía no quiere saber nada del viaje de novios pero los vecinos sí. Le organizan una fiesta sorpresa y ella, aunque está enfadada con todos, les pasa los billetes del viaje de su luna de miel para que los sorteen.
@@ -871,7 +937,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ],[
         static::FIELD_NAME => 'Érase un cirujano plástico',
-        static::FIELD_SLUG => '3x32',
+        static::FIELD_SLUG => '3x32-erase-un-cirujano-plastico',
+        static::FIELD_NATURAL_ID => '3x32',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Juan Cuesta sigue haciéndoles la vida imposible como casero a Carmen y a Bea y ellas, hartas de que no les deje ni poner un cuadro, deciden buscar otro piso. Juan enseguida encuentra dos nuevos inquilinos, Juan Luis y Rafa, dos cuarentones separados que se instalan temporalmente decididos a disfrutar de la vida. Uno de ellos, Juan Luis, es un reputado cirujano plástico que va a despertar un desmedido interés en la comunidad de vecinos por la estética personal.
@@ -883,7 +950,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 81,
       ],[
         static::FIELD_NAME => 'Érase unas vacaciones',
-        static::FIELD_SLUG => '3x33',
+        static::FIELD_SLUG => '3x33-erase-unas-vacaciones',
+        static::FIELD_NATURAL_ID => '3x33',
         static::FIELD_SEASON => '3',
         static::FIELD_SUMMARY =>
           'Rafael, el padre de Lucía, invita a su hija y a toda la comunidad de vecinos a disfrutar de unas vacaciones en un complejo de bungalows que ha comprado en Benidorm y que piensa derruir para construir un gran hotel.
@@ -903,7 +971,8 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase un despertar',
-        static::FIELD_SLUG => '4x01',
+        static::FIELD_SLUG => '4x01-erase-un-despertar',
+        static::FIELD_NATURAL_ID => '4x01',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Los vecinos han iniciado las obras en sus pisos, pero el seguro se niega a pagarles el arreglo alegando que el incendio ha sido provocado.
@@ -917,7 +986,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un cultivo',
-        static::FIELD_SLUG => '4x02',
+        static::FIELD_SLUG => '4x02-erase-un-cultivo',
+        static::FIELD_NATURAL_ID => '4x02',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'La investigación policial del atropello de Paloma avanza satisfactoriamente para Juan, pero Isabel está cada vez más preocupada.
@@ -930,7 +1000,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase un desvío provisional',
-        static::FIELD_SLUG => '4x03',
+        static::FIELD_SLUG => '4x03-erase-un-desvio-provisional',
+        static::FIELD_NATURAL_ID => '4x03',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'La calle Desengaño sufre un inusual atasco debido a la construcción de un parking en la plaza que obliga a desviar temporalmente el tráfico. Los vecinos protestan por el ruido y Juan Cuesta inicia una recogida de firmas por el barrio para elevar una queja al Ayuntamiento.
@@ -942,7 +1013,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 80,
       ], [
         static::FIELD_NAME => 'Érase una sequía',
-        static::FIELD_SLUG => '4x04',
+        static::FIELD_SLUG => '4x04-erase-una-sequia',
+        static::FIELD_NATURAL_ID => '4x04',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Debido a la sequía el Ayuntamiento de la ciudad ha restringido el suministro de agua a sólo cinco horas al día. Los vecinos convocan una junta y deciden excavar un pozo en el patio.
@@ -956,7 +1028,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 85,
       ], [
         static::FIELD_NAME => 'Érase un banco en la acera',
-        static::FIELD_SLUG => '4x05',
+        static::FIELD_SLUG => '4x05-erase-un-banco-en-la-acera',
+        static::FIELD_NATURAL_ID => '4x05',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'El Ayuntamiento coloca un banco en la acera justo delante del telefonillo del portal. Los vecinos protestan y le piden a Juan que consiga que lo retiren. Pero Vicenta, Concha y Marisa cambian de opinión cuando se convierte en el lugar de reunión y confidencias de una extraña pareja: una mujer guardia civil y un joven subsahariano que viven un amor imposible.
@@ -969,7 +1042,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase una Navidad convulsa',
-        static::FIELD_SLUG => '4x06',
+        static::FIELD_SLUG => '4x06-erase-una-navidad-convulsa',
+        static::FIELD_NATURAL_ID => '4x06',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Los vecinos morosos pagan las derramas y en la comunidad reina la armonía. Como se acerca la Navidad, convocan una cena de confraternización para la Nochebuena en casa de Juan Cuesta.
@@ -983,7 +1057,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 90,
       ], [
         static::FIELD_NAME => 'Érase la tercera Nochevieja',
-        static::FIELD_SLUG => '4x07',
+        static::FIELD_SLUG => '4x07-erase-la-tercera-nochevieja',
+        static::FIELD_NATURAL_ID => '4x07',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Para no repetir el caos de Nochebuena, se celebra una junta y Juan Cuesta prohíbe celebrar más fiestas comunitarias el día de Nochevieja. Así pues, cada uno debe celebrarlo por su cuenta.
@@ -998,7 +1073,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase unos propósitos de año nuevo',
-        static::FIELD_SLUG => '4x08',
+        static::FIELD_SLUG => '4x08-erase-unos-propositos-de-ano-nuevo',
+        static::FIELD_NATURAL_ID => '4x08',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Isabel intenta rehacer y estimular su vida sexual con Juan Cuesta y acaba metiéndole en un conflicto político-vecinal. Por otra parte, a Mauri se le acaba el plazo para presentar el libro, pero está bloqueado y Mariano se ofrece a ayudarle.
@@ -1010,7 +1086,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una presidenta títere',
-        static::FIELD_SLUG => '4x09',
+        static::FIELD_SLUG => '4x09-erase-una-presidenta-titere',
+        static::FIELD_NATURAL_ID => '4x09',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Belén empieza su mandato de presidenta de la comunidad con problemas porque las señoras la presionan para echar a Andrés Guerra del ático.
@@ -1023,7 +1100,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un par de bodas',
-        static::FIELD_SLUG => '4x10',
+        static::FIELD_SLUG => '4x10-erase-un-par-de-bodas',
+        static::FIELD_NATURAL_ID => '4x10',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Belén y Paco preparan sus respectivas bodas, Belén con Pedro y Paco con Lourdes. Sin embargo, la noche anterior a la ceremonia, Pedro le pide a Belén que firme la separación de bienes.
@@ -1035,7 +1113,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una conexión wifi',
-        static::FIELD_SLUG => '4x11',
+        static::FIELD_SLUG => '4x11-erase-una-conexion-wifi',
+        static::FIELD_NATURAL_ID => '4x11',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Juan Cuesta instala una conexión wifi de internet de la que los vecinos van a sacar provecho.
@@ -1049,7 +1128,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un vudú',
-        static::FIELD_SLUG => '4x12',
+        static::FIELD_SLUG => '4x12-erase-un-vudu',
+        static::FIELD_NATURAL_ID => '4x12',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'María Jesús cada día tiene más problemas con Belén y empieza a hacerle vudú a Lucía para que le venda su piso.
@@ -1061,7 +1141,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 86,
       ], [
         static::FIELD_NAME => 'Érase un día de San Valentín',
-        static::FIELD_SLUG => '4x13',
+        static::FIELD_SLUG => '4x13-erase-un-dia-de-san-valentin',
+        static::FIELD_NATURAL_ID => '4x13',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Las parejas de la comunidad celebran san Valentín y se envían ramos de flores. Emilio intenta recuperar a Belén, Juan a Isabel, Fernando quiere tener un detalle con Mauri y Yago con Lucía. Pero según van llegando los ramos, Emilio se va a hacer un lío con las tarjetas y las cambia todas.
@@ -1073,7 +1154,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una nueva vida',
-        static::FIELD_SLUG => '4x14',
+        static::FIELD_SLUG => '4x14-erase-una-nueva-vida',
+        static::FIELD_NATURAL_ID => '4x14',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Emilio y Belén consiguen engañar al seguro y cobrar el dinero. Deciden huir y comenzar una nueva vida juntos, lejos de la comunidad de vecinos.
@@ -1086,7 +1168,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un consuelo',
-        static::FIELD_SLUG => '4x15',
+        static::FIELD_SLUG => '4x15-erase-un-consuelo',
+        static::FIELD_NATURAL_ID => '4x15',
         static::FIELD_SEASON => '4',
         static::FIELD_SUMMARY =>
           'Capítulo especial en el que se muestran escenas inéditas y tomas falsas previas al lanzamiento de la temporada 5.',
@@ -1102,7 +1185,8 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase una extradición',
-        static::FIELD_SLUG => '5x01',
+        static::FIELD_SLUG => '5x01-erase-una-extradiccion',
+        static::FIELD_NATURAL_ID => '5x01',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'La policía encuentra a Belén y a Emilio en las Bahamas y los extradita a España, donde pasan a disposición judicial.
@@ -1116,7 +1200,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 84,
       ], [
         static::FIELD_NAME => 'Érase un colapso',
-        static::FIELD_SLUG => '5x02',
+        static::FIELD_SLUG => '5x02-erase-un-colapso',
+        static::FIELD_NATURAL_ID => '5x02',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'A Juan le dan el alta y vuelve a casa. Isabel intenta convencerle para que deje la presidencia y evite los problemas. Pero va a tener que empezar solucionando el más urgente: ahora hay dos porteros, Emilio y Mariano.
@@ -1129,7 +1214,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un robot de cocina',
-        static::FIELD_SLUG => '5x03',
+        static::FIELD_SLUG => '5x03-erase-un-robot-de-cocina',
+        static::FIELD_NATURAL_ID => '5x03',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Mamen, la mujer de Higinio, invita a todos los vecinos a una cena en su casa para conocerse mejor. Mientras tanto, a Belén, que sigue con el psicólogo, le entran remordimientos por estar engañando a Emilio e intenta romper con él.
@@ -1141,7 +1227,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 88,
       ], [
         static::FIELD_NAME => 'Érase un presidente de vacaciones',
-        static::FIELD_SLUG => '5x04',
+        static::FIELD_SLUG => '5x04-erase-un-presidente-de-vacaciones',
+        static::FIELD_NATURAL_ID => '5x04',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Juan e Isabel preparan su viaje a Canarias. Yago y Natalia se apuntan a ir con ellos pero José Miguel consigue quedarse sólo y montar una fiesta para conquistar a Candela.
@@ -1156,7 +1243,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 83,
       ], [
         static::FIELD_NAME => 'Érase un anuncio',
-        static::FIELD_SLUG => '5x05',
+        static::FIELD_SLUG => '5x05-erase-un-anuncio',
+        static::FIELD_NATURAL_ID => '5x05',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'En casa de Mamen van a grabar un anuncio, pero a última hora, los de la agencia cambian de idea y deciden que la cocina de los Cuesta es menos artificial y que lo van a grabar allí. Los Cuesta están encantados, porque así consiguen algo de dinero ya que Natalia en Tenerife los ha dejado en números rojos y hasta el día treinta no pueden disponer de dinero alguno. De hecho, su situación es límite y ya les han cortado el agua, pero ellos se niegan a pedir dinero prestado a los vecinos.
@@ -1169,7 +1257,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 81,
       ], [
         static::FIELD_NAME => 'Érase un billete de cincuenta euros',
-        static::FIELD_SLUG => '5x06',
+        static::FIELD_SLUG => '5x06-erase-un-billete-de-cincuenta-euros',
+        static::FIELD_NATURAL_ID => '5x06',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Marisa y Concha deciden abandonar a Vicenta e irse a una residencia, que ahora tienen de todo.
@@ -1184,7 +1273,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase un escándalo',
-        static::FIELD_SLUG => '5x07',
+        static::FIELD_SLUG => '5x07-erase-un-escandalo',
+        static::FIELD_NATURAL_ID => '5x07',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Rafael encarga a Emilio que limpie el piso porque se lo va a dejar a un amigo suyo, un «señor muy importante», para un encuentro con su amante. En cuanto se enteran, los vecinos montan guardia para saber de quién se trata.
@@ -1196,7 +1286,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un descubrimiento macabro',
-        static::FIELD_SLUG => '5x08',
+        static::FIELD_SLUG => '5x08-erase-un-descubrimiento-macabro',
+        static::FIELD_NATURAL_ID => '5x08',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Los Cuesta siguen con obras en su casa y Mariano decide aprovechar también para hacer algunos arreglos en la portería. Tira un tabique y aparecen los huesos de un esqueleto humano. Se lo comunica a Juan e Isabel y, entre todos, inician una investigación.
@@ -1208,7 +1299,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 79,
       ], [
         static::FIELD_NAME => 'Érase una emisora pirata',
-        static::FIELD_SLUG => '5x09',
+        static::FIELD_SLUG => '5x09-erase-una-emisora-pirata',
+        static::FIELD_NATURAL_ID => '5x09',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'El padre Miguel le alquila a Paco la trastienda del videoclub para montar una radio pirata. Marisa, Vicenta y Concha aprovechan para hacer un programa de radio-patio.
@@ -1221,7 +1313,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 75,
       ], [
         static::FIELD_NAME => 'Érase un funeral con sorpresa',
-        static::FIELD_SLUG => '5x10',
+        static::FIELD_SLUG => '5x10-erase-un-funeral-con-sorpresa',        static::FIELD_NATURAL_ID => '5x10',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Los vecinos han pasado la noche en vela porque la nieta de los Cuesta no para de llorar. Natalia está pasando por una depresión post-parto y es Yago el que se tiene que ocupar la niña, a la que ha puesto Yamiley de nombre.
@@ -1235,7 +1327,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 89,
       ], [
         static::FIELD_NAME => 'Érase una lista de bodas',
-        static::FIELD_SLUG => '5x11',
+        static::FIELD_SLUG => '5x11-erase-una-lista-de-bodas',
+        static::FIELD_NATURAL_ID => '5x11',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Emilio y Belén necesitan dinero inmediatamente para pagar al abogado y reparten las invitaciones de boda entre los vecinos incluyendo una lista de bodas falsa con regalos carísimos.
@@ -1247,7 +1340,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 77,
       ], [
         static::FIELD_NAME => 'Érase un paripé',
-        static::FIELD_SLUG => '5x12',
+        static::FIELD_SLUG => '5x12-erase-un-paripe',
+        static::FIELD_NATURAL_ID => '5x12',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Emilio y Belén ensayan la discusión que piensan interpretar ante el altar, a última hora, para cancelar la boda. La ceremonia es al día siguiente, a las dos de la tarde en un descampado, pero dos horas antes, ambos tienen que acudir al juicio por estafa que tienen pendiente.
@@ -1259,7 +1353,8 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_DURATION => 72,
       ], [
         static::FIELD_NAME => 'Érase un adiós',
-        static::FIELD_SLUG => '5x13',
+        static::FIELD_SLUG => '5x13-erase-un-adios',
+        static::FIELD_NATURAL_ID => '5x13',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
           'Belén y Emilio se esconden en la pensión Loli una semana porque los vecinos piensan que están de luna de miel en la playa. Pero Paco, cada vez más celoso, descubre el engaño de la boda y se lo cuenta a todos.
