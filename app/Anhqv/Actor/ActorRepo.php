@@ -1,16 +1,16 @@
-<?php namespace Anhqv\Character;
+<?php namespace Anhqv\Actor;
 
 use Anhqv\Base\BaseRepo;
 use Illuminate\Http\Request;
 
-class CharacterRepo extends BaseRepo implements CharacterRepoInterface
+class ActorRepo extends BaseRepo implements ActorRepoInterface
 {
 
     protected $model;
 
     public function __construct()
     {
-        $this->model = new Character;
+        $this->model = new Actor;
     }
 
     public function getModel()
@@ -18,9 +18,9 @@ class CharacterRepo extends BaseRepo implements CharacterRepoInterface
         return $this->model;
     }
 
-    public function setModel(Character $character)
+    public function setModel(Actor $actor)
     {
-        $this->model = $character;
+        $this->model = $actor;
         return $this->model;
     }
 
