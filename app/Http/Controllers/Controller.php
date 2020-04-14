@@ -31,6 +31,13 @@ use Illuminate\Routing\Controller as BaseController;
  *   description="Recursos relacionados con los Capítulos"
  * )
  */
+
+ /**
+ * @OA\Tag(
+ *   name="actors",
+ *   description="Recursos relacionados con los Actores"
+ * )
+ */
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
