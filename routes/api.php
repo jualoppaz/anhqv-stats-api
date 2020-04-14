@@ -30,4 +30,5 @@ Route::prefix('chapters')->group(function () {
 
 Route::prefix('actors')->group(function () {
   Route::get('/', 'ActorController@index');
+  Route::get('/{slug}', 'ActorController@show');
 });

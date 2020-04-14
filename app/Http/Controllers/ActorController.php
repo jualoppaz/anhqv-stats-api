@@ -71,4 +71,35 @@ class ActorController extends Controller
     Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Exit');
     return response()->json($res, static::HTTP_OK, [], JSON_PRETTY_PRINT);
   }
+
+  /**
+   * @OA\Get(
+   *  path="/actors/{slug}",
+   *  summary="Mostrar detalle de actor",
+   *  tags={"actors"},
+   *  @OA\Parameter(
+   *    name="slug",
+   *    description="Slug que identifica al actor de forma única",
+   *    required=true,
+   *    in="path",
+   *    @OA\Schema(
+   *      type="string"
+   *    )
+   * ),
+   *  @OA\Response(
+   *    response=200,
+   *    description="Detalle del actor consultado."
+   *  )
+   * )
+   */
+  public function show(Request $request, $slug)
+  {
+    $methodName = __FUNCTION__;
+    Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Access');
+
+    $res = $this->actorRepo->findBySlug($slug);
+
+    Utils::log(static::LOG_LEVEL_DEBUG, $this->className, $methodName, 'Exit');
+    return response()->json($res, static::HTTP_OK, [], JSON_PRETTY_PRINT);
+  }
 }
