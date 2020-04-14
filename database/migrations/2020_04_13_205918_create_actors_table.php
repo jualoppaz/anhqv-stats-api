@@ -11,6 +11,7 @@ class CreateActorsTable extends Migration
   const FIELD_NAME = 'name';
   const FIELD_SURNAME = 'surname';
   const FIELD_SECOND_SURNAME = 'second_surname';
+  const FIELD_SHORTNAME = 'shortname';
   const FIELD_BIRTHDATE = 'birthdate';
   const FIELD_DEATHDATE = 'deathdate';
   const FIELD_IMAGE_URL = 'image_url';
@@ -27,12 +28,16 @@ class CreateActorsTable extends Migration
       $table->id();
       $table->string(static::FIELD_NAME, 30)->nullable(false)->comment('Nombre del actor');
       $table->string(static::FIELD_SURNAME, 50)->comment('Primer apellido del actor');
-      $table->string(static::FIELD_SECOND_SURNAME, 50)->comment('Segundo apellido del actor');
-      $table->date(static::FIELD_BIRTHDATE)->comment('Fecha de nacimiento del actor');
+      $table->string(static::FIELD_SECOND_SURNAME, 50)->nullable(true)->comment('Segundo apellido del actor');
+      $table->string(static::FIELD_SHORTNAME, 50)->comment('Nombre artístico del actor');
+      $table->date(static::FIELD_BIRTHDATE)->nullable(true)->comment('Fecha de nacimiento del actor');
       $table->date(static::FIELD_DEATHDATE)->nullable(true)->comment('Fecha de fallecimiento del actor');
       $table->string(static::FIELD_IMAGE_URL, 100)->comment('Url a la imagen del actor');
       $table->string(static::FIELD_SLUG, 30)->nullable(false)->comment('Slug que identifica al actor en las urls');
       $table->timestamps();
+
+      // constraints
+      $table->unique(static::FIELD_SLUG);
     });
   }
 
