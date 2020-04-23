@@ -17,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
         App::bind('Anhqv\Character\CharacterRepoInterface', 'Anhqv\Character\CharacterRepo');
         App::bind('Anhqv\Chapter\ChapterRepoInterface', 'Anhqv\Chapter\ChapterRepo');
         App::bind('Anhqv\Actor\ActorRepoInterface', 'Anhqv\Actor\ActorRepo');
+        App::bind('Anhqv\SeoConfig\SeoConfigRepoInterface', 'Anhqv\SeoConfig\SeoConfigRepo');
     }
 
     /**
