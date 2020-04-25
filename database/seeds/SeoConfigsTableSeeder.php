@@ -61,6 +61,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Información y estadísticas Aquí No Hay Quien Viva: personajes, actores, capítulos... y mucho más. ✅ Disponible API REST documentada.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'characters',
+        static::FIELD_TITLE => 'Personajes',
+        static::FIELD_DESCRIPTION => 'Galería con todos los personajes que aparecen en Aquí No Hay Quien Viva',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes',
+        static::FIELD_OG_TITLE => 'Personajes',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/logo.png',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes',
+        static::FIELD_OG_DESCRIPTION => 'Galería con los personajes que han participado en Aquí No Hay Quien Viva',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
