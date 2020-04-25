@@ -32,3 +32,7 @@ Route::prefix('actors')->group(function () {
   Route::get('/', 'ActorController@index');
   Route::get('/{slug}', 'ActorController@show');
 });
+
+Route::prefix('seo-configs')->group(function() {
+  Route::get('/{slug}', 'SeoConfigController@show');
+});
