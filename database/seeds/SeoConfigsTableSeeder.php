@@ -253,6 +253,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Lucía Álvarez, personaje de Aquí No Hay Quien Viva interpretado por María Adánez.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-emilio-delgado',
+        static::FIELD_TITLE => 'Personaje | Emilio Delgado',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Emilio Delgado, personaje de Aquí No Hay Quien Viva interpretado por Fernando Tejero.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/emilio-delgado',
+        static::FIELD_OG_TITLE => 'Personaje | Emilio Delgado',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/emilio-delgado.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/emilio-delgado',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Emilio Delgado, personaje de Aquí No Hay Quien Viva interpretado por Fernando Tejero.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
