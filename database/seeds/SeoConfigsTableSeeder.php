@@ -85,6 +85,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Marisa Benito, personaje de Aquí No Hay Quien Viva interpretado por Mariví Bilbao.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-vicenta-benito',
+        static::FIELD_TITLE => 'Personaje | Vicenta Benito',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Vicenta Benito, personaje de Aquí No Hay Quien Viva interpretado por Gemma Cuervo.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/vicenta-benito',
+        static::FIELD_OG_TITLE => 'Personaje | Vicenta Benito',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/vicenta-benito.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/vicenta-benito',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Vicenta Benito, personaje de Aquí No Hay Quien Viva interpretado por Gemma Cuervo.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
