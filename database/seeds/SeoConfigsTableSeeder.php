@@ -325,6 +325,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Santiago Segura, personaje de Aquí No Hay Quien Viva interpretado por él mismo.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-mariano-delgado',
+        static::FIELD_TITLE => 'Personaje | Mariano Delgado',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Mariano Delgado, personaje de Aquí No Hay Quien Viva interpretado por Eduardo Gómez.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/mariano-delgado',
+        static::FIELD_OG_TITLE => 'Personaje | Mariano Delgado',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/mariano-delgado.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/mariano-delgado',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mariano Delgado, personaje de Aquí No Hay Quien Viva interpretado por Eduardo Gómez.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
