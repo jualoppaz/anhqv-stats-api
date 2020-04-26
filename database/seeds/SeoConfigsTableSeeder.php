@@ -301,6 +301,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del Repartidor de Propaganda, personaje extra de Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-paco',
+        static::FIELD_TITLE => 'Personaje | Paco',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Paco, personaje de Aquí No Hay Quien Viva interpretado por Guillermo Ortega.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/paco',
+        static::FIELD_OG_TITLE => 'Personaje | Paco',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/paco.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/paco',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Paco, personaje de Aquí No Hay Quien Viva interpretado por Guillermo Ortega.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
