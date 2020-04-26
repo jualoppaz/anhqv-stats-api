@@ -277,6 +277,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mozo Mudanza 1, personaje de Aquí No Hay Quien Viva interpretado por Antonio Gómez.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-mozo-mudanza-2',
+        static::FIELD_TITLE => 'Personaje | Mozo Mudanza 2',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Mozo Mudanza 2, personaje de Aquí No Hay Quien Viva interpretado por Arsenio Luna.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/mozo-mudanza-2',
+        static::FIELD_OG_TITLE => 'Personaje | Mozo Mudanza 2',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/mozo-mudanza-2.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/mozo-mudanza-2',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mozo Mudanza 2, personaje de Aquí No Hay Quien Viva interpretado por Arsenio Luna.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
