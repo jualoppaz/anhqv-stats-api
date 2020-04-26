@@ -109,6 +109,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Juan Cuesta, personaje de Aquí No Hay Quien Viva interpretado por José Luis Gil.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-paloma-hurtado',
+        static::FIELD_TITLE => 'Personaje | Paloma Hurtado',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Paloma Hurtado, personaje de Aquí No Hay Quien Viva interpretado por Loles León.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/paloma-hurtado',
+        static::FIELD_OG_TITLE => 'Personaje | Paloma Hurtado',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/paloma-hurtado.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/paloma-hurtado',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Paloma Hurtado, personaje de Aquí No Hay Quien Viva interpretado por Loles León.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
