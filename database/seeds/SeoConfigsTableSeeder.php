@@ -145,6 +145,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Belén López, personaje de Aquí No Hay Quien Viva interpretado por Malena Alterio.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-alicia-sanz',
+        static::FIELD_TITLE => 'Personaje | Alicia Sanz',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Alicia Sanz, personaje de Aquí No Hay Quien Viva interpretado por Laura Pamplona.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/alicia-sanz',
+        static::FIELD_OG_TITLE => 'Personaje | Alicia Sanz',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/alicia-sanz.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/alicia-sanz',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Alicia Sanz, personaje de Aquí No Hay Quien Viva interpretado por Laura Pamplona.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
