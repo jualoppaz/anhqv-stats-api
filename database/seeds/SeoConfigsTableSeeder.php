@@ -169,6 +169,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Concha, personaje de Aquí No Hay Quien Viva interpretado por Emma Penella.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-dani-rubio',
+        static::FIELD_TITLE => 'Personaje | Dani Rubio',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Dani Rubio, personaje de Aquí No Hay Quien Viva interpretado por Dani Ballesteros.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/dani-rubio',
+        static::FIELD_OG_TITLE => 'Personaje | Dani Rubio',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/dani-rubio.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/dani-rubio',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Dani Rubio, personaje de Aquí No Hay Quien Viva interpretado por Dani Ballesteros.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
