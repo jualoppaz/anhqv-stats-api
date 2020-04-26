@@ -337,6 +337,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mariano Delgado, personaje de Aquí No Hay Quien Viva interpretado por Eduardo Gómez.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-esther',
+        static::FIELD_TITLE => 'Personaje | Esther',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Esther, personaje de Aquí No Hay Quien Viva interpretado por Susana Reija.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/esther',
+        static::FIELD_OG_TITLE => 'Personaje | Esther',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/esther.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/esther',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Esther, personaje de Aquí No Hay Quien Viva interpretado por Susana Reija.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
