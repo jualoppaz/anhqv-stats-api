@@ -48,7 +48,7 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Marisa',
         static::FIELD_NICKNAME => '',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/marisa.jpg',
-        static::FIELD_SLUG => 'marisa'
+        static::FIELD_SLUG => 'marisa-benito'
       ], [
         static::FIELD_NAME => 'Vicenta',
         static::FIELD_SURNAME => 'Benito',
