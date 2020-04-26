@@ -9,8 +9,8 @@ class CreateSeoConfigsTable extends Migration
 
   const TABLE_NAME = 'seo_configs';
   const FIELD_SLUG = 'slug';
-  const FIELD_DESCRIPTION = 'description';
   const FIELD_TITLE = 'title';
+  const FIELD_DESCRIPTION = 'description';
   const FIELD_CANONICAL_URL = 'canonical_url';
   const FIELD_OG_TITLE = 'og_title';
   const FIELD_OG_TYPE = 'og_type';
@@ -30,8 +30,8 @@ class CreateSeoConfigsTable extends Migration
     Schema::create(static::TABLE_NAME, function (Blueprint $table) {
       $table->id();
       $table->string(static::FIELD_SLUG, 100)->comment('Slug que identifica a una página en la web');
-      $table->string(static::FIELD_DESCRIPTION)->comment('Descripción deseada en buscadores');
       $table->string(static::FIELD_TITLE)->comment('Título de la página');
+      $table->string(static::FIELD_DESCRIPTION)->comment('Descripción deseada en buscadores');
       $table->string(static::FIELD_CANONICAL_URL)->comment('Url absoluta que identifica a la página de forma inequívoca');
       $table->string(static::FIELD_OG_TITLE)->comment('Título para el meta og:title de open graph');
       $table->string(static::FIELD_OG_TYPE)->comment('Tipo de contenido para el meta og:type de open graph');
