@@ -217,6 +217,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Fernando Navarro, personaje de Aquí No Hay Quien Viva interpretado por Adriá Collado.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-natalia-cuesta',
+        static::FIELD_TITLE => 'Personaje | Natalia Cuesta',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Natalia Cuesta, personaje de Aquí No Hay Quien Viva interpretado por Sofía Nieto.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/natalia-cuesta',
+        static::FIELD_OG_TITLE => 'Personaje | Natalia Cuesta',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/natalia-cuesta.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/natalia-cuesta',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Natalia Cuesta, personaje de Aquí No Hay Quien Viva interpretado por Sofía Nieto.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
