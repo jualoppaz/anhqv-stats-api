@@ -205,6 +205,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mauricio Hidalgo, personaje de Aquí No Hay Quien Viva interpretado por Luis Merlo.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-fernando-navarro',
+        static::FIELD_TITLE => 'Personaje | Fernando Navarro',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Fernando Navarro, personaje de Aquí No Hay Quien Viva interpretado por Adriá Collado.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/fernando-navarro',
+        static::FIELD_OG_TITLE => 'Personaje | Fernando Navarro',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/fernando-navarro.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/fernando-navarro',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Fernando Navarro, personaje de Aquí No Hay Quien Viva interpretado por Adriá Collado.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
