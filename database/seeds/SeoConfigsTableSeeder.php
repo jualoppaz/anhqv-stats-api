@@ -313,6 +313,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Paco, personaje de Aquí No Hay Quien Viva interpretado por Guillermo Ortega.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-santiago-segura',
+        static::FIELD_TITLE => 'Personaje | Santiago Segura',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Santiago Segura, personaje de Aquí No Hay Quien Viva interpretado por él mismo.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/santiago-segura',
+        static::FIELD_OG_TITLE => 'Personaje | Santiago Segura',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/santiago-segura.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/santiago-segura',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Santiago Segura, personaje de Aquí No Hay Quien Viva interpretado por él mismo.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
