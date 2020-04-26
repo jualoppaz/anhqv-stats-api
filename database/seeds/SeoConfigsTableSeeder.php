@@ -97,6 +97,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Vicenta Benito, personaje de Aquí No Hay Quien Viva interpretado por Gemma Cuervo.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'character-juan-cuesta',
+        static::FIELD_TITLE => 'Personaje | Juan Cuesta',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Juan Cuesta, personaje de Aquí No Hay Quien Viva interpretado por José Luis Gil.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/personajes/juan-cuesta',
+        static::FIELD_OG_TITLE => 'Personaje | Juan Cuesta',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/characters/juan-cuesta.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/personajes/juan-cuesta',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Juan Cuesta, personaje de Aquí No Hay Quien Viva interpretado por José Luis Gil.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
