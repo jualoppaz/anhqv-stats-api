@@ -421,6 +421,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Edu García, actor que da vida a José Miguel Cuesta en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-malena-alterio',
+        static::FIELD_TITLE => 'Actor | Malena Alterio',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Malena Alterio, actriz que da vida a Belén López en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/malena-alterio',
+        static::FIELD_OG_TITLE => 'Actor | Malena Alterio',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/malena-alterio.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/malena-alterio',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Malena Alterio, actriz que da vida a Belén López en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
