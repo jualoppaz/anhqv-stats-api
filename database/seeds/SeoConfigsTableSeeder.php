@@ -349,6 +349,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Esther, personaje de Aquí No Hay Quien Viva interpretado por Susana Reija.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actors',
+        static::FIELD_TITLE => 'Actores',
+        static::FIELD_DESCRIPTION => 'Galería con todos los actores que intervienen en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores',
+        static::FIELD_OG_TITLE => 'Actores',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/logo.png',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores',
+        static::FIELD_OG_DESCRIPTION => 'Galería con todos los actores que intervienen en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
