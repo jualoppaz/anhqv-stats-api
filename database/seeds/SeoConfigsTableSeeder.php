@@ -373,6 +373,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Mariví Bilbao, actriz que da vida a Marisa Benito en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-gemma-cuervo',
+        static::FIELD_TITLE => 'Actor | Gemma Cuervo',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Gemma Cuervo, actriz que da vida a Vicenta Benito en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/gemma-cuervo',
+        static::FIELD_OG_TITLE => 'Actor | Gemma Cuervo',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/gemma-cuervo.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/gemma-cuervo',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Gemma Cuervo, actriz que da vida a Vicenta Benito en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
