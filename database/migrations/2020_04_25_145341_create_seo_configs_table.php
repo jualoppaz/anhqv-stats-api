@@ -40,6 +40,9 @@ class CreateSeoConfigsTable extends Migration
       $table->string(static::FIELD_OG_DESCRIPTION)->comment('Descripción para el meta og:description de open graph');
       $table->string(static::FIELD_TWITTER_CARD)->comment('Tipo de tarjeta para el meta twitter:card');
       $table->string(static::FIELD_TWITTER_SITE)->comment('Nombre de la web para el meta twitter:site');
+
+      // constraints
+      $table->unique(static::FIELD_SLUG);
     });
   }
 
