@@ -409,6 +409,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Loles León, actriz que da vida a Paloma Hurtado en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-edu-garcia',
+        static::FIELD_TITLE => 'Actor | Edu García',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Edu García, actor que da vida a José Miguel Cuesta en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/edu-garcia',
+        static::FIELD_OG_TITLE => 'Actor | Edu García',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/edu-garcia.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/edu-garcia',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Edu García, actor que da vida a José Miguel Cuesta en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
