@@ -505,6 +505,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Adriá Collado, actor que da vida a Fernando Navarro en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-sofia-nieto',
+        static::FIELD_TITLE => 'Actor | Sofía Nieto',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Sofía Nieto, actriz que da vida a Natalia Cuesta en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/sofia-nieto',
+        static::FIELD_OG_TITLE => 'Actor | Sofía Nieto',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/sofia-nieto.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/sofia-nieto',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Sofía Nieto, actriz que da vida a Natalia Cuesta en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
