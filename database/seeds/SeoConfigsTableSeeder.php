@@ -601,6 +601,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Santiago Segura, actor que se interpreta a sí mismo en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-eduardo-gomez',
+        static::FIELD_TITLE => 'Actor | Eduardo Gómez',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Eduardo Gómez, actor que da vida a Mariano Delgado en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/eduardo-gomez',
+        static::FIELD_OG_TITLE => 'Actor | Eduardo Gómez',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/eduardo-gomez.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/eduardo-gomez',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Eduardo Gómez, actor que da vida a Mariano Delgado en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
