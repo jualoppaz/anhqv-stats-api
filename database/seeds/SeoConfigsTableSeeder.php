@@ -553,6 +553,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Fernando Tejero, actor que da vida a Emilio Delgado en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-antonio-gomez',
+        static::FIELD_TITLE => 'Actor | Antonio Gómez',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Antonio Gómez, actor que da vida al Mozo de Mudanza 1 en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/antonio-gomez',
+        static::FIELD_OG_TITLE => 'Actor | Antonio Gómez',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/antonio-gomez.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/antonio-gomez',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Antonio Gómez, actor que da vida al Mozo de Mudanza 1 en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
