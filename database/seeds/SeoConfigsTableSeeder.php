@@ -565,6 +565,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Antonio Gómez, actor que da vida al Mozo de Mudanza 1 en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-arsenio-luna',
+        static::FIELD_TITLE => 'Actor | Arsenio Luna',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Arsenio Luna, actor que da vida al Mozo de Mudanza 2 en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/arsenio-luna',
+        static::FIELD_OG_TITLE => 'Actor | Arsenio Luna',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/arsenio-luna.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/arsenio-luna',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Arsenio Luna, actor que da vida al Mozo de Mudanza 2 en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
