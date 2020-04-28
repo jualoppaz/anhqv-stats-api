@@ -541,6 +541,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de María Adánez, actriz que da vida a Lucía Álvarez en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-fernando-tejero',
+        static::FIELD_TITLE => 'Actor | Fernando Tejero',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Fernando Tejero, actor que da vida a Emilio Delgado en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/fernando-tejero',
+        static::FIELD_OG_TITLE => 'Actor | Fernando Tejero',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/fernando-tejero.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/fernando-tejero',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Fernando Tejero, actor que da vida a Emilio Delgado en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
