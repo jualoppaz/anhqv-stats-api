@@ -577,6 +577,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Arsenio Luna, actor que da vida al Mozo de Mudanza 2 en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-guillermo-ortega',
+        static::FIELD_TITLE => 'Actor | Guillermo Ortega',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Guillermo Ortega, actor que da vida a Paco en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/guillermo-ortega',
+        static::FIELD_OG_TITLE => 'Actor | Guillermo Ortega',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/guillermo-ortega.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/guillermo-ortega',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Guillermo Ortega, actor que da vida a Paco en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
