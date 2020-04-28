@@ -493,6 +493,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Luis Merlo, actor que da vida a Mauricio Hidalgo en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-adria-collado',
+        static::FIELD_TITLE => 'Actor | Adriá Collado',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Adriá Collado, actor que da vida a Fernando Navarro en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/adria-collado',
+        static::FIELD_OG_TITLE => 'Actor | Adriá Collado',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/adria-collado.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/adria-collado',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Adriá Collado, actor que da vida a Fernando Navarro en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
