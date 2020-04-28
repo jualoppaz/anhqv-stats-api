@@ -529,6 +529,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Daniel Guzmán, actor que da vida a Roberto Alonso en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-maria-adanez',
+        static::FIELD_TITLE => 'Actor | María Adánez',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de María Adánez, actriz que da vida a Lucía Álvarez en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/maria-adanez',
+        static::FIELD_OG_TITLE => 'Actor | María Adánez',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/maria-adanez.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/maria-adanez',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de María Adánez, actriz que da vida a Lucía Álvarez en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
