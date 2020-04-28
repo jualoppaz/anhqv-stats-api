@@ -445,6 +445,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Laura Pamplona, actriz que da vida a Alicia Sanz en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-emma-penella',
+        static::FIELD_TITLE => 'Actor | Emma Penella',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Emma Penella, actriz que da vida a Concha en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/emma-penella',
+        static::FIELD_OG_TITLE => 'Actor | Emma Penella',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/emma-penella.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/emma-penella',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Emma Penella, actriz que da vida a Concha en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
