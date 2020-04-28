@@ -613,6 +613,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Eduardo Gómez, actor que da vida a Mariano Delgado en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-susana-reija',
+        static::FIELD_TITLE => 'Actor | Susana Reija',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Susana Reija, actriz que da vida a Esther en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/susana-reija',
+        static::FIELD_OG_TITLE => 'Actor | Susana Reija',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/desconocido.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/susana-reija',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Susana Reija, actriz que da vida a Esther en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
