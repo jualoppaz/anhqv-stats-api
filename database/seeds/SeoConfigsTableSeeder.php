@@ -457,6 +457,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Emma Penella, actriz que da vida a Concha en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-dani-ballesteros',
+        static::FIELD_TITLE => 'Actor | Dani Ballesteros',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Dani Ballesteros, actor que da vida a Dani Rubio en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/dani-ballesteros',
+        static::FIELD_OG_TITLE => 'Actor | Dani Ballesteros',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/dani-ballesteros.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/dani-ballesteros',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Dani Ballesteros, actor que da vida a Dani Rubio en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
