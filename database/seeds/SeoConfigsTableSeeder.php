@@ -469,6 +469,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Dani Ballesteros, actor que da vida a Dani Rubio en Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => 'actor-joseba-apaolaza',
+        static::FIELD_TITLE => 'Actor | Joseba Apaolaza',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles de Joseba Apaolaza, actor que da vida a Armando en Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/actores/joseba-apaolaza',
+        static::FIELD_OG_TITLE => 'Actor | Joseba Apaolaza',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/actors/joseba-apaolaza.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/actores/joseba-apaolaza',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles de Joseba Apaolaza, actor que da vida a Armando en Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
