@@ -650,6 +650,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
+        static::FIELD_SLUG => '1x02-erase-una-reforma',
+        static::FIELD_TITLE => '1x02 | Érase una reforma',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 1x02 (Érase una reforma) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/1/capitulos/1x02-erase-una-reforma',
+        static::FIELD_OG_TITLE => '1x02 | Érase una reforma',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/1x02.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/1/capitulos/1x02-erase-una-reforma',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 1x02 (Érase una reforma) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
         static::FIELD_SLUG => 'season-2-chapters',
         static::FIELD_TITLE => 'Temporada 2 | Capítulos',
         static::FIELD_DESCRIPTION => 'Galería con todos los capítulos de la segunda temporada de Aquí No Hay Quien Viva.',
