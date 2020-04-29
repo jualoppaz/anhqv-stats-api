@@ -926,6 +926,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
+        static::FIELD_SLUG => '2x07-erase-una-huelga',
+        static::FIELD_TITLE => '2x07 | Érase una huelga',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 2x07 (Érase una huelga) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/2/capitulos/2x07-erase-una-huelga',
+        static::FIELD_OG_TITLE => '2x07 | Érase una huelga',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/2x07.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/2/capitulos/2x07-erase-una-huelga',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 2x07 (Érase una huelga) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
         static::FIELD_SLUG => 'season-3-chapters',
         static::FIELD_TITLE => 'Temporada 3 | Capítulos',
         static::FIELD_DESCRIPTION => 'Galería con todos los capítulos de la tercera temporada de Aquí No Hay Quien Viva.',
