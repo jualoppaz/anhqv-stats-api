@@ -1346,6 +1346,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
+        static::FIELD_SLUG => '3x26-erase-el-primer-presidente-gay',
+        static::FIELD_TITLE => '3x26 | Érase el primer presidente gay',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 3x26 (Érase el primer presidente gay) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/3/capitulos/3x26-erase-el-primer-presidente-gay',
+        static::FIELD_OG_TITLE => '3x26 | Érase el primer presidente gay',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/3x26.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/3/capitulos/3x26-erase-el-primer-presidente-gay',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 3x26 (Érase el primer presidente gay) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
         static::FIELD_SLUG => 'season-4-chapters',
         static::FIELD_TITLE => 'Temporada 4 | Capítulos',
         static::FIELD_DESCRIPTION => 'Galería con todos los capítulos de la cuarta temporada de Aquí No Hay Quien Viva.',
