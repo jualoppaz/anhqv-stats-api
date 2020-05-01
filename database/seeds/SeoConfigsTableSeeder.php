@@ -1669,6 +1669,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x02 (Érase un colapso) de Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => '5x03-erase-un-robot-de-cocina',
+        static::FIELD_TITLE => '5x03 | Érase un robot de cocina',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 5x03 (Érase un robot de cocina) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x03-erase-un-robot-de-cocina',
+        static::FIELD_OG_TITLE => '5x03 | Érase un robot de cocina',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/5x03.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x03-erase-un-robot-de-cocina',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x03 (Érase un robot de cocina) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
