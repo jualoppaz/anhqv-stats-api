@@ -1454,6 +1454,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
+        static::FIELD_SLUG => '4x01-erase-un-despertar',
+        static::FIELD_TITLE => '4x01 | Érase un despertar',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 4x01 (Érase un despertar) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/4/capitulos/4x01-erase-un-despertar',
+        static::FIELD_OG_TITLE => '4x01 | Érase un despertar',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/4x01.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/4/capitulos/4x01-erase-un-despertar',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 4x01 (Érase un despertar) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
         static::FIELD_SLUG => 'season-5-chapters',
         static::FIELD_TITLE => 'Temporada 5 | Capítulos',
         static::FIELD_DESCRIPTION => 'Galería con todos los capítulos de la quinta y última temporada de Aquí No Hay Quien Viva.',
