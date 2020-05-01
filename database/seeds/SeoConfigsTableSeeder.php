@@ -1753,6 +1753,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x09 (Érase una emisora pirata) de Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => '5x10-erase-un-funeral-con-sorpresa',
+        static::FIELD_TITLE => '5x10 | Érase un funeral con sorpresa',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 5x10 (Érase un funeral con sorpresa) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x10-erase-un-funeral-con-sorpresa',
+        static::FIELD_OG_TITLE => '5x10 | Érase un funeral con sorpresa',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/5x10.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x10-erase-un-funeral-con-sorpresa',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x10 (Érase un funeral con sorpresa) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
