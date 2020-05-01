@@ -1729,6 +1729,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x07 (Érase un escándalo) de Aquí No Hay Quien Viva.',
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
+        static::FIELD_SLUG => '5x08-erase-un-descubrimiento-macabro',
+        static::FIELD_TITLE => '5x08 | Érase un descubrimiento macabro',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 5x08 (Érase un descubrimiento macabro) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x08-erase-un-descubrimiento-macabro',
+        static::FIELD_OG_TITLE => '5x08 | Érase un descubrimiento macabro',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/5x08.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/5/capitulos/5x08-erase-un-descubrimiento-macabro',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 5x08 (Érase un descubrimiento macabro) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ]
     ];
   }
