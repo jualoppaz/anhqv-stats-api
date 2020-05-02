@@ -1430,7 +1430,7 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
-        static::FIELD_SLUG => '3x32-erase-un-cirujano-plástico',
+        static::FIELD_SLUG => '3x32-erase-un-cirujano-plastico',
         static::FIELD_TITLE => '3x32 | Érase un cirujano plástico',
         static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 3x32 (Érase un cirujano plástico) de Aquí No Hay Quien Viva.',
         static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/3/capitulos/3x32-erase-un-cirujano-plastico',
