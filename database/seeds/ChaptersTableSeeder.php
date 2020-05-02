@@ -986,7 +986,7 @@ class ChaptersTableSeeder extends Seeder
     return [
       [
         static::FIELD_NAME => 'Érase una extradición',
-        static::FIELD_SLUG => '5x01-erase-una-extradiccion',
+        static::FIELD_SLUG => '5x01-erase-una-extradicion',
         static::FIELD_NATURAL_ID => '5x01',
         static::FIELD_SEASON => '5',
         static::FIELD_SUMMARY =>
