@@ -56,7 +56,7 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Vicenta',
         static::FIELD_NICKNAME => '',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/vicenta-benito.jpg',
-        static::FIELD_SLUG => 'vicenta'
+        static::FIELD_SLUG => 'vicenta-benito'
       ], [
         static::FIELD_NAME => 'Juan',
         static::FIELD_SURNAME => 'Cuesta',
@@ -72,7 +72,7 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Paloma',
         static::FIELD_NICKNAME => '',
         static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/characters/paloma-hurtado.jpg',
-        static::FIELD_SLUG => 'paloma'
+        static::FIELD_SLUG => 'paloma-hurtado'
       ], [
         static::FIELD_NAME => 'José Miguel',
         static::FIELD_SURNAME => 'Cuesta',

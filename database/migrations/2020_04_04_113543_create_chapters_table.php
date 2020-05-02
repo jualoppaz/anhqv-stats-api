@@ -39,6 +39,7 @@ class CreateChaptersTable extends Migration
 
       // constraints
       $table->unique(static::FIELD_SLUG);
+      $table->unique(static::FIELD_NATURAL_ID);
     });
   }
 
