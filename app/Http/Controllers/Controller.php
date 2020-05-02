@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 /**
  * @OA\Info(
  *  title=SWAGGER_API_TITLE,
- *  version="0.3.0"
+ *  version="0.4.0"
  * )
  */
 
@@ -32,10 +32,17 @@ use Illuminate\Routing\Controller as BaseController;
  * )
  */
 
- /**
+/**
  * @OA\Tag(
  *   name="actors",
  *   description="Recursos relacionados con los Actores"
+ * )
+ */
+
+/**
+ * @OA\Tag(
+ *   name="seo configs",
+ *   description="Recursos relacionados con las configuraciones de SEO de las páginas"
  * )
  */
 class Controller extends BaseController

@@ -188,7 +188,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Arsenio Luna',
         static::FIELD_BIRTHDATE => null,
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/arsenio-luna.jpg',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/desconocido.jpg',
         static::FIELD_SLUG => 'arsenio-luna'
       ], [
         static::FIELD_NAME => 'Guillermo',
@@ -221,7 +221,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Susana Reija',
         static::FIELD_BIRTHDATE => null,
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/susana-reija.jpg',
+        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/desconocido.jpg',
         static::FIELD_SLUG => 'susana-reija'
       ]
     ];
