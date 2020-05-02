@@ -1214,6 +1214,18 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
         static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
       ], [
+        static::FIELD_SLUG => '3x15-erase-una-academia',
+        static::FIELD_TITLE => '3x15 | Érase una academia',
+        static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 3x15 (Érase una academia) de Aquí No Hay Quien Viva.',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/temporadas/3/capitulos/3x15-erase-una-academia',
+        static::FIELD_OG_TITLE => '3x15 | Érase una academia',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/chapters/3x15.jpg',
+        static::FIELD_OG_URL => 'http://anhqv-stats.es/temporadas/3/capitulos/3x15-erase-una-academia',
+        static::FIELD_OG_DESCRIPTION => 'Ficha con los detalles del capítulo 3x15 (Érase una academia) de Aquí No Hay Quien Viva.',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+      ], [
         static::FIELD_SLUG => '3x16-erase-unos-estatutos',
         static::FIELD_TITLE => '3x16 | Érase unos estatutos',
         static::FIELD_DESCRIPTION => 'Ficha con los detalles del capítulo 3x16 (Érase unos estatutos) de Aquí No Hay Quien Viva.',
