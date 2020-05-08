@@ -52,9 +52,9 @@ class SeoConfigsTableSeeder extends Seeder
     return [
       [
         static::FIELD_SLUG => 'home',
-        static::FIELD_TITLE => 'ANHQV STATS',
+        static::FIELD_TITLE => 'ANHQV STATS | Información y Estadísticas de Aquí No Hay Quien Viva',
         static::FIELD_DESCRIPTION => 'Información y estadísticas Aquí No Hay Quien Viva: personajes, actores, capítulos... y mucho más. ✅ Disponible API REST documentada.',
-        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/',static::FIELD_OG_TITLE => 'ANHQV STATS',
+        static::FIELD_CANONICAL_URL => 'http://anhqv-stats.es/',static::FIELD_OG_TITLE => 'ANHQV STATS | Información y Estadísticas de Aquí No Hay Quien Viva',
         static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
         static::FIELD_OG_IMAGE => 'http://anhqv-stats.es/images/logo.png',
         static::FIELD_OG_URL => 'http://anhqv-stats.es/',
