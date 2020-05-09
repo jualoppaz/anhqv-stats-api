@@ -14,6 +14,7 @@ class CreateCharactersTable extends Migration
   const FIELD_SHORTNAME = 'shortname';
   const FIELD_NICKNAME = 'nickname';
   const FIELD_IMAGE_URL = 'image_url';
+  const FIELD_IMAGE_ALT = 'image_alt';
   const FIELD_SLUG = 'slug';
 
   /**
@@ -31,6 +32,7 @@ class CreateCharactersTable extends Migration
       $table->string(static::FIELD_SHORTNAME, 30)->nullable(false)->comment('Nombre corto del personaje');
       $table->string(static::FIELD_NICKNAME, 30)->comment('Apodo del personaje');
       $table->string(static::FIELD_IMAGE_URL, 100)->comment('Url a la imagen del personaje');
+      $table->string(static::FIELD_IMAGE_ALT, 100)->comment('Texto a mostrar en el atributo alt de la imagen del personaje');
       $table->string(static::FIELD_SLUG, 30)->nullable(false)->comment('Slug que identifica al personaje en las urls');
       $table->timestamps();
 
