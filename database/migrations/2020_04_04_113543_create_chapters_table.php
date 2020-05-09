@@ -13,6 +13,7 @@ class CreateChaptersTable extends Migration
   const FIELD_SEASON = 'season';
   const FIELD_SUMMARY = 'summary';
   const FIELD_IMAGE_URL = 'image_url';
+  const FIELD_IMAGE_ALT = 'image_alt';
   const FIELD_VIDEO_URL = 'video_url';
   const FIELD_RELEASE_DATE = 'release_date';
   const FIELD_DURATION = 'duration';
@@ -32,6 +33,7 @@ class CreateChaptersTable extends Migration
       $table->string(static::FIELD_SEASON, 1)->nullable(false)->comment('Temporada a la que pertenece');
       $table->text(static::FIELD_SUMMARY)->nullable(false)->comment('Sinopsis del capítulo');
       $table->string(static::FIELD_IMAGE_URL, 100)->nullable(false)->comment('URL de la imagen del capítulo');
+      $table->string(static::FIELD_IMAGE_ALT, 100)->comment('Texto a mostrar en el atributo alt de la imagen del capítulo');
       $table->string(static::FIELD_VIDEO_URL, 100)->comment('URL del vídeo de Youtube con el capítulo');
       $table->date(static::FIELD_RELEASE_DATE)->nullable(true)->comment('Fecha de estreno del capítulo');
       $table->integer(static::FIELD_DURATION)->nullable(true)->comment('Duración del capítulo en minutos');
