@@ -15,6 +15,7 @@ class CreateActorsTable extends Migration
   const FIELD_BIRTHDATE = 'birthdate';
   const FIELD_DEATHDATE = 'deathdate';
   const FIELD_IMAGE_URL = 'image_url';
+  const FIELD_IMAGE_ALT = 'image_alt';
   const FIELD_SLUG = 'slug';
 
   /**
@@ -33,6 +34,7 @@ class CreateActorsTable extends Migration
       $table->date(static::FIELD_BIRTHDATE)->nullable(true)->comment('Fecha de nacimiento del actor');
       $table->date(static::FIELD_DEATHDATE)->nullable(true)->comment('Fecha de fallecimiento del actor');
       $table->string(static::FIELD_IMAGE_URL, 100)->comment('Url a la imagen del actor');
+      $table->string(static::FIELD_IMAGE_ALT, 100)->comment('Texto a mostrar en el atributo alt de la imagen del actor');
       $table->string(static::FIELD_SLUG, 30)->nullable(false)->comment('Slug que identifica al actor en las urls');
       $table->timestamps();
 
