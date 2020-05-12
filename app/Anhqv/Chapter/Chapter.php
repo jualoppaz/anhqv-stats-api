@@ -4,6 +4,8 @@ namespace Anhqv\Chapter;
 
 use Anhqv\Base\BaseEntity;
 
+use Anhqv\Scene;
+
 use Carbon\Carbon;
 
 class Chapter extends BaseEntity
@@ -43,5 +45,10 @@ class Chapter extends BaseEntity
     }
 
     return null;
+  }
+
+  public function scenes()
+  {
+    return $this->hasMany('Anhqv\Scene\Scene', 'chapter_id', 'id');
   }
 }
