@@ -49,6 +49,7 @@ class CreateEventsTable extends Migration
         ->comment('Texto del diálogo');
 
       $table->foreign(static::FIELD_SCENE_ID)->references(static::FIELD_ID)->on(static::TABLE_SCENES_NAME);
+      $table->unique([static::FIELD_SCENE_ID, static::FIELD_ORDER]);
     });
   }
 
