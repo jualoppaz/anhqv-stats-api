@@ -16,5 +16,6 @@ class DatabaseSeeder extends Seeder
         $this->call(ActorsTableSeeder::class);
         $this->call(SeoConfigsTableSeeder::class);
         $this->call(ScenesTableSeeder::class);
+        $this->call(EventsTableSeeder::class);
     }
 }
