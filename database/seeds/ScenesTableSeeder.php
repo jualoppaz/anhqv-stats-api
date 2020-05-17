@@ -123,7 +123,31 @@ class ScenesTableSeeder extends Seeder
       static::FIELD_IMAGE_URL => '',
       static::FIELD_IMAGE_ALT => '',
       static::FIELD_CHAPTER_ID => $chapter_1x01,
-      static::FIELD_TITLE => 'Vicenta conduce a Roberto y Lucía hasta su piso',
+      static::FIELD_TITLE => 'Vicenta les da a Roberto y Lucía las llaves de su piso',
+      static::FIELD_ORDER => count($scenes) + 1,
+    ];
+
+    $scenes[] = [
+      static::FIELD_IMAGE_URL => '',
+      static::FIELD_IMAGE_ALT => '',
+      static::FIELD_CHAPTER_ID => $chapter_1x01,
+      static::FIELD_TITLE => 'Roberto y Lucía conocen a Marisa, MAuri y Fernando',
+      static::FIELD_ORDER => count($scenes) + 1,
+    ];
+
+    $scenes[] = [
+      static::FIELD_IMAGE_URL => '',
+      static::FIELD_IMAGE_ALT => '',
+      static::FIELD_CHAPTER_ID => $chapter_1x01,
+      static::FIELD_TITLE => 'Roberto y Lucía conocen a los Cuesta y a Concha',
+      static::FIELD_ORDER => count($scenes) + 1,
+    ];
+
+    $scenes[] = [
+      static::FIELD_IMAGE_URL => '',
+      static::FIELD_IMAGE_ALT => '',
+      static::FIELD_CHAPTER_ID => $chapter_1x01,
+      static::FIELD_TITLE => 'Roberto y Lucía llegan a su piso',
       static::FIELD_ORDER => count($scenes) + 1,
     ];
 
