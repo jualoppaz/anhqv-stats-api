@@ -71,7 +71,19 @@ class ChapterRepo extends BaseRepo implements ChapterRepoInterface
 
     foreach ($res->scenes as $scene)
     {
-      $scene->events;
+      $events = $scene->events;
+
+      foreach ($events as $event)
+      {
+        $characters = $event->characters;
+
+        foreach ($characters as $character)
+        {
+          $character->setVisible([
+            'slug', 'name', 'surname', 'second_surname', 'image_url', 'image_alt'
+          ]);
+        }
+      }
     }
 
     return $res;
