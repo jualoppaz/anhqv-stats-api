@@ -4156,4 +4156,16 @@ class EventsTableSeeder extends Seeder
 
     return $events;
   }
+
+  /**
+   * Eventos de la escena 20 del capitulo 1x01
+   */
+  public function getEvents_1x01_20($scene_id)
+  {
+    $this->command->info('Seeding scene 20');
+
+    $events = [];
+
+    return $events;
+  }
 }
