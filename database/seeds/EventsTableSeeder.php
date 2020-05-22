@@ -217,13 +217,14 @@ class EventsTableSeeder extends Seeder
     $events_1x01_15 = $this->getEvents_1x01_15($scenes_1x01[$index++]);
     $events_1x01_16 = $this->getEvents_1x01_16($scenes_1x01[$index++]);
     $events_1x01_17 = $this->getEvents_1x01_17($scenes_1x01[$index++]);
+    $events_1x01_18 = $this->getEvents_1x01_18($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
       $events_1x01_05, $events_1x01_06, $events_1x01_07, $events_1x01_08,
       $events_1x01_09, $events_1x01_10, $events_1x01_11, $events_1x01_12,
       $events_1x01_13, $events_1x01_14, $events_1x01_15, $events_1x01_16,
-      $events_1x01_17,
+      $events_1x01_17, $events_1x01_18,
     );
 
     return $res;
@@ -3391,6 +3392,254 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Pues sí.',
       static::FIELD_CHARACTERS_ID => [$emilioId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 18 del capitulo 1x01
+   */
+  public function getEvents_1x01_18($scene_id)
+  {
+    $this->command->info('Seeding scene 18');
+
+    $events = [];
+
+    $robertoId = $this->characters['roberto-alonso'];
+    $luciaId = $this->characters['lucia-alvarez'];
+    $palomaId = $this->characters['paloma-hurtado'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Cariño, yo creo que eso no sale: es el dibujo de la baldosa.',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Tú ya has terminado?',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Sí, he terminado hasta los huevos. ¿Por qué no vamos a comer algo?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Qué dices? ¿Y si vienen los de la mudanza?',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ostras, la mudanza... Fff, se me había olvidado. Oye, yo casi prefiero que no vengan.',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Se puede saber qué te pasa? Llevas todo el día negativo.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, es sólo que tengo hambre. Pero no te preocupes, que mojo la balleta en Fairy y se me pasa.',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, es que parece que no te hace ilusión venir a vivir juntos.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, claro que me hace ilusión, pero es que esto es una mierda.',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Oye, que yo también vivía muy bien con mis padres.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Entonces por qué les has dicho a tu padre que te compre este piso?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pues porque antes de casarnos tendremos que comprobar si somos compatibles.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Antes ¿de qué?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bueno, mira. Me voy a comprar algo para comer...',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Y yo me voy a dar un baño. ¿Tenemos gel?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, tenemos Fairy.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¡Hola! ¿Qué tal?',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Hola...',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Cómo va la mudanza?',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bien, bien, bien, muchas gracias.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Aahh, y ¿a dónde vas?',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Eehh, a comprar unas cosas que nos hacen falta.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿A estas horas? No. Pasa, mujer, que yo tengo de todo.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, no, no, muchísimas gracias, que así me da un poquito el aire.',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No. Pasa, mujer, y así te enseño la casa.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, no, de verdad, si...',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Venga tonta, si lo estás deseando. Anda, pasa pa\' dentro.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pero sólo me quedo un ratito, ¿eh?',
+      static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bueno, siéntate en este sofá, que es de cuero. Bueno, pues estoy encantada de que estés aquí.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
     ];
 
     return $events;
