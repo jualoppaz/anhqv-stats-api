@@ -211,7 +211,7 @@ class ScenesTableSeeder extends Seeder
       static::FIELD_IMAGE_URL => '',
       static::FIELD_IMAGE_ALT => '',
       static::FIELD_CHAPTER_ID => $chapter_1x01,
-      static::FIELD_TITLE => 'Emilio se reencuentra con su amigo de la mili... el "parlitas"',
+      static::FIELD_TITLE => 'Emilio se reencuentra con su amigo de la mili... el "Parlita"',
       static::FIELD_ORDER => count($scenes) + 1,
     ];
 
