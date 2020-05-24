@@ -246,6 +246,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_26 = $this->getEvents_1x01_26($scenes_1x01[$index++]);
     $events_1x01_27 = $this->getEvents_1x01_27($scenes_1x01[$index++]);
     $events_1x01_28 = $this->getEvents_1x01_28($scenes_1x01[$index++]);
+    $events_1x01_29 = $this->getEvents_1x01_29($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -255,6 +256,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_17, $events_1x01_18, $events_1x01_19, $events_1x01_20,
       $events_1x01_21, $events_1x01_22, $events_1x01_23, $events_1x01_24,
       $events_1x01_25, $events_1x01_26, $events_1x01_27, $events_1x01_28,
+      $events_1x01_29,
     );
 
     return $res;
@@ -5323,6 +5325,68 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Ay, qué mona, fíjate. Vosotros ni hipoteca ni nada, claro... pues mira qué bien.',
       static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 29 del capitulo 1x01
+   */
+  public function getEvents_1x01_29($scene_id)
+  {
+    $events = [];
+
+    $marisaId = $this->characters['marisa-benito'];
+    $vicentaId = $this->characters['vicenta-benito'];
+    $conchaId = $this->characters['concha'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Venga, vamos al dormitorio a ver qué hay.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¡Qué nervios, por Dios!',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Pero qué haces?',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Creo que se ha caído algo.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Quietas: voy a dar la luz.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bueno, pues sí que empezamos bien...',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
     ];
 
     return $events;
