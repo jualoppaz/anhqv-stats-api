@@ -243,14 +243,6 @@ class ScenesTableSeeder extends Seeder
       static::FIELD_IMAGE_URL => '',
       static::FIELD_IMAGE_ALT => '',
       static::FIELD_CHAPTER_ID => $chapter_1x01,
-      static::FIELD_TITLE => 'Armando vuelve a quedar con una mujer',
-      static::FIELD_ORDER => count($scenes) + 1,
-    ];
-
-    $scenes[] = [
-      static::FIELD_IMAGE_URL => '',
-      static::FIELD_IMAGE_ALT => '',
-      static::FIELD_CHAPTER_ID => $chapter_1x01,
       static::FIELD_TITLE => 'Roberto consigue llenar la bañera pero llaman a la puerta',
       static::FIELD_ORDER => count($scenes) + 1,
     ];
@@ -259,7 +251,7 @@ class ScenesTableSeeder extends Seeder
       static::FIELD_IMAGE_URL => '',
       static::FIELD_IMAGE_ALT => '',
       static::FIELD_CHAPTER_ID => $chapter_1x01,
-      static::FIELD_TITLE => 'Roberto acaba desnudo en el rellano',
+      static::FIELD_TITLE => 'Roberto deambula desnudo por el rellano',
       static::FIELD_ORDER => count($scenes) + 1,
     ];
 
