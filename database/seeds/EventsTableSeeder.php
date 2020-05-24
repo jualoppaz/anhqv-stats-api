@@ -237,6 +237,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_23 = $this->getEvents_1x01_23($scenes_1x01[$index++]);
     $events_1x01_24 = $this->getEvents_1x01_24($scenes_1x01[$index++]);
     $events_1x01_25 = $this->getEvents_1x01_25($scenes_1x01[$index++]);
+    $events_1x01_26 = $this->getEvents_1x01_26($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -245,7 +246,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_13, $events_1x01_14, $events_1x01_15, $events_1x01_16,
       $events_1x01_17, $events_1x01_18, $events_1x01_19, $events_1x01_20,
       $events_1x01_21, $events_1x01_22, $events_1x01_23, $events_1x01_24,
-      $events_1x01_25,
+      $events_1x01_25, $events_1x01_26,
     );
 
     return $res;
@@ -5107,6 +5108,37 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => '¿Estáis locas? ¿Pero vais a meteros a cotillear en una casa que no es vuestra? Ahhhhh.... voy con vosotras.',
       static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 26 del capitulo 1x01
+   */
+  public function getEvents_1x01_26($scene_id)
+  {
+    $this->command->info('Seeding scene 26');
+
+    $events = [];
+
+    $robertoId = $this->characters['roberto-alonso'];
+    $nataliaId = $this->characters['natalia-cuesta'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Eeee, eee, por favor, no grites, no grites. Te lo pido por favor, ¿eh?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Y yo por qué iba a gritar? Ah, y bonito culo.',
+      static::FIELD_CHARACTERS_ID => [$nataliaId],
     ];
 
     return $events;
