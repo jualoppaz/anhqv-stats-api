@@ -32,6 +32,8 @@ class EventsTableSeeder extends Seeder
 
     $events = $this->getEvents();
 
+    $this->command->getOutput()->progressStart(count($events));
+
     foreach ($events as $event) {
       $eventId = DB::table(static::TABLE_NAME)->insertGetId([
         static::FIELD_SCENE_ID => $event[static::FIELD_SCENE_ID],
@@ -47,7 +49,11 @@ class EventsTableSeeder extends Seeder
           static::FIELD_CHARACTER_ID => $characterId,
         ]);
       }
+
+      $this->command->getOutput()->progressAdvance();
     }
+
+    $this->command->getOutput()->progressFinish();
   }
 
   public function loadCharacters(){
@@ -238,6 +244,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_24 = $this->getEvents_1x01_24($scenes_1x01[$index++]);
     $events_1x01_25 = $this->getEvents_1x01_25($scenes_1x01[$index++]);
     $events_1x01_26 = $this->getEvents_1x01_26($scenes_1x01[$index++]);
+    $events_1x01_27 = $this->getEvents_1x01_27($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -246,7 +253,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_13, $events_1x01_14, $events_1x01_15, $events_1x01_16,
       $events_1x01_17, $events_1x01_18, $events_1x01_19, $events_1x01_20,
       $events_1x01_21, $events_1x01_22, $events_1x01_23, $events_1x01_24,
-      $events_1x01_25, $events_1x01_26,
+      $events_1x01_25, $events_1x01_26, $events_1x01_27,
     );
 
     return $res;
@@ -257,8 +264,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_01($scene_id)
   {
-    $this->command->info('Seeding scene 01');
-
     $marisaId = $this->characters['marisa-benito'];
     $vicentaId = $this->characters['vicenta-benito'];
 
@@ -352,8 +357,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_02($scene_id)
   {
-    $this->command->info('Seeding scene 02');
-
     $juanCuestaId = $this->characters['juan-cuesta'];
     $palomaId = $this->characters['paloma-hurtado'];
     $josemiId = $this->characters['jose-miguel-cuesta'];
@@ -416,8 +419,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_03($scene_id)
   {
-    $this->command->info('Seeding scene 03');
-
     $belenId = $this->characters['belen-lopez'];
     $aliciaId = $this->characters['alicia-sanz'];
 
@@ -551,8 +552,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_04($scene_id)
   {
-    $this->command->info('Seeding scene 04');
-
     $conchaId = $this->characters['concha'];
     $daniId = $this->characters['dani-rubio'];
     $armandoId = $this->characters['armando'];
@@ -655,8 +654,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_05($scene_id)
   {
-    $this->command->info('Seeding scene 05');
-
     $mauriId = $this->characters['mauricio-hidalgo'];
     $fernandoId = $this->characters['fernando-navarro'];
 
@@ -750,8 +747,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_06($scene_id)
   {
-    $this->command->info('Seeding scene 06');
-
     $juanCuestaId = $this->characters['juan-cuesta'];
     $palomaId = $this->characters['paloma-hurtado'];
 
@@ -789,8 +784,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_07($scene_id)
   {
-    $this->command->info('Seeding scene 07');
-
     $events = [];
 
     $robertoId = $this->characters['roberto-alonso'];
@@ -1185,8 +1178,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_08($scene_id)
   {
-    $this->command->info('Seeding scene 08');
-
     $events = [];
 
     $vicentaId = $this->characters['vicenta-benito'];
@@ -1313,8 +1304,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_09($scene_id)
   {
-    $this->command->info('Seeding scene 09');
-
     $events = [];
 
     $vicentaId = $this->characters['vicenta-benito'];
@@ -1548,8 +1537,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_10($scene_id)
   {
-    $this->command->info('Seeding scene 10');
-
     $events = [];
 
     $vicentaId = $this->characters['vicenta-benito'];
@@ -1719,8 +1706,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_11($scene_id)
   {
-    $this->command->info('Seeding scene 11');
-
     $events = [];
 
     $vicentaId = $this->characters['vicenta-benito'];
@@ -1874,8 +1859,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_12($scene_id)
   {
-    $this->command->info('Seeding scene 12');
-
     $events = [];
 
     $luciaId = $this->characters['lucia-alvarez'];
@@ -2106,8 +2089,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_13($scene_id)
   {
-    $this->command->info('Seeding scene 13');
-
     $events = [];
 
     $juanCuestaId = $this->characters['juan-cuesta'];
@@ -2315,8 +2296,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_14($scene_id)
   {
-    $this->command->info('Seeding scene 14');
-
     $events = [];
 
     $aliciaId = $this->characters['alicia-sanz'];
@@ -2394,8 +2373,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_15($scene_id)
   {
-    $this->command->info('Seeding scene 15');
-
     $events = [];
 
     $emilioId = $this->characters['emilio-delgado'];
@@ -2651,8 +2628,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_16($scene_id)
   {
-    $this->command->info('Seeding scene 16');
-
     $events = [];
 
     $conchaId = $this->characters['concha'];
@@ -2827,8 +2802,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_17($scene_id)
   {
-    $this->command->info('Seeding scene 17');
-
     $events = [];
 
     $mozoMudanza1Id = $this->characters['mozo-mudanza-1'];
@@ -3424,8 +3397,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_18($scene_id)
   {
-    $this->command->info('Seeding scene 18');
-
     $events = [];
 
     $robertoId = $this->characters['roberto-alonso'];
@@ -3672,8 +3643,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_19($scene_id)
   {
-    $this->command->info('Seeding scene 19');
-
     $events = [];
 
     $emilioId = $this->characters['emilio-delgado'];
@@ -4177,8 +4146,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_20($scene_id)
   {
-    $this->command->info('Seeding scene 20');
-
     $events = [];
 
     return $events;
@@ -4189,8 +4156,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_21($scene_id)
   {
-    $this->command->info('Seeding scene 21');
-
     $events = [];
 
     $marianoId = $this->characters['mariano-delgado'];
@@ -4348,8 +4313,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_22($scene_id)
   {
-    $this->command->info('Seeding scene 22');
-
     $events = [];
 
     $daniId = $this->characters['dani-rubio'];
@@ -4468,8 +4431,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_23($scene_id)
   {
-    $this->command->info('Seeding scene 23');
-
     $events = [];
 
     $robertoId = $this->characters['roberto-alonso'];
@@ -4950,8 +4911,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_24($scene_id)
   {
-    $this->command->info('Seeding scene 24');
-
     $events = [];
 
     $conchaId = $this->characters['concha'];
@@ -5006,8 +4965,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_25($scene_id)
   {
-    $this->command->info('Seeding scene 25');
-
     $events = [];
 
     $conchaId = $this->characters['concha'];
@@ -5118,8 +5075,6 @@ class EventsTableSeeder extends Seeder
    */
   public function getEvents_1x01_26($scene_id)
   {
-    $this->command->info('Seeding scene 26');
-
     $events = [];
 
     $robertoId = $this->characters['roberto-alonso'];
@@ -5137,8 +5092,135 @@ class EventsTableSeeder extends Seeder
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => '¿Y yo por qué iba a gritar? Ah, y bonito culo.',
+      static::FIELD_TEXT => '¿Y yo por qué iba a gritar? Ah, y ¡bonito culo!',
       static::FIELD_CHARACTERS_ID => [$nataliaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 27 del capitulo 1x01
+   */
+  public function getEvents_1x01_27($scene_id)
+  {
+    $events = [];
+
+    $conchaId = $this->characters['concha'];
+    $marisaId = $this->characters['marisa-benito'];
+    $vicentaId = $this->characters['vicenta-benito'];
+    $nataliaId = $this->characters['natalia-cuesta'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Venga, date prisa.',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Calla, que no tengo las gafas de cerca.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Cuidado, cuidado. Tss, cuidado.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Hola.',
+      static::FIELD_CHARACTERS_ID => [$nataliaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Hola.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Hola... ¿dónde irá esta niña a estas horas? Vaya padres.',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Nos van a pillar.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Oye, pero ¿qué haces tú con la regadera?',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Por si nos preguntan, decimos que vamos a regar las plantas.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Pero qué plantas?',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Oiii, si son gays de ésos tendrán que tener plantas, digo yo ¿no?',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ah, no sé.',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Calla, y vamos para dentro.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Esto que estamos haciendo no está nada bien.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
     ];
 
     return $events;
