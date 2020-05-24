@@ -247,6 +247,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_27 = $this->getEvents_1x01_27($scenes_1x01[$index++]);
     $events_1x01_28 = $this->getEvents_1x01_28($scenes_1x01[$index++]);
     $events_1x01_29 = $this->getEvents_1x01_29($scenes_1x01[$index++]);
+    $events_1x01_30 = $this->getEvents_1x01_30($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -256,7 +257,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_17, $events_1x01_18, $events_1x01_19, $events_1x01_20,
       $events_1x01_21, $events_1x01_22, $events_1x01_23, $events_1x01_24,
       $events_1x01_25, $events_1x01_26, $events_1x01_27, $events_1x01_28,
-      $events_1x01_29,
+      $events_1x01_29, $events_1x01_30,
     );
 
     return $res;
@@ -5388,6 +5389,16 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TEXT => 'Bueno, pues sí que empezamos bien...',
       static::FIELD_CHARACTERS_ID => [$conchaId],
     ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 30 del capitulo 1x01
+   */
+  public function getEvents_1x01_30($scene_id)
+  {
+    $events = [];
 
     return $events;
   }
