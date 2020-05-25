@@ -253,6 +253,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_33 = $this->getEvents_1x01_33($scenes_1x01[$index++]);
     $events_1x01_34 = $this->getEvents_1x01_34($scenes_1x01[$index++]);
     $events_1x01_35 = $this->getEvents_1x01_35($scenes_1x01[$index++]);
+    $events_1x01_36 = $this->getEvents_1x01_36($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -263,7 +264,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_21, $events_1x01_22, $events_1x01_23, $events_1x01_24,
       $events_1x01_25, $events_1x01_26, $events_1x01_27, $events_1x01_28,
       $events_1x01_29, $events_1x01_30, $events_1x01_31, $events_1x01_32,
-      $events_1x01_33, $events_1x01_34, $events_1x01_35,
+      $events_1x01_33, $events_1x01_34, $events_1x01_35, $events_1x01_36,
     );
 
     return $res;
@@ -6085,6 +6086,43 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Roberto... ¡Roberto, cariño! ¿Estás ahí?',
       static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 36 del capitulo 1x01
+   */
+  public function getEvents_1x01_36($scene_id)
+  {
+    $events = [];
+
+    $robertoId = $this->characters['roberto-alonso'];
+    $juanCuestaId = $this->characters['juan-cuesta'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Emilio... ¡Emilio...! Ttt, joder.',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Qué hacen nuestras cosas aquí?',
+      static::FIELD_CHARACTERS_ID => [$robertoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pero qué pesado es el chico nuevo del videoclub. Cómo está esto...',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
     ];
 
     return $events;
