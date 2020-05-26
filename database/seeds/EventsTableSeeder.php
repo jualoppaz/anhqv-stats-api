@@ -270,6 +270,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_44 = $this->getEvents_1x01_44($scenes_1x01[$index++]);
     $events_1x01_45 = $this->getEvents_1x01_45($scenes_1x01[$index++]);
     $events_1x01_46 = $this->getEvents_1x01_46($scenes_1x01[$index++]);
+    $events_1x01_47 = $this->getEvents_1x01_47($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -283,7 +284,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_33, $events_1x01_34, $events_1x01_35, $events_1x01_36,
       $events_1x01_37, $events_1x01_38, $events_1x01_39, $events_1x01_40,
       $events_1x01_41, $events_1x01_42, $events_1x01_43, $events_1x01_44,
-      $events_1x01_45, $events_1x01_46,
+      $events_1x01_45, $events_1x01_46, $events_1x01_47,
     );
 
     return $res;
@@ -7723,6 +7724,115 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => '¿Un degenerado? Vamos, no digas tonterías.',
       static::FIELD_CHARACTERS_ID => [$luciaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 47 del capitulo 1x01
+   */
+  public function getEvents_1x01_47($scene_id)
+  {
+    $events = [];
+
+    $juanCuestaId = $this->characters['juan-cuesta'];
+    $palomaId = $this->characters['paloma-hurtado'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Un degenerado, eso es lo que es: ¡un degenerado! Imagínate que se encuentra con nuestra niña: nos la traumatiza.',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Y yo creo que se ha dejado el grifo abierto aposta.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Por qué iba a hacer eso, mujer?',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Envidia.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Envidia ¿de qué?',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pero si ella se ha colado en casa solamente para ver cómo la tengo puesta.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Está bien, es el primer día. Vamos a darles un margen de confianza.',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Sí, sí. Tú dales confianza y ya verás como a ésta la hacen presidenta.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Cómo presidenta? El presidente soy yo...',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ja, pues ya te veo en la oposición.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Está bien. Si quieren guerra, tendrán guera. El miércoles junta de vecinos. Éstos no saben dónde se han metido.',
+      static::FIELD_CHARACTERS_ID => [$juanCuestaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Di que sí, cariño.',
+      static::FIELD_CHARACTERS_ID => [$palomaId],
     ];
 
     return $events;
