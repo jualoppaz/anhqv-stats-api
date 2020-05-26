@@ -257,6 +257,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_37 = $this->getEvents_1x01_37($scenes_1x01[$index++]);
     $events_1x01_38 = $this->getEvents_1x01_38($scenes_1x01[$index++]);
     $events_1x01_39 = $this->getEvents_1x01_39($scenes_1x01[$index++]);
+    $events_1x01_40 = $this->getEvents_1x01_40($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -268,7 +269,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_25, $events_1x01_26, $events_1x01_27, $events_1x01_28,
       $events_1x01_29, $events_1x01_30, $events_1x01_31, $events_1x01_32,
       $events_1x01_33, $events_1x01_34, $events_1x01_35, $events_1x01_36,
-      $events_1x01_37, $events_1x01_38, $events_1x01_39,
+      $events_1x01_37, $events_1x01_38, $events_1x01_39, $events_1x01_40,
     );
 
     return $res;
@@ -6676,6 +6677,67 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Illo, tío, que eso es de mi abuela.',
       static::FIELD_CHARACTERS_ID => [$daniId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 40 del capitulo 1x01
+   */
+  public function getEvents_1x01_40($scene_id)
+  {
+    $events = [];
+
+    $fernandoId = $this->characters['fernando-navarro'];
+    $mauriId = $this->characters['mauricio-hidalgo'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '7 horas, Mauri. 7 horas de retraso esperando en el aeropuerto, y justo cuando vamos a facturar resulta... que te has olvidado los billetes.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Te juro que los puse en el neceser.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ya... ¿y el neceser?',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '... En casa.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Para un fin de semana que podemos salir juntos, es que... Deja ya de grabar con la camarita, anda.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Fin de las vacaciones: see you soon.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
     ];
 
     return $events;
