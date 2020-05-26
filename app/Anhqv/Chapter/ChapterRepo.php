@@ -67,24 +67,10 @@ class ChapterRepo extends BaseRepo implements ChapterRepoInterface
   }
 
   public function findBySlug($slug){
-    $res = $this->model->where('slug', $slug)->firstOrFail();
-
-    foreach ($res->scenes as $scene)
-    {
-      $events = $scene->events;
-
-      foreach ($events as $event)
-      {
-        $characters = $event->characters;
-
-        foreach ($characters as $character)
-        {
-          $character->setVisible([
-            'slug', 'name', 'surname', 'second_surname', 'image_url', 'image_alt'
-          ]);
-        }
-      }
-    }
+    $res = $this->model
+      ->where('slug', $slug)
+      ->with(['scenes.events.characters'])
+      ->firstOrFail();
 
     return $res;
   }
