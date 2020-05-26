@@ -267,6 +267,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_41 = $this->getEvents_1x01_41($scenes_1x01[$index++]);
     $events_1x01_42 = $this->getEvents_1x01_42($scenes_1x01[$index++]);
     $events_1x01_43 = $this->getEvents_1x01_43($scenes_1x01[$index++]);
+    $events_1x01_44 = $this->getEvents_1x01_44($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
@@ -279,7 +280,7 @@ class EventsTableSeeder extends Seeder
       $events_1x01_29, $events_1x01_30, $events_1x01_31, $events_1x01_32,
       $events_1x01_33, $events_1x01_34, $events_1x01_35, $events_1x01_36,
       $events_1x01_37, $events_1x01_38, $events_1x01_39, $events_1x01_40,
-      $events_1x01_41, $events_1x01_42, $events_1x01_43,
+      $events_1x01_41, $events_1x01_42, $events_1x01_43, $events_1x01_44,
     );
 
     return $res;
@@ -7472,6 +7473,115 @@ class EventsTableSeeder extends Seeder
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Daaaaniiii.',
       static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 44 del capitulo 1x01
+   */
+  public function getEvents_1x01_44($scene_id)
+  {
+    $events = [];
+
+    $mauriId = $this->characters['mauricio-hidalgo'];
+    $fernandoId = $this->characters['fernando-navarro'];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bueno, ¿cuál de los dos va a dormir en el sofá?',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Por qué?',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Nooo, como sólo somos amigos.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Va, no empecemos... ¿Qué le importa a esta gente lo que somos o no somos?',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Eh, eh, eh. Yo tengo muy claro quién soy. Pero parece ser que tú no.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ven aquí. Siéntate... Escúchame, están a punto de ascenderme en el bufete.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ahh.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No creo que sea un buen momento para salir del armario.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Fernando, no es que tú no quieras salir del armario, es que te has escondido en el cajón de los calcetines. Me voy al sofá.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿No piensas hacer nada? ¿Voy a tener que dormir aquí?',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Anda, ven. Tontito.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Vale, te perdono.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
     ];
 
     return $events;
