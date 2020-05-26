@@ -258,7 +258,7 @@ class EventsTableSeeder extends Seeder
     $events_1x01_38 = $this->getEvents_1x01_38($scenes_1x01[$index++]);
     $events_1x01_39 = $this->getEvents_1x01_39($scenes_1x01[$index++]);
     $events_1x01_40 = $this->getEvents_1x01_40($scenes_1x01[$index++]);
-    $events_1x01_41 = $this->getEvents_1x01_40($scenes_1x01[$index++]);
+    $events_1x01_41 = $this->getEvents_1x01_41($scenes_1x01[$index++]);
 
     $res = array_merge(
       $events_1x01_01, $events_1x01_02, $events_1x01_03, $events_1x01_04,
