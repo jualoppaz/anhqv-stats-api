@@ -15,6 +15,6 @@ class Event extends BaseEntity
 
   public function characters()
   {
-    return $this->belongsToMany('Anhqv\Character');
+    return $this->belongsToMany('Anhqv\Character\Character', 'events_characters', 'event_id', 'character_id');
   }
 }
