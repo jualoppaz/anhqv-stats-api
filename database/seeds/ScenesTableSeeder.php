@@ -363,14 +363,6 @@ class ScenesTableSeeder extends Seeder
       static::FIELD_IMAGE_URL => '',
       static::FIELD_IMAGE_ALT => '',
       static::FIELD_CHAPTER_ID => $chapter_1x01,
-      static::FIELD_TITLE => 'Emilio, Alicia y Belén continúan encerrados en el ascensor',
-      static::FIELD_ORDER => count($scenes) + 1,
-    ];
-
-    $scenes[] = [
-      static::FIELD_IMAGE_URL => '',
-      static::FIELD_IMAGE_ALT => '',
-      static::FIELD_CHAPTER_ID => $chapter_1x01,
       static::FIELD_TITLE => 'Juan Cuesta intenta derribar la puerta del 3ºA',
       static::FIELD_ORDER => count($scenes) + 1,
     ];
