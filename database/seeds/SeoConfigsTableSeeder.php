@@ -2421,7 +2421,23 @@ class SeoConfigsTableSeeder extends Seeder
         static::FIELD_TWITTER_IMAGE => 'http://www.anhqv-stats.es/images/chapters/5x13.jpg',
         static::FIELD_TWITTER_TITLE => '5x13 | Érase un adiós',
         static::FIELD_TWITTER_DESCRIPTION => 'Ficha con los detalles del capítulo 5x13 (Érase un adiós) de Aquí No Hay Quien Viva.',
-      ]
+      ],
+      [
+        static::FIELD_SLUG => 'api-doc',
+        static::FIELD_TITLE => 'ANHQV STATS | API REST de Aquí No Hay Quien Viva ',
+        static::FIELD_DESCRIPTION => 'API REST de la serie Aquí No Hay Quien Viva (ANHQV) ☑️ Documentación NO OFICIAL realizada con Swagger',
+        static::FIELD_KEYWORDS => 'anhqv, stats, anhqv stats, aquí no hay quien viva, información, estadísticas, personajes, serie anhqv, actores, capítulos, api rest anhqv, swagger, api rest swagger',
+        static::FIELD_CANONICAL_URL => 'http://www.anhqv-stats.es/api-doc',static::FIELD_OG_TITLE => 'ANHQV STATS | API REST de Aquí No Hay Quien Viva',
+        static::FIELD_OG_TYPE => static::VALUE_OG_TYPE,
+        static::FIELD_OG_IMAGE => 'http://www.anhqv-stats.es/images/swagger-logo.png',
+        static::FIELD_OG_URL => 'http://www.anhqv-stats.es/api-doc',
+        static::FIELD_OG_DESCRIPTION => 'API REST de la serie Aquí No Hay Quien Viva (ANHQV) ☑️ Documentación NO OFICIAL realizada con Swagger',
+        static::FIELD_TWITTER_CARD => static::VALUE_TWITTER_CARD,
+        static::FIELD_TWITTER_SITE => static::VALUE_TWITTER_SITE,
+        static::FIELD_TWITTER_IMAGE => 'http://www.anhqv-stats.es/images/swagger-logo.png',
+        static::FIELD_TWITTER_TITLE => 'ANHQV STATS | API REST de Aquí No Hay Quien Viva',
+        static::FIELD_TWITTER_DESCRIPTION => 'API REST de la serie Aquí No Hay Quien Viva (ANHQV) ☑️ Documentación NO OFICIAL realizada con Swagger',
+      ],
     ];
   }
 }
