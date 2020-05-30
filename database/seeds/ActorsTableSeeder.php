@@ -53,7 +53,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Mariví Bilbao',
         static::FIELD_BIRTHDATE => Carbon::create('1930', '01', '22'),
         static::FIELD_DEATHDATE => Carbon::create('2013', '04', '03'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/marivi-bilbao.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/marivi-bilbao.jpg',
         static::FIELD_IMAGE_ALT => 'Mariví Bilbao',
         static::FIELD_SLUG => 'marivi-bilbao'
       ], [
@@ -62,7 +62,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Igartúa',
         static::FIELD_SHORTNAME => 'Gemma Cuervo',
         static::FIELD_BIRTHDATE => Carbon::create('1936', '06', '22'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/gemma-cuervo.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/gemma-cuervo.jpg',
         static::FIELD_IMAGE_ALT => 'Gemma Cuervo',
         static::FIELD_SLUG => 'gemma-cuervo'
       ], [
@@ -71,7 +71,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Sanz',
         static::FIELD_SHORTNAME => 'José Luis Gil',
         static::FIELD_BIRTHDATE => Carbon::create('1957', '12', '09'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/jose-luis-gil.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/jose-luis-gil.jpg',
         static::FIELD_IMAGE_ALT => 'José Luis Gil',
         static::FIELD_SLUG => 'jose-luis-gil'
       ], [
@@ -80,7 +80,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Rodríguez',
         static::FIELD_SHORTNAME => 'Loles León',
         static::FIELD_BIRTHDATE => Carbon::create('1950', '08', '01'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/loles-leon.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/loles-leon.jpg',
         static::FIELD_IMAGE_ALT => 'Loles León',
         static::FIELD_SLUG => 'loles-leon'
       ], [
@@ -89,7 +89,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Martínez',
         static::FIELD_SHORTNAME => 'Edu García',
         static::FIELD_BIRTHDATE => Carbon::create('1992', '04', '30'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/edu-garcia.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/edu-garcia.jpg',
         static::FIELD_IMAGE_ALT => 'Eduardo García',
         static::FIELD_SLUG => 'edu-garcia'
       ], [
@@ -98,7 +98,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Bacaicoa',
         static::FIELD_SHORTNAME => 'Malena Alterio',
         static::FIELD_BIRTHDATE => Carbon::create('1974', '01', '21'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/malena-alterio.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/malena-alterio.jpg',
         static::FIELD_IMAGE_ALT => 'Malena Grisel',
         static::FIELD_SLUG => 'malena-alterio'
       ], [
@@ -107,7 +107,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Pamplona',
         static::FIELD_SHORTNAME => 'Laura Pamplona',
         static::FIELD_BIRTHDATE => Carbon::create('1973', '09', '07'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/laura-pamplona.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/laura-pamplona.jpg',
         static::FIELD_IMAGE_ALT => 'Laura Pamplona',
         static::FIELD_SLUG => 'laura-pamplona'
       ], [
@@ -117,7 +117,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Emma Penella',
         static::FIELD_BIRTHDATE => Carbon::create('1931', '03', '02'),
         static::FIELD_DEATHDATE => Carbon::create('2007', '08', '27'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/emma-penella.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/emma-penella.jpg',
         static::FIELD_IMAGE_ALT => 'Manuel Ruiz',
         static::FIELD_SLUG => 'emma-penella'
       ], [
@@ -126,7 +126,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Ballesteros',
         static::FIELD_SHORTNAME => 'Dani Ballesteros',
         static::FIELD_BIRTHDATE => Carbon::create('1992', '12', '02'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/dani-ballesteros.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/dani-ballesteros.jpg',
         static::FIELD_IMAGE_ALT => 'Daniel Rubio Ballesteros',
         static::FIELD_SLUG => 'dani-ballesteros'
       ], [
@@ -135,7 +135,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Jáuregui',
         static::FIELD_SHORTNAME => 'Joseba Apaolaza',
         static::FIELD_BIRTHDATE => Carbon::create('1960', '12', '29'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/joseba-apaolaza.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/joseba-apaolaza.jpg',
         static::FIELD_IMAGE_ALT => 'Joseba Apaolaza',
         static::FIELD_SLUG => 'joseba-apaolaza'
       ], [
@@ -144,7 +144,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Merlo',
         static::FIELD_SHORTNAME => 'Luis Merlo',
         static::FIELD_BIRTHDATE => Carbon::create('1966', '06', '13'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/luis-merlo.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/luis-merlo.jpg',
         static::FIELD_IMAGE_ALT => 'Luis Merlo',
         static::FIELD_SLUG => 'luis-merlo'
       ], [
@@ -153,7 +153,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Adriá Collado',
         static::FIELD_BIRTHDATE => Carbon::create('1972', '08', '03'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/adria-collado.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/adria-collado.jpg',
         static::FIELD_IMAGE_ALT => 'Adriá Collado',
         static::FIELD_SLUG => 'adria-collado'
       ], [
@@ -162,7 +162,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Sofía Nieto',
         static::FIELD_BIRTHDATE => Carbon::create('1984', '08', '16'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/sofia-nieto.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/sofia-nieto.jpg',
         static::FIELD_IMAGE_ALT => 'Sofía Nieto',
         static::FIELD_SLUG => 'sofia-nieto'
       ], [
@@ -171,7 +171,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Guzmán',
         static::FIELD_SHORTNAME => 'Daniel Guzmán',
         static::FIELD_BIRTHDATE => Carbon::create('1974', '09', '21'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/daniel-guzman.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/daniel-guzman.jpg',
         static::FIELD_IMAGE_ALT => 'Daniel Guzmán',
         static::FIELD_SLUG => 'daniel-guzman'
       ], [
@@ -180,7 +180,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Almenara',
         static::FIELD_SHORTNAME => 'María Adánez',
         static::FIELD_BIRTHDATE => Carbon::create('1976', '03', '12'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/maria-adanez.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/maria-adanez.jpg',
         static::FIELD_IMAGE_ALT => 'María Adánez',
         static::FIELD_SLUG => 'maria-adanez'
       ], [
@@ -189,7 +189,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Muñoz-Torrero',
         static::FIELD_SHORTNAME => 'Fernando Tejero',
         static::FIELD_BIRTHDATE => Carbon::create('1967', '02', '24'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/fernando-tejero.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/fernando-tejero.jpg',
         static::FIELD_IMAGE_ALT => 'Fernando Tejero',
         static::FIELD_SLUG => 'fernando-tejero'
       ], [
@@ -198,7 +198,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Celdrán',
         static::FIELD_SHORTNAME => 'Antonio Gómez',
         static::FIELD_BIRTHDATE => null,
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/antonio-gomez.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/antonio-gomez.jpg',
         static::FIELD_IMAGE_ALT => 'Antonio Gómez',
         static::FIELD_SLUG => 'antonio-gomez'
       ], [
@@ -207,7 +207,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Arsenio Luna',
         static::FIELD_BIRTHDATE => null,
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/desconocido.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/desconocido.jpg',
         static::FIELD_IMAGE_ALT => 'Arsenio Luna',
         static::FIELD_SLUG => 'arsenio-luna'
       ], [
@@ -216,7 +216,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Sierra',
         static::FIELD_SHORTNAME => 'Guillermo Ortega',
         static::FIELD_BIRTHDATE => Carbon::create('1971', '06', '30'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/guillermo-ortega.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/guillermo-ortega.jpg',
         static::FIELD_IMAGE_ALT => 'Guillermo Ortega',
         static::FIELD_SLUG => 'guillermo-ortega'
       ], [
@@ -225,7 +225,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => 'Silva',
         static::FIELD_SHORTNAME => 'Santiago Segura',
         static::FIELD_BIRTHDATE => Carbon::create('1965', '07', '17'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/santiago-segura.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/santiago-segura.jpg',
         static::FIELD_IMAGE_ALT => 'Santiago Segura',
         static::FIELD_SLUG => 'santiago-segura'
       ], [
@@ -235,7 +235,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SHORTNAME => 'Eduardo Gómez',
         static::FIELD_BIRTHDATE => Carbon::create('1951', '07', '27'),
         static::FIELD_DEATHDATE => Carbon::create('2019', '07', '28'),
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/eduardo-gomez.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/eduardo-gomez.jpg',
         static::FIELD_IMAGE_ALT => 'Eduardo Gómez',
         static::FIELD_SLUG => 'eduardo-gomez'
       ], [
@@ -244,7 +244,7 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_SECOND_SURNAME => null,
         static::FIELD_SHORTNAME => 'Susana Reija',
         static::FIELD_BIRTHDATE => null,
-        static::FIELD_IMAGE_URL => 'http://anhqv-stats.es/images/actors/desconocido.jpg',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/desconocido.jpg',
         static::FIELD_IMAGE_ALT => 'Susana Reija',
         static::FIELD_SLUG => 'susana-reija'
       ]
