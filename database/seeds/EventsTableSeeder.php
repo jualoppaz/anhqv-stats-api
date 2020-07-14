@@ -66,7 +66,12 @@ class EventsTableSeeder extends Seeder
     $eventsTableSeeder1x01 = new EventsTableSeeder1x01();
     $events_1x01 = $eventsTableSeeder1x01->getEvents_1x01();
 
-    $res = array_merge($events_1x01);
+    $eventsTableSeeder1x02 = new EventsTableSeeder1x02();
+    $events_1x02 = $eventsTableSeeder1x02->getEvents_1x02();
+
+    $res = array_merge(
+      $events_1x01, $events_1x02,
+    );
 
     return $res;
   }
