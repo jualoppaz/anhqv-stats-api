@@ -48,6 +48,14 @@ class ScenesTableSeeder1x02
       static::FIELD_ORDER => count($scenes) + 1,
     ];
 
+    $scenes[] = [
+      static::FIELD_IMAGE_URL => '',
+      static::FIELD_IMAGE_ALT => '',
+      static::FIELD_CHAPTER_ID => $chapter_1x02,
+      static::FIELD_TITLE => 'Natalia flirtea con Roberto',
+      static::FIELD_ORDER => count($scenes) + 1,
+    ];
+
     return $scenes;
   }
 }
