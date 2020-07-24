@@ -247,6 +247,24 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/desconocido.jpg',
         static::FIELD_IMAGE_ALT => 'Susana Reija',
         static::FIELD_SLUG => 'susana-reija'
+      ], [
+        static::FIELD_NAME => 'Ángel',
+        static::FIELD_SURNAME => 'Jodrá',
+        static::FIELD_SECOND_SURNAME => null,
+        static::FIELD_SHORTNAME => 'Ángel Jodrá',
+        static::FIELD_BIRTHDATE => null,
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/angel-jodra.jpg',
+        static::FIELD_IMAGE_ALT => 'Ángel Jodrá',
+        static::FIELD_SLUG => 'angel-jodra'
+      ], [
+        static::FIELD_NAME => 'Ernesto',
+        static::FIELD_SURNAME => 'Arango',
+        static::FIELD_SECOND_SURNAME => null,
+        static::FIELD_SHORTNAME => 'Ernesto Arango',
+        static::FIELD_BIRTHDATE => null,
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/ernesto-arango.jpg',
+        static::FIELD_IMAGE_ALT => 'Ernesto Arango',
+        static::FIELD_SLUG => 'ernesto-arango'
       ]
     ];
   }
