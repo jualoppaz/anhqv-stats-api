@@ -1500,7 +1500,7 @@ class EventsTableSeeder1x01
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => 'Espera, espera, espera. Espera que te ayudo, espera. No sigas... Ala, tira. Con cuidadito, ¿eh? no vayamos a tener un disgusto. Vamos.',
+      static::FIELD_TEXT => 'Espera, espera, espera. Espera que te ayudo, espera. No sigas... Hala, tira. Con cuidadito, ¿eh? no vayamos a tener un disgusto. Vamos.',
       static::FIELD_CHARACTERS_ID => [$juanCuestaId],
     ];
 
@@ -4829,7 +4829,7 @@ class EventsTableSeeder1x01
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => 'A ver... sí, sí, es mía, es mía. Venga, copazo al cuerpo, tía. Ala, vamos a empezar ya.',
+      static::FIELD_TEXT => 'A ver... sí, sí, es mía, es mía. Venga, copazo al cuerpo, tía. Hala, vamos a empezar ya.',
       static::FIELD_CHARACTERS_ID => [$marisaId],
     ];
 
@@ -5481,7 +5481,7 @@ class EventsTableSeeder1x01
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => 'Ala, guapas. Ala, Seguid rompiendo cosas. Y ahora a ver qué hacemos.',
+      static::FIELD_TEXT => 'Hala, guapas. Hala, seguid rompiendo cosas. Y ahora a ver qué hacemos.',
       static::FIELD_CHARACTERS_ID => [$marisaId],
     ];
 
@@ -6891,7 +6891,7 @@ class EventsTableSeeder1x01
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => 'No hagas eso que te vas a hacer daño, ¡que te vas a hacer daañoooooo! Ala...',
+      static::FIELD_TEXT => 'No hagas eso que te vas a hacer daño, ¡que te vas a hacer daañoooooo! Hala...',
       static::FIELD_CHARACTERS_ID => [$juanCuestaId],
     ];
 

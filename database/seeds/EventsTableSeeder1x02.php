@@ -744,7 +744,7 @@ class EventsTableSeeder1x02
       static::FIELD_SCENE_ID => $scene_id,
       static::FIELD_ORDER => count($events) + 1,
       static::FIELD_TYPE => static::VALUE_DIALOG,
-      static::FIELD_TEXT => 'Venga, ya podéis pasar el material. ¡Ala, cenutrio! ¡Que te vas a cargar la puerta, que vas como las vacas! Bueno, no te preocupes que eso luego te lo pinto yo.',
+      static::FIELD_TEXT => 'Venga, ya podéis pasar el material. ¡Hala, cenutrio! ¡Que te vas a cargar la puerta, que vas como las vacas! Bueno, no te preocupes que eso luego te lo pinto yo.',
       static::FIELD_CHARACTERS_ID => [$antonioId],
     ];
 
