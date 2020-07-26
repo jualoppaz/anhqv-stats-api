@@ -41,11 +41,12 @@ class EventsTableSeeder1x02
     $events_1x02_09 = $this->getEvents_1x02_09($scenes_1x02[$index++]);
     $events_1x02_10 = $this->getEvents_1x02_10($scenes_1x02[$index++]);
     $events_1x02_11 = $this->getEvents_1x02_11($scenes_1x02[$index++]);
+    $events_1x02_12 = $this->getEvents_1x02_12($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
       $events_1x02_05, $events_1x02_06, $events_1x02_07, $events_1x02_08,
-      $events_1x02_09, $events_1x02_10, $events_1x02_11,
+      $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
     );
 
     return $res;
@@ -1806,6 +1807,77 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Jum...',
       static::FIELD_CHARACTERS_ID => [$aliciaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 12 del capitulo 1x02
+   */
+  public function getEvents_1x02_12($scene_id)
+  {
+    $emilioId = $this->characters['emilio-delgado'];
+    $vicentaId = $this->characters['vicenta-benito'];
+    $marisaId = $this->characters['marisa-benito'];
+    $conchaId = $this->characters['concha'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pues sí, les han forzado la puerta. Yo no sé para qué, pero les han forzado la puerta.',
+      static::FIELD_CHARACTERS_ID => [$emilioId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Bueno, por lo menos no se han llevado nada. Yo creo que han visto a Valentín y se han asustado.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Eso debe ser. ¿Y tú no has visto entrar a nadie raro?',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No. Yo aparte de ustedes, no.',
+      static::FIELD_CHARACTERS_ID => [$emilioId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Qué es lo que querían, si no tenemos nada?',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Pues habéis tenido suerte de no estar en casa, que si llegáis a estar... Lo mismo os violan que os matan a las dos. Yo no sé cómo podéis vivir tranquilas en un primero. El día menos pensado os entran por la ventana y si no, al tiempo. Yo porque vivo en un segundo, y además está mi hijo, que si no... hace tiempo que hubiera puesto una alarma.',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Y qué cuesta una alarma de esas?',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
     ];
 
     return $events;
