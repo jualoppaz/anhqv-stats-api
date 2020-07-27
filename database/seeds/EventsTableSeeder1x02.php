@@ -44,12 +44,13 @@ class EventsTableSeeder1x02
     $events_1x02_12 = $this->getEvents_1x02_12($scenes_1x02[$index++]);
     $events_1x02_13 = $this->getEvents_1x02_13($scenes_1x02[$index++]);
     $events_1x02_14 = $this->getEvents_1x02_14($scenes_1x02[$index++]);
+    $events_1x02_15 = $this->getEvents_1x02_15($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
       $events_1x02_05, $events_1x02_06, $events_1x02_07, $events_1x02_08,
       $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
-      $events_1x02_13, $events_1x02_14,
+      $events_1x02_13, $events_1x02_14, $events_1x02_15,
     );
 
     return $res;
@@ -2085,6 +2086,115 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Juan, no te dejes, ¿eh? ¡No te dejes!',
       static::FIELD_CHARACTERS_ID => [$palomaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 15 del capitulo 1x02
+   */
+  public function getEvents_1x02_15($scene_id)
+  {
+    $vicentaId = $this->characters['vicenta-benito'];
+    $marisaId = $this->characters['marisa-benito'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Marisa, ¿estás dormida?',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Noooooo...',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Oye, ¿qué vamos a hacer si vuelven?',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Quiénes?',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Los que nos han roto la puerta...',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Y quién te dice a ti que van a volver si no se llevaron nada?',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Claro, porque a lo mejor nos buscan a nosotras.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Claro, nos han visto en la portada del Interviú y se han encaprichado.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Estoy hablando en serio.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Mira, duérmete y déjame en paz ya.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Qué es ese ruido? Valentín, ¡busca, busca, BUSCA!',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Hoy mejor duermo con la dentadura puesta, no vaya a ser que tenga que morder a alguien.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
     ];
 
     return $events;
