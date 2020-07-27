@@ -45,12 +45,13 @@ class EventsTableSeeder1x02
     $events_1x02_13 = $this->getEvents_1x02_13($scenes_1x02[$index++]);
     $events_1x02_14 = $this->getEvents_1x02_14($scenes_1x02[$index++]);
     $events_1x02_15 = $this->getEvents_1x02_15($scenes_1x02[$index++]);
+    $events_1x02_16 = $this->getEvents_1x02_16($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
       $events_1x02_05, $events_1x02_06, $events_1x02_07, $events_1x02_08,
       $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
-      $events_1x02_13, $events_1x02_14, $events_1x02_15,
+      $events_1x02_13, $events_1x02_14, $events_1x02_15, $events_1x02_16,
     );
 
     return $res;
@@ -2195,6 +2196,43 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Hoy mejor duermo con la dentadura puesta, no vaya a ser que tenga que morder a alguien.',
       static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 16 del capitulo 1x02
+   */
+  public function getEvents_1x02_16($scene_id)
+  {
+    $mauriId = $this->characters['mauricio-hidalgo'];
+    $fernandoId = $this->characters['fernando-navarro'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Pero quién puede levantarse a trabajar a las 8 de la mañana aparte de Iñaki Gabilondo?',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Yo.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ay, perdona, si lo digo por éstos que... perdona... ¡Fernando, un beso! Dame un besito.',
+      static::FIELD_CHARACTERS_ID => [$mauriId],
     ];
 
     return $events;
