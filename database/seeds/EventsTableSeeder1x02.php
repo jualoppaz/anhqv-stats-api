@@ -46,12 +46,14 @@ class EventsTableSeeder1x02
     $events_1x02_14 = $this->getEvents_1x02_14($scenes_1x02[$index++]);
     $events_1x02_15 = $this->getEvents_1x02_15($scenes_1x02[$index++]);
     $events_1x02_16 = $this->getEvents_1x02_16($scenes_1x02[$index++]);
+    $events_1x02_17 = $this->getEvents_1x02_17($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
       $events_1x02_05, $events_1x02_06, $events_1x02_07, $events_1x02_08,
       $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
       $events_1x02_13, $events_1x02_14, $events_1x02_15, $events_1x02_16,
+      $events_1x02_17,
     );
 
     return $res;
@@ -2233,6 +2235,35 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Ay, perdona, si lo digo por éstos que... perdona... ¡Fernando, un beso! Dame un besito.',
       static::FIELD_CHARACTERS_ID => [$mauriId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 17 del capitulo 1x02
+   */
+  public function getEvents_1x02_17($scene_id)
+  {
+    $conchaId = $this->characters['concha'];
+    $obreroPolacoId = $this->characters['obrero-polaco'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¡Uy! ¡¡Cuidadoooo!! A ver si bajas y me lavas las sábanas...',
+      static::FIELD_CHARACTERS_ID => [$conchaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Sí, sí, sí, sí, sí...',
+      static::FIELD_CHARACTERS_ID => [$obreroPolacoId],
     ];
 
     return $events;
