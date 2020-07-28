@@ -48,13 +48,14 @@ class EventsTableSeeder1x02
     $events_1x02_16 = $this->getEvents_1x02_16($scenes_1x02[$index++]);
     $events_1x02_17 = $this->getEvents_1x02_17($scenes_1x02[$index++]);
     $events_1x02_18 = $this->getEvents_1x02_18($scenes_1x02[$index++]);
+    $events_1x02_19 = $this->getEvents_1x02_19($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
       $events_1x02_05, $events_1x02_06, $events_1x02_07, $events_1x02_08,
       $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
       $events_1x02_13, $events_1x02_14, $events_1x02_15, $events_1x02_16,
-      $events_1x02_17, $events_1x02_18,
+      $events_1x02_17, $events_1x02_18, $events_1x02_19,
     );
 
     return $res;
@@ -2276,6 +2277,26 @@ class EventsTableSeeder1x02
   public function getEvents_1x02_18($scene_id)
   {
     $events = [];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 19 del capitulo 1x02
+   */
+  public function getEvents_1x02_19($scene_id)
+  {
+    $belenId = $this->characters['belen-lopez'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ay, que ya han terminado con el pico... ¡Mierda, callad!',
+      static::FIELD_CHARACTERS_ID => [$belenId],
+    ];
 
     return $events;
   }
