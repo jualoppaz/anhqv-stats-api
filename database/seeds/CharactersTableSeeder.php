@@ -286,6 +286,15 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/obrero-polaco.jpg',
         static::FIELD_IMAGE_ALT => 'Obrero polaco',
         static::FIELD_SLUG => 'obrero-polaco'
+      ], [
+        static::FIELD_NAME => 'Gerardo',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Gerardo',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/gerardo.jpg',
+        static::FIELD_IMAGE_ALT => 'Gerardo, el calvo que habla muy rápido',
+        static::FIELD_SLUG => 'gerardo'
       ],
     ];
   }

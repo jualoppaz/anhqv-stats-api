@@ -52,6 +52,7 @@ class EventsTableSeeder1x02
     $events_1x02_20 = $this->getEvents_1x02_20($scenes_1x02[$index++]);
     $events_1x02_21 = $this->getEvents_1x02_21($scenes_1x02[$index++]);
     $events_1x02_22 = $this->getEvents_1x02_22($scenes_1x02[$index++]);
+    $events_1x02_23 = $this->getEvents_1x02_23($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
@@ -59,7 +60,7 @@ class EventsTableSeeder1x02
       $events_1x02_09, $events_1x02_10, $events_1x02_11, $events_1x02_12,
       $events_1x02_13, $events_1x02_14, $events_1x02_15, $events_1x02_16,
       $events_1x02_17, $events_1x02_18, $events_1x02_19, $events_1x02_20,
-      $events_1x02_21, $events_1x02_22,
+      $events_1x02_21, $events_1x02_22, $events_1x02_23,
     );
 
     return $res;
@@ -2636,6 +2637,100 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => 'Ah, tú qué vas a saber, si no te enteras nunca de nada...',
       static::FIELD_CHARACTERS_ID => [$mauricioId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 23 del capitulo 1x02
+   */
+  public function getEvents_1x02_23($scene_id)
+  {
+    $gerardoId = $this->characters['gerardo'];
+    $marisaId = $this->characters['marisa-benito'];
+    $vicentaId = $this->characters['vicenta-benito'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Señoras, enhorabuena por su elección. Este sistema de alarma consta de 3 sensores de movimiento situados: 1, en salón; 2, cocina; 3, dormitorio. Ahora tienen que introducir un código secreto de 4 dígitos que, bajo ningún concepto, deben decir a nadie.',
+      static::FIELD_CHARACTERS_ID => [$gerardoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¿Cuál ponemos?',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'El de la tarjeta de crédito: 4547.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Calla, pon el que te dé la gana: luego me lo dices.',
+      static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Mire para allá.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Ya está.',
+      static::FIELD_CHARACTERS_ID => [$vicentaId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Repito, no deben decírselo a nadie. Y ahora les explicaré su funcionamiento, es muy sencillo.',
+      static::FIELD_CHARACTERS_ID => [$gerardoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Para activar el sistema y conectar la alarma en toda la vivienda teclee su número de identificación personal o código secreto pulsando posteriormente la tecla enter situada en la esquina inferior derecha del panel de control. Si sólo desean anular alguna zona para conectar la alarma cuando usted se encuentre dentro de la vivienda, teclee su número de identificación personal o código secreto pulsando posteriormente la tecla bypass situada en la esquina superior izquierda en el panel del control, y el número de la zona que desee anular: 1 para salón, 2 para la cocina, 3 para el dormitorio, seguido de la tecla shift situada en la esquina superior derecha del panel de control. Luego, durante 5 segundos, parpadeará una luz roja situada en la esquina inferior izquierda en el panel de control. Tras cruzar ese tiempo sólo tienen que pulsar la tecla enter y como comprobará perfectamente se encuentra situada en la esquina inferior derecha del panel de control.',
+      static::FIELD_CHARACTERS_ID => [$gerardoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Eso es todo, ¿lo han entendido?',
+      static::FIELD_CHARACTERS_ID => [$gerardoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Enhorabuena.',
+      static::FIELD_CHARACTERS_ID => [$gerardoId],
     ];
 
     return $events;

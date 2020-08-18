@@ -44,7 +44,7 @@ class CreateEventsTable extends Migration
       $table->integer(static::FIELD_ORDER)
         ->nullable(false)
         ->comment('Orden del evento dentro de una escena');
-      $table->string(static::FIELD_TEXT, 350)
+      $table->string(static::FIELD_TEXT, 1000)
         ->nullable(true)
         ->comment('Texto del diálogo');
 

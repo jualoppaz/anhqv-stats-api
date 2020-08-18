@@ -186,6 +186,11 @@ class EventsTableSeeder extends Seeder
       ->first()
       ->id;
 
+    $gerardoId = DB::table('characters')
+      ->whereSlug('gerardo')
+      ->first()
+      ->id;
+
     $this->characters = [
       'marisa-benito' => $marisaId,
       'vicenta-benito' => $vicentaId,
@@ -213,6 +218,7 @@ class EventsTableSeeder extends Seeder
       'obrero-africano' => $obreroAfricanoId,
       'obrero-marroqui' => $obreroMarroquiId,
       'obrero-polaco' => $obreroPolacoId,
+      'gerardo' => $gerardoId,
     ];
   }
 
