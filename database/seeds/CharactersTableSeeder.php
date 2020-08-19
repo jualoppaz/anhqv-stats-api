@@ -250,7 +250,52 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/esther.jpg',
         static::FIELD_IMAGE_ALT => 'Esther',
         static::FIELD_SLUG => 'esther'
-      ]
+      ], [
+        static::FIELD_NAME => 'Antonio',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Antonio',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/antonio-el-capataz.jpg',
+        static::FIELD_IMAGE_ALT => 'Antonio, el capataz de la obra',
+        static::FIELD_SLUG => 'antonio-el-capataz'
+      ], [
+        static::FIELD_NAME => 'Obrero marroquí',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Obrero marroquí',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/obrero-marroqui.jpg',
+        static::FIELD_IMAGE_ALT => 'Obrero marroquí',
+        static::FIELD_SLUG => 'obrero-marroqui'
+      ], [
+        static::FIELD_NAME => 'Obrero africano',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Obrero africano',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/obrero-africano.jpg',
+        static::FIELD_IMAGE_ALT => 'Obrero africano',
+        static::FIELD_SLUG => 'obrero-africano'
+      ], [
+        static::FIELD_NAME => 'Obrero polaco',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Obrero polaco',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/obrero-polaco.jpg',
+        static::FIELD_IMAGE_ALT => 'Obrero polaco',
+        static::FIELD_SLUG => 'obrero-polaco'
+      ], [
+        static::FIELD_NAME => 'Gerardo',
+        static::FIELD_SURNAME => '',
+        static::FIELD_SECOND_SURNAME => '',
+        static::FIELD_SHORTNAME => 'Gerardo',
+        static::FIELD_NICKNAME => '',
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/gerardo.jpg',
+        static::FIELD_IMAGE_ALT => 'Gerardo, el calvo que habla muy rápido',
+        static::FIELD_SLUG => 'gerardo'
+      ],
     ];
   }
 }
