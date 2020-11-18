@@ -10,7 +10,7 @@ use Illuminate\Routing\Controller as BaseController;
 /**
  * @OA\Info(
  *  title=SWAGGER_API_TITLE,
- *  version="0.5.1"
+ *  version="0.5.2"
  * )
  */
 
