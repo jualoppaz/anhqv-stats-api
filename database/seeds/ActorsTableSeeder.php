@@ -265,6 +265,15 @@ class ActorsTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/ernesto-arango.jpg',
         static::FIELD_IMAGE_ALT => 'Ernesto Arango',
         static::FIELD_SLUG => 'ernesto-arango'
+      ], [
+        static::FIELD_NAME => 'Jaime',
+        static::FIELD_SURNAME => 'Ordóñez',
+        static::FIELD_SECOND_SURNAME => null,
+        static::FIELD_SHORTNAME => 'Jaime Ordóñez',
+        static::FIELD_BIRTHDATE => Carbon::create('1971', '08', '19'),
+        static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/actors/jaime-ordonez.jpg',
+        static::FIELD_IMAGE_ALT => 'Jaime Ordóñez',
+        static::FIELD_SLUG => 'jaime-ordonez'
       ]
     ];
   }
