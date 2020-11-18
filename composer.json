@@ -1,7 +1,7 @@
 {
     "name": "jualoppaz/anhqv-stats-api",
     "type": "project",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "description": "API de la aplicación web anhqv-stats.es",
     "keywords": [
         "framework",

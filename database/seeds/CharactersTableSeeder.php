@@ -291,9 +291,9 @@ class CharactersTableSeeder extends Seeder
         static::FIELD_SURNAME => '',
         static::FIELD_SECOND_SURNAME => '',
         static::FIELD_SHORTNAME => 'Gerardo',
-        static::FIELD_NICKNAME => '',
+        static::FIELD_NICKNAME => 'El calvo que habla rápido',
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/characters/gerardo.jpg',
-        static::FIELD_IMAGE_ALT => 'Gerardo, el calvo que habla muy rápido',
+        static::FIELD_IMAGE_ALT => 'Gerardo, el calvo que habla rápido',
         static::FIELD_SLUG => 'gerardo'
       ],
     ];
