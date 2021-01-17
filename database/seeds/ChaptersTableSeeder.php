@@ -545,7 +545,7 @@ class ChaptersTableSeeder extends Seeder
           '<p>En este capítulo, el Presidente Juan Cuesta cumple 13 años al frente de la presidencia de esta nuestra comunidad, y decide ir piso por piso recogiendo iniciativas de los vecinos para mejorar la convivencia en el edificio y plasmarlo todo en un libro blanco.</p><p>Al ser domingo, el presi sólo puede contar con la ayuda de Mariano. Los vecinos tienen muchas peticiones que hacer. Mauri cambiaría a los vecinos, las «supernenas» creen que ya es hora de que las cosas funcionen. El «comité de sabios» se reúne y llegan a una conclusión: en los últimos tiempos, ha habido mucho amor en la escalera.</p><p>La conclusión final es clara, esta comunidad es un auténtico manicomio, pero todos ellos son irremplazables. Por eso celebran con una fiesta por todo lo alto el aniversario presidencial de Juan Cuesta.</p>',
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/chapters/3x07b.jpg',
         static::FIELD_IMAGE_ALT => '3x07b - Érase un aniversario',
-        static::FIELD_VIDEO_URL => 'https://www.dailymotion.com/embed/video/x5wo6b7',
+        static::FIELD_VIDEO_URL => 'https://ok.ru/videoembed/3318584838878',
         static::FIELD_DURATION => 57,
       ],[
         static::FIELD_NAME => 'Érase un famoso',
