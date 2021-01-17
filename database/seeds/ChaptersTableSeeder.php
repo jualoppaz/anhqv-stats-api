@@ -406,7 +406,7 @@ class ChaptersTableSeeder extends Seeder
           '<p>Paloma comienza su mandato de presidenta de la comunidad haciendo algunos cambios en el portal: coloca una fuente, una alfombra roja.., lo suficiente para que los vecinos convoquen elecciones apresuradamente. En radio patio se celebra el primer debate electoral entre las dos contrincantes: Paloma y la Hierbas.</p><p>Los preparativos para la boda siguen su curso y Alicia, Belén y Lucía acompañan a Rocío a elegir traje de novia a una tienda que conoce Alicia, donde se venden muy baratos los trajes de novia más feos que no ha querido nadie.</p><p>Mauri decide ayudar a Bea a ser madre, se ofrece como donante de semen para la fertilización, y acuden a la clínica.</p>',
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/chapters/2x11.jpg',
         static::FIELD_IMAGE_ALT => '2x11 - Érase unas elecciones',
-        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rX_fZofMAtc',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/mEej8Em0zT4',
         static::FIELD_RELEASE_DATE => Carbon::create('2004', '06', '09'),
         static::FIELD_DURATION => 61,
       ], [
