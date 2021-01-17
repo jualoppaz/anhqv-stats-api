@@ -133,7 +133,7 @@ class ChaptersTableSeeder extends Seeder
           '<p>Mauri se resbala y cae por la escalera del edificio y acaba con una pierna escayolada. Fernando habla con Juan Cuesta para que informe al seguro pero resulta que llevan sin pagarlo tres años. Los vecinos deciden enviar al padre de Emilio para que se haga pasar por el perito y que les den la indemnización que consideran justa: 187 euros. Fernando descubre el engaño y amenaza con denunciar a la comunidad, pero se presentan todos los vecinos pidiendo disculpas y acaba tranquilizándose.</p><p>Por otra parte, Emilio se acuesta con Belén y termina por enterarse todo el edificio. Como no han usado protección, Emilio se cree que ha ido a pillarle para quedarse embarazada de él.</p><p>Por último, Roberto y Lucía contratan a una asistenta que resulta ser una cotilla e informa a todos los vecinos de lo que pasa en la casa, incluyendo que Lucía tiene un retraso de varias semanas y puede estar embarazada.</p>',
         static::FIELD_IMAGE_URL => 'http://www.anhqv-stats.es/images/chapters/1x06.jpg',
         static::FIELD_IMAGE_ALT => '1x06 - Érase un resbalón',
-        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/5N1yaHZ8iwY',
+        static::FIELD_VIDEO_URL => 'https://www.youtube.com/embed/rrYJc8sZUnU',
         static::FIELD_RELEASE_DATE => Carbon::create('2003', '10', '12'),
         static::FIELD_DURATION => 63,
       ], [
