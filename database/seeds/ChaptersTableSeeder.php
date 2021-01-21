@@ -44,6 +44,7 @@ class ChaptersTableSeeder extends Seeder
         static::FIELD_IMAGE_URL => $chapter[static::FIELD_IMAGE_URL],
         static::FIELD_IMAGE_ALT => $chapter[static::FIELD_IMAGE_ALT],
         static::FIELD_VIDEO_URL => $chapter[static::FIELD_VIDEO_URL],
+        static::FIELD_OWN_VIDEO_URL => isset($chapter[static::FIELD_OWN_VIDEO_URL]) ? $chapter[static::FIELD_OWN_VIDEO_URL] : null,
         static::FIELD_RELEASE_DATE => isset($chapter[static::FIELD_RELEASE_DATE]) ? $chapter[static::FIELD_RELEASE_DATE] : null,
         static::FIELD_DURATION => isset($chapter[static::FIELD_DURATION]) ? $chapter[static::FIELD_DURATION] : null,
       ]);
