@@ -57,6 +57,7 @@ class EventsTableSeeder1x02
     $events_1x02_25 = $this->getEvents_1x02_25($scenes_1x02[$index++]);
     $events_1x02_26 = $this->getEvents_1x02_26($scenes_1x02[$index++]);
     $events_1x02_27 = $this->getEvents_1x02_27($scenes_1x02[$index++]);
+    $events_1x02_28 = $this->getEvents_1x02_28($scenes_1x02[$index++]);
 
     $res = array_merge(
       $events_1x02_01, $events_1x02_02, $events_1x02_03, $events_1x02_04,
@@ -65,7 +66,7 @@ class EventsTableSeeder1x02
       $events_1x02_13, $events_1x02_14, $events_1x02_15, $events_1x02_16,
       $events_1x02_17, $events_1x02_18, $events_1x02_19, $events_1x02_20,
       $events_1x02_21, $events_1x02_22, $events_1x02_23, $events_1x02_24,
-      $events_1x02_25, $events_1x02_26, $events_1x02_27,
+      $events_1x02_25, $events_1x02_26, $events_1x02_27, $events_1x02_28,
     );
 
     return $res;
@@ -3228,6 +3229,59 @@ class EventsTableSeeder1x02
       static::FIELD_TYPE => static::VALUE_DIALOG,
       static::FIELD_TEXT => '¡El papel! ¡Toma el papel! ¡Toma el papel!',
       static::FIELD_CHARACTERS_ID => [$marisaId],
+    ];
+
+    return $events;
+  }
+
+  /**
+   * Eventos de la escena 28 del capitulo 1x02
+   */
+  public function getEvents_1x02_28($scene_id)
+  {
+    $mauricioId = $this->characters['mauricio-hidalgo'];
+    $fernandoId = $this->characters['fernando-navarro'];
+
+    $events = [];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Joder, pero ¿qué pasa ahora?',
+      static::FIELD_CHARACTERS_ID => [$mauricioId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Es una alarma: voy a ver qué pasa.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'No, no, no. No vayas.',
+      static::FIELD_CHARACTERS_ID => [$mauricioId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => 'Tranquilo, no va a pasarme nada. Tú duérmete.',
+      static::FIELD_CHARACTERS_ID => [$fernandoId],
+    ];
+
+    $events[] = [
+      static::FIELD_SCENE_ID => $scene_id,
+      static::FIELD_ORDER => count($events) + 1,
+      static::FIELD_TYPE => static::VALUE_DIALOG,
+      static::FIELD_TEXT => '¡Pero si no puedo!',
+      static::FIELD_CHARACTERS_ID => [$mauricioId],
     ];
 
     return $events;
