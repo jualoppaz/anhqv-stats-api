@@ -4600,5 +4600,7 @@ class EventsTableSeeder1x02
       static::FIELD_TEXT => '¿A Mauri? Sí. Sí, yo se lo digo. Vamos, que... que va a estar encantado.',
       static::FIELD_CHARACTERS_ID => [$fernandoId],
     ];
+
+    return $events;
   }
 }
